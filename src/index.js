@@ -4,8 +4,7 @@ import "./assets/base.scss";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Login from './Components/Login'; 
 import About from './Components/About'; 

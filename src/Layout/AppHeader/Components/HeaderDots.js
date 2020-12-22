@@ -90,7 +90,7 @@ class HeaderDots extends React.Component {
     return (
       <Fragment>
         <div className="header-dots">
-          <UncontrolledDropdown>
+          {/*<UncontrolledDropdown>
             <DropdownToggle className="p-0 mr-2" color="link">
               <div className="icon-wrapper icon-wrapper-alt rounded-circle">
                 <div className="icon-wrapper-bg bg-primary" />
@@ -199,7 +199,7 @@ class HeaderDots extends React.Component {
                 </NavItem>
               </Nav>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </UncontrolledDropdown>*/}
           <UncontrolledDropdown>
             <DropdownToggle className="p-0 mr-2" color="link">
               <div className="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -223,8 +223,8 @@ class HeaderDots extends React.Component {
                   </div>
                 </div>
               </div>
-              <DropdownItem header>Popular Languages</DropdownItem>
-              <DropdownItem>
+              {/*<DropdownItem header>Popular Languages</DropdownItem>*/}
+              <DropdownItem active>
                 <Flag className="mr-3 opacity-8" country="US" />
                 USA
               </DropdownItem>
@@ -232,27 +232,9 @@ class HeaderDots extends React.Component {
                 <Flag className="mr-3 opacity-8" country="CH" />
                 Switzerland
               </DropdownItem>
-              <DropdownItem>
-                <Flag className="mr-3 opacity-8" country="FR" />
-                France
-              </DropdownItem>
-              <DropdownItem>
-                <Flag className="mr-3 opacity-8" country="ES" />
-                Spain
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem header>Others</DropdownItem>
-              <DropdownItem active>
-                <Flag className="mr-3 opacity-8" country="DE" />
-                Germany
-              </DropdownItem>
-              <DropdownItem>
-                <Flag className="mr-3 opacity-8" country="IT" />
-                Italy
-              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <UncontrolledDropdown>
+          {/*<UncontrolledDropdown>
             <DropdownToggle className="p-0" color="link">
               <div className="icon-wrapper icon-wrapper-alt rounded-circle">
                 <div className="icon-wrapper-bg bg-success" />
@@ -313,7 +295,7 @@ class HeaderDots extends React.Component {
                 </NavItem>
               </Nav>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </UncontrolledDropdown>*/}
         </div>
       </Fragment>
     );

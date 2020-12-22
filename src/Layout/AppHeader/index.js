@@ -7,8 +7,8 @@ import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 
 import HeaderLogo from "../AppLogo";
 
-import SearchBox from "./Components/SearchBox";
-import MegaMenu from "./Components/MegaMenu";
+//import SearchBox from "./Components/SearchBox";
+//import MegaMenu from "./Components/MegaMenu";
 import UserBox from "./Components/UserBox";
 import HeaderRightDrawer from "./Components/HeaderRightDrawer";
 
@@ -33,16 +33,31 @@ class Header extends React.Component {
           <div className={cx("app-header__content", {
               "header-mobile-open": enableMobileMenuSmall,
             })}>
-            <div className="app-header-left">
-              <SearchBox />
-              <MegaMenu />
-            </div>
             <div className="app-header-right">
               <HeaderDots />
               <UserBox />
               <HeaderRightDrawer />
             </div>
           </div>
+		  <nav className="navbar navbar-expand-lg navbar-dark  bg-dark  w-100">
+		  <div className="container">
+			  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span className="navbar-toggler-icon"></span>
+			  </button>
+			  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
+				<ul className="navbar-nav ml-auto">
+				  <li className="nav-item active">
+					<a className="nav-link" href="#">The Platform</a>
+				  </li>
+				  <li className="nav-item">
+					<a className="nav-link" href="#">Plan</a>
+				  </li>
+				  <li className="nav-item">
+					<a className="nav-link" href="#">Support</a>
+				  </li>
+				</ul>
+			  </div></div>
+			</nav>
         </CSSTransitionGroup>
       </Fragment>
     );

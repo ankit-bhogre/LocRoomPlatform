@@ -171,7 +171,7 @@ class UserBox extends React.Component {
                   </DropdownMenu>
                 </UncontrolledButtonDropdown>
               </div>
-              <div className="widget-content-left  ml-3 header-user-info">
+              {/*<div className="widget-content-left  ml-3 header-user-info">
                 <div className="widget-heading">Alina Mclourd</div>
                 <div className="widget-subheading">VP People Manager</div>
               </div>
@@ -182,7 +182,7 @@ class UserBox extends React.Component {
                 <UncontrolledTooltip placement="bottom" target={"Tooltip-1"}>
                   Click for Toastify Notifications!
                 </UncontrolledTooltip>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

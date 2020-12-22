@@ -71,9 +71,9 @@ import PageTitle from "../Layout/AppMain/PageTitle";
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									<PageTitle heading="Form Controls"
-										subheading="Wide selection of forms controls, using the Bootstrap 4 code base, but built with React."
-										icon="pe-7s-display1 icon-gradient bg-premium-dark"/>
+									<PageTitle heading="Negotiation Rooms"
+										subheading="Wide selection of home"
+										icon="pe-7s-door-lock icon-gradient bg-premium-dark"/>
 								</div>
 							</div>
 						</div>
