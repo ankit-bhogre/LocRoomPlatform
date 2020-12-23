@@ -2,6 +2,7 @@ import React, { Fragment, Component } from "react";
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faFacebook, faYoutube, faTwitter, faInstagram, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Row } from "reactstrap";
+import footerlogo from "../assets/utils/images/footer-logo.svg";
 
 export default class Footer extends Component {
   render() {
@@ -14,10 +15,11 @@ export default class Footer extends Component {
 			 <div className="content-three"><div className="container">Content 3</div></div>
 		</Row>
 		  <Row className="no-gutters footer-1">
-		  <div className="container ">
+		  <div className="container-fluid ">
 			  <div className="row ">
-			  	<div className="col-3">
-				
+			  	<div className="col-4">
+					<div><img width={60} className="" src={footerlogo} alt=""/></div>
+					<div className="footer-sec-one-div">Div</div>
 				</div>
 				<div className="col-2">
 				  <h6>Rooms</h6>
@@ -48,7 +50,7 @@ export default class Footer extends Component {
 			</div>
 		  </Row>
 		  <Row className="no-gutters">
-		  <div className="container">
+		  <div className="container-fluid">
 			  <div className="row footer-2">				
 				 <div className="col-8">
 				 	<div class="text-left py-3">

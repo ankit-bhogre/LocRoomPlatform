@@ -1,31 +1,15 @@
-import React, { Component, Suspense, Fragment } from 'react'; 
-import { Route, withRouter } from "react-router-dom";
+import React, { Component, Fragment } from 'react'; 
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+//import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import cx from "classnames";
-import {
-    setBackgroundColor,
-    setColorScheme,
-    setBackgroundImage,
-    setBackgroundImageOpacity,
-    setEnableBackgroundImage,
-    setEnableFixedHeader,
-    setEnableHeaderShadow,
-    setEnableSidebarShadow,
-    setEnableFixedSidebar,
-    setEnableFixedFooter,
-    setHeaderBackgroundColor,
-    setEnablePageTitleSubheading,
-    setEnablePageTabsAlt,
-    setEnablePageTitleIcon,
-} from '../reducers/ThemeOptions';
 
 import ResizeDetector from "react-resize-detector";
 //import AppMain from "../Layout/AppMain";
 import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
 import PageTitle from "../Layout/AppMain/PageTitle";
-
+import Footer from "./Footer"; 
 
  
 //import { Route, Switch, Redirect } from 'react-router-dom';  
@@ -73,7 +57,7 @@ import PageTitle from "../Layout/AppMain/PageTitle";
 								<div className="app-main__inner">
 									<PageTitle heading="Negotiation Rooms"
 										subheading="Wide selection of home"
-										icon="pe-7s-door-lock icon-gradient bg-premium-dark"/>
+										icon="pe-7s-door-lock"/>
 								</div>
 							</div>
 						</div>
@@ -81,7 +65,7 @@ import PageTitle from "../Layout/AppMain/PageTitle";
 					</div>
 				)}
 			  />
-				
+			<Footer />	
             </Fragment>  
         )  
     }  

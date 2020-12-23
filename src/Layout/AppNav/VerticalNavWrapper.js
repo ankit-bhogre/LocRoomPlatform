@@ -6,9 +6,6 @@ import { setEnableMobileMenu } from "../../reducers/ThemeOptions";
 import {
   MainNav,
   ComponentsNav,
-  FormsNav,
-  WidgetsNav,
-  ChartsNav,
 } from "./NavItems";
 
 class Nav extends Component {

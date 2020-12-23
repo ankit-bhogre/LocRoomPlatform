@@ -31,7 +31,7 @@ const AppMain = () => {
                         </div>
                         <h6 className="mt-5">
                             Please wait while we load all the Components examples
-                            <small>Because this is a demonstration we load at once all the Components examples. This wouldn't happen in a real live app!</small>
+                            <small>Because this is a demonstration we load at once all the Components examples. This wouldnt happen in a real live app!</small>
                         </h6>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const AppMain = () => {
                         </div>
                         <h6 className="mt-5">
                             Please wait while we load all the Forms examples
-                            <small>Because this is a demonstration we load at once all the Forms examples. This wouldn't happen in a real live app!</small>
+                            <small>Because this is a demonstration we load at once all the Forms examples. This wouldnt happen in a real live app!</small>
                         </h6>
                     </div>
                 </div>

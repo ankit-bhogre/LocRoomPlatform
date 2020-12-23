@@ -7,7 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Login from './Components/Login'; 
-import About from './Components/About'; 
+import Dashboard from './Components/Dashboard'; 
 import configureStore from "./config/configureStore"; 
 
 import { Provider } from "react-redux";
@@ -17,7 +17,7 @@ export default function App() {
     <Provider store={store}>
 		<Router>
 			<Switch>
-				<Route path="/about"><About /></Route>
+				<Route path="/dashboard"><Dashboard /></Route>
 				<Route path="/"><Login /></Route>
 			</Switch>
 		</Router>

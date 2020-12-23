@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 // import Ionicon from 'react-ionicons';
 
-import { IoIosCalendar } from "react-icons/io";
+//import { IoIosCalendar } from "react-icons/io";
 
 import PerfectScrollbar from "react-perfect-scrollbar";
 
@@ -15,7 +15,7 @@ import {
   Button,
   NavItem,
   NavLink,
-  UncontrolledTooltip,
+  //UncontrolledTooltip,
   UncontrolledButtonDropdown,
 } from "reactstrap";
 

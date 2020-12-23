@@ -9,7 +9,6 @@ import bg1 from "../assets/utils/images/originals/city.jpg";
 import bg2 from "../assets/utils/images/originals/citydark.jpg";
 import bg3 from "../assets/utils/images/originals/citynights.jpg";
 
-import toplogo from "../assets/utils/images/logo.png";
 import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import Footer from "./Footer"; 
 
@@ -31,9 +30,9 @@ export default class Login extends Component {
 	  <Fragment>
         <div className="h-100">
 		  <Row className="no-gutters">	
-		  	<div className="container-fluid">
+		  	<div className="container">
 			  <Col lg="3" md="3" sm="12" className="fl top_logo">
-			  	<div><Link to="/"><img className="" src={toplogo} alt=""/></Link></div>
+			  	<div className="app-logo" />
 			  </Col>		  
 			  <Col lg="7" md="7" sm="12" className="fl">
 			  	<div className=""><h2>Banner</h2></div>
@@ -48,7 +47,7 @@ export default class Login extends Component {
 			<Row className="no-gutters">
 			
 		  <nav className="navbar navbar-expand-lg navbar-dark  bg-dark  w-100">
-		  <div className="container-fluid">
+		  <div className="container">
 			  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span className="navbar-toggler-icon"></span>
 			  </button>
@@ -145,12 +144,12 @@ export default class Login extends Component {
                     </Row>
                     <div className="d-flex align-items-center">
                       <div className="ml-auto">
-                        <Link to="/" className="btn-lg btn btn-link" >
+                        <Link to="/about" className="btn-lg btn btn-link" >
                           Forgot your password?
                         </Link>{" "}
-                        <Link to="/dashboard"><Button color="primary" size="lg">
+                        <Button color="primary" size="lg">
                           Login to Dashboard
-                        </Button></Link>
+                        </Button>
                       </div>
                     </div>
 					<div className="login_with">

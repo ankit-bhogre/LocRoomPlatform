@@ -54,10 +54,8 @@
   transition: width .2s;
 
   .logo-src {
-    /*height: $logo-height;
-    width: $logo-width;*/
-	height: 55px;
-    width: 200px;
+    height: $logo-height;
+    width: $logo-width;
     background: url('~assets/utils/images/logo-inverse.png');
   }
 }

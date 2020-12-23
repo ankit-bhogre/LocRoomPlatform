@@ -2,7 +2,7 @@
 
 .fixed-sidebar {
   .app-sidebar {
-    position: fixed;
+    position: relative;
     height: 100vh;
   }
 
@@ -10,7 +10,7 @@
 
     .app-main__outer {
       z-index: 9;
-      padding-left: $app-sidebar-width;
+      /*padding-left: $app-sidebar-width;*/
     }
 
   }

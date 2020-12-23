@@ -1,39 +1,34 @@
 import React, { Fragment } from "react";
 
 // import Ionicon from 'react-ionicons';
-import {
+/*import {
   IoIosGrid,
   IoIosNotificationsOutline,
   IoIosAnalytics,
-} from "react-icons/io";
+} from "react-icons/io";*/
 
 import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  Nav,
-  Col,
-  Row,
-  Button,
-  NavItem,
   DropdownItem,
 } from "reactstrap";
 
-import { AreaChart, Area, ResponsiveContainer } from "recharts";
+//import { AreaChart, Area, ResponsiveContainer } from "recharts";
 
-import { faArrowLeft, faCog } from "@fortawesome/free-solid-svg-icons";
+//import { faArrowLeft, faCog } from "@fortawesome/free-solid-svg-icons";
 
-import CountUp from "react-countup";
+//import CountUp from "react-countup";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import bg4 from "../../../assets/utils/images/dropdown-header/abstract4.jpg";
+//import bg4 from "../../../assets/utils/images/dropdown-header/abstract4.jpg";
 import city2 from "../../../assets/utils/images/dropdown-header/city2.jpg";
-import city3 from "../../../assets/utils/images/dropdown-header/city3.jpg";
+//import city3 from "../../../assets/utils/images/dropdown-header/city3.jpg";
 
 import Flag from "react-flagkit";
 
-import Tabs from "react-responsive-tabs";
+//import Tabs from "react-responsive-tabs";
 
 // Dropdown Tabs Content
 import ChatExample from "./TabsContent/ChatExample";
