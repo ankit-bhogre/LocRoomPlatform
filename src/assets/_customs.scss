@@ -1,4 +1,21 @@
-.lp_title{font-weight: 600;font-size: 35px;line-height: 40px}
+
+.lp_title{font-family: 'Poppins',sans-serif;font-weight:600;font-size: 44px;line-height: 47px;}
+.lp_register{font-family:'Poppins',sans-serif;font-weight:500;font-size: 18px;}
+.loginForm_btndiv{width: 100%;}
+.lp_forgotps_link{font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;color: #347DF0;}
+.lp_cnwith_text{font-family:'Poppins',sans-serif;font-weight:500;font-size:18px;}
+.lp_loginwith_icon{text-align: center;border: 1px solid #EAECF2; margin: 5px;padding: 5px;}
+// margin: 5px;
+.lp_social_icon{width: 100px;font-size: 26px;}
+.lp_social_text{font-family:'Poppins',sans-serif;font-weight:500;font-size: 16px;color: #4F4F4F; display: block;}
+.lp_social_google{font-size: 14px;}
+// .lp_google_text{margin: 5px;} width: 26%;color: red;
+.lp_social_fb{color: #4F4F4F;} .lp_social_google{} .lp_social_linked{color: #000000;}
+.lp_login_icon1{padding: 10px;} .lp_login_icon2{    padding-bottom: 13px;}
+.lp_cnwith_text>a:hover{cursor: pointer;}
+.loginForm_lg_btn{font-family:'Poppins',sans-serif;width: 100%;font-size: 18px;font-weight: 600;color: #FFFFFF;background: #0063E5;border: none;}
+.loginForm_lg_btn:hover{background: #0063E5;}
+.lp_form_input{border: 1px solid #D0DDE2;border-radius: 8px;height: 40px;background: #F6F7F8}
 .lp_sub_title{font-size:20px;text-align: center;margin-top: 20px;margin-bottom: 50px;line-height: 30px;}
 .top_social_icons{ display: flex;justify-content: center;align-items: center;}
 .top_social_icons a {color: #333;font-size: 25px; padding: 10px 6px;}
@@ -7,17 +24,25 @@
 .footer-1 ul{padding-left:15px;}
 .footer-1 li{ list-style-type:none; line-height:30px;}
 .footer-2 li{ list-style-type:none; display:inline-block; padding-right:20px;}
+.footer_social>a{ display: inline-block; color: #4F4F4F; display: inline-block;font-size: 26px;margin: 4px;}
+.footer_followus_text{font-family:'Poppins',sans-serif; font-weight: 400; font-size: 14px;color: #4F4F4F;    padding-top: 55px;}
 .inner-menu{margin-top:60px;}
 .content-two{background: #C4C4C4;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
 .content-three{background: #ABA3A3;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
 .footer-copyright{text-align:right;}
-.txtcap{text-transform:uppercase; margin-bottom:5px;}
+.txtcap{font-family: 'Poppins', sans-serif;text-transform:uppercase; margin-bottom:5px;color: #0063E5;font-size: 24px; font-weight: 600;}
 .login_with h5{ font-size:16px; margin:20px 0;}
 .login_with .col-md-2{ float:left; font-size:20px;}
 .tp_nav .nav-link{ padding:2px; font-size:18px;}
 .fl{float:left;}
 .inav{font-size: 20px; font-weight: bold !important;vertical-align: text-bottom;}
-
+.top_flagicons_togle{margin: 0; padding: 0;}
+.top_flagicons_togle::after{display: none; }
+.top_flagicons_togle::before{display: none !important; }
+.top_flagicons_togle{background: none;border: none;}
+.top_flagicons_togle:hover{background: none}
+.top_flagicons_img{width: 50% !important;}
+.top_flagicons_menu{min-width: 5rem;     transform: translate(0px, 27px) !important;}
 .top_main_header{ display:flex; width:100%;}
 .top_custom_nav{ background: #000;width: 100%;}
 .top_custom_nav li{ display:inline-block;}

@@ -2,17 +2,20 @@ import React, { Fragment, Component } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// faTwitter, faInstagram,
+import {faLinkedinIn, faFacebookSquare,faFacebook, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+// import Dropdown from 'react-bootstrap';
+// import { DropdownButton } from 'react-bootstrap';
+import Dropdown from 'react-bootstrap/Dropdown';
 import bg1 from "../assets/utils/images/originals/city.jpg";
 import bg2 from "../assets/utils/images/originals/citydark.jpg";
 import bg3 from "../assets/utils/images/originals/citynights.jpg";
-
+// import brazilflag from "../assets/custom_images/brazil-flag.svg";
+// import usflag from "../assets/custom_images/united-states-of-america-flag.svg";
 import toplogo from "../assets/utils/images/logo.png";
 import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import Footer from "./Footer"; 
-
 export default class Login extends Component {
   render() {
     let settings = {
@@ -30,23 +33,43 @@ export default class Login extends Component {
     return (
 	  <Fragment>
         <div className="h-100">
+          {/* header code here for login */}
 		  <Row className="no-gutters">	
 		  	<div className="container-fluid">
-			  <Col lg="3" md="3" sm="12" className="fl top_logo">
+			  <Col lg="10" md="10" sm="8"  className="fl top_logo col-8">
 			  	<div><Link to="/"><img className="" src={toplogo} alt=""/></Link></div>
 			  </Col>		  
-			  <Col lg="7" md="7" sm="12" className="fl">
-			  	<div className=""><h2>Banner</h2></div>
-			  </Col>		  
-			  <Col lg="2" md="2" sm="12" className="fl top_social_icons">
-				<a className="" href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+			  {/* <Col lg="7" md="7" sm="12" className="fl">
+			  	<div className="">
+            <h2>Banner</h2>
+          </div>
+			  </Col>		   */}
+			  <Col lg="2" md="2" sm="4"  className="fl top_social_icons pt-3 col-4">
+        <Dropdown className="top_flagicons_dropdown">
+          <Dropdown.Toggle variant="light" id="dropdown-basic" className="top_flagicons_togle">
+          <img className="top_flagicons_img" src={require('../assets/custom_images/usaflag.png')}></img>  
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu className="top_flagicons_menu">
+            <Dropdown.Item href="#/action-1" className="top_flagicons_items"><img className="top_flagicons_img" src={require('../assets/custom_images/usaflag.png')}></img></Dropdown.Item>
+            <Dropdown.Item href="#/action-2" className="top_flagicons_items"><img className="top_flagicons_img" src={require('../assets/custom_images/brazilflag.png')}></img></Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+				{/* <a className="" href="#"><FontAwesomeIcon icon={faFacebook} /></a>
 				<a className="" href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-				<a className="" href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+				<a className="" href="#"><FontAwesomeIcon icon={faInstagram} /></a> */}
+        {/* ************* */}
+        
+        {/* <img src={require('../assets/custom_images/icons8-brazil-96.png')}></img>
+          <select name="top_language_option" id="top_language_id">
+              <option value="volvo"><img src={require('../assets/custom_images/icons8-brazil-96.png')}></img></option>
+              <option value="saab"  style={{backgroundImage: "url(../assets/custom_images/icons8-brazil-96.png)"}}>++Saab</option>
+          </select> */}
+        {/* ************* */}
 			  </Col>
 			  </div>
 			</Row>
 			<Row className="no-gutters">
-			
 		  <nav className="navbar navbar-expand-lg navbar-dark  bg-dark  w-100">
 		  <div className="container-fluid">
 			  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,8 +89,9 @@ export default class Login extends Component {
 				</ul>
 			  </div></div>
 			</nav>
-			
 			</Row>
+
+      {/* header code close here  */}
           <Row className="h-100 no-gutters">
             <Col lg="7" className="d-none d-lg-block">
 				
@@ -120,7 +144,7 @@ export default class Login extends Component {
                   <div className="txtcap">Welcome to a</div>
                 </h4>				
                   <div className="lp_title">New Concept of Digital Platform</div>
-                <h6 className="mt-3">
+                <h6 className="mt-3 lp_register">
                   Not registred?{" "}
                   <a href="https://colorlib.com/" onClick={(e) => e.preventDefault()} className="text-primary">
                     Register Now!
@@ -132,32 +156,37 @@ export default class Login extends Component {
                     <Row form>
                       <Col md={12}>
                         <FormGroup>
-                          <Label for="exampleEmail">Email</Label>
-                          <Input type="email" name="email" id="exampleEmail" placeholder="Email here..."/>
+                          <Input type="email" name="email" className="lp_form_input" id="exampleEmail" placeholder="Username or email"/>
                         </FormGroup>
                       </Col>
                       <Col md={12}>
                         <FormGroup>
-                          <Label for="examplePassword">Password</Label>
-                          <Input type="password" name="password" id="examplePassword" placeholder="Password here..."/>
+                          <Input type="password" name="password" className="lp_form_input" id="examplePassword" placeholder="Password"/>
                         </FormGroup>
                       </Col>
                     </Row>
-                    <div className="d-flex align-items-center">
-                      <div className="ml-auto">
-                        <Link to="/" className="btn-lg btn btn-link" >
+                    <div className="d-flex flex-column align-items-end">
+                      <div className="loginForm_btndiv">
+                        {/* <Link to="/" className="btn-lg btn btn-link" >
+                          Forgot your password?
+                        </Link>{" "} */}
+                        <Link to="/dashboard"><Button color="primary" className="loginForm_lg_btn" size="lg">
+                          Log In
+                        </Button></Link>
+                      </div>
+                      <div className="lp_forgotpassword">
+                          <Link to="/" className="btn-lg btn btn-link lp_forgotps_link" >
                           Forgot your password?
                         </Link>{" "}
-                        <Link to="/dashboard"><Button color="primary" size="lg">
-                          Login to Dashboard
-                        </Button></Link>
                       </div>
                     </div>
 					<div className="login_with">
-						<h5>Or continue with:</h5>
-						<div className="col-md-2"><FontAwesomeIcon icon={faFacebook} /></div>
-						<div className="col-md-2"><FontAwesomeIcon icon={faGoogle} /></div>
-						<div className="col-md-2"><FontAwesomeIcon icon={faLinkedin} /></div>
+						<h5 className="lp_cnwith_text">Or continue with:</h5>
+						<a href="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_fb" icon={faFacebookSquare} /><span className="lp_social_text">facebook</span></div></a>
+						{/* <a href="#"><div className="col-md-2 lp_loginwith_icon"><FontAwesomeIcon  className="lp_social_icon lp_social_google" icon={faGoogle} /><span className="lp_social_text">google</span></div></a> */}
+            <a href="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon2"><img className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img><span className="lp_social_text lp_social_google">google</span></div></a>
+            {/* <div className="col-md-2 lp_loginwith_icon"><img className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img> <span className="lp_social_text lp_google_text">google</span></div> */}
+						<a href="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_linked" icon={faLinkedinIn} /><span className="lp_social_text">linkedin</span></div></a>
 					</div>
                   </Form>
                 </div>
