@@ -13,7 +13,7 @@
   transition: all .2s;
 
   .app-sidebar__inner {
-    padding: 2px ($layout-spacer-x) $layout-spacer-x;
+    padding: 2px ($side-layout-spacer-x) $side-layout-spacer-x;
   }
 
   .scrollbar-container {
@@ -48,11 +48,13 @@
 .app-sidebar__heading {
   text-transform: uppercase;
   font-size: $font-size-xs;
-  margin: ($layout-spacer-x / 2) 0;
+  margin: ($layout-spacer-x / 2) -8px;
   font-weight: bold;
   color: $primary;
+  background-color: $bgthemecolor;
   white-space: nowrap;
   position: relative;
+  padding:10px;
 }
 
 .sidebar-mobile-overlay {

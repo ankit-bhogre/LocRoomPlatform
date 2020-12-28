@@ -78,13 +78,13 @@ export default class Login extends Component {
 			  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
 				<ul className="navbar-nav ml-auto">
 				  <li className="nav-item active">
-					<a className="nav-link" href="#">The Platform</a>
+					<Link className="nav-link" to="#">The Platform</Link>
 				  </li>
 				  <li className="nav-item">
-					<a className="nav-link" href="#">Plan</a>
+					<Link className="nav-link" to="#">Plan</Link>
 				  </li>
 				  <li className="nav-item">
-					<a className="nav-link" href="#">Support</a>
+					<Link className="nav-link" to="#">Support</Link>
 				  </li>
 				</ul>
 			  </div></div>
@@ -146,9 +146,9 @@ export default class Login extends Component {
                   <div className="lp_title">New Concept of Digital Platform</div>
                 <h6 className="mt-3 lp_register">
                   Not registred?{" "}
-                  <a href="https://colorlib.com/" onClick={(e) => e.preventDefault()} className="text-primary">
+                  <Link href="https://colorlib.com/" onClick={(e) => e.preventDefault()} className="text-primary">
                     Register Now!
-                  </a>
+                  </Link>
                 </h6>
                 <Row className="divider" />
                 <div>

@@ -31,7 +31,7 @@ import Flag from "react-flagkit";
 //import Tabs from "react-responsive-tabs";
 
 // Dropdown Tabs Content
-import ChatExample from "./TabsContent/ChatExample";
+/*import ChatExample from "./TabsContent/ChatExample";
 import TimelineEx from "./TabsContent/TimelineExample";
 import SysErrEx from "./TabsContent/SystemExample";
 
@@ -71,7 +71,7 @@ function getTabs() {
     getContent: () => tab.content,
     key: index,
   }));
-}
+}*/
 
 class HeaderDots extends React.Component {
   constructor(props) {

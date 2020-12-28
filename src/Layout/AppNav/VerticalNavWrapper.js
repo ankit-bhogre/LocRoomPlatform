@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import MetisMenu from "react-metismenu";
 import { setEnableMobileMenu } from "../../reducers/ThemeOptions";
 import {
   MainNav,
-  ComponentsNav,
+  //ComponentsNav,
 } from "./NavItems";
 
 class Nav extends Component {
@@ -19,13 +19,8 @@ class Nav extends Component {
   render() {
     return (
       <Fragment>
-        <h5 className="app-sidebar__heading"><i className="inav pe-7s-home"></i> Home</h5>
-        <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
-          className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
-
-        <h5 className="app-sidebar__heading"><i className="inav pe-7s-video"></i> Video Conference</h5>
-        <MetisMenu content={ComponentsNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
-          className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+        <h5 className="app-sidebar__heading"><Link to="/"><i className="inav pe-7s-home"></i> Home</Link></h5>
+        <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
       </Fragment>
     );
   }

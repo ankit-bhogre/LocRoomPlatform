@@ -1,6 +1,6 @@
 export const MainNav = [
   {
-    icon: "pe-7s-door-lock",
+    icon: "pe-7s-door-lock frst_mlnk",
     label: "Rooms",
     content: [
       {
@@ -8,11 +8,11 @@ export const MainNav = [
         content: [
           {
             label: "Negotiation 1",
-            to: "/",
+            to: "/dashboard",
           },
           {
             label: "Negotiation 2",
-            to: "about",
+            to: "/dashboard",
           }
         ],
       },
@@ -44,12 +44,12 @@ export const MainNav = [
     ],
   },
   {
-    icon: "pe-7s-id",
-    label: "Contracts",
+    icon: "pe-7s-video",
+    label: "Video Conference",
     content: [
       {
         label: "Contract 1",
-        to: "/",
+        to: "/dashboard",
       },
       {
         label: "Contract 2",
