@@ -49,7 +49,7 @@ export const MainNav = [
     content: [
       {
         label: "Contract 1",
-        to: "/",
+        to: "/dashboard",
       },
       {
         label: "Contract 2",

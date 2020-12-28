@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import cx from "classnames";
-
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
@@ -49,13 +49,13 @@ class Header extends React.Component {
 				  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
 					<ul className="navbar-nav ml-auto">
 					  <li className="nav-item active">
-						<a className="nav-link" href="#">The Platform</a>
+						<Link className="nav-link" to="#">The Platform</Link>
 					  </li>
 					  <li className="nav-item">
-						<a className="nav-link" href="#">Plan</a>
+						<Link className="nav-link" to="#">Plan</Link>
 					  </li>
 					  <li className="nav-item">
-						<a className="nav-link" href="#">Support</a>
+						<Link className="nav-link" to="#">Support</Link>
 					  </li>
 					</ul>
 				  </div></div>
