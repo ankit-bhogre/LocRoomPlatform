@@ -8,11 +8,11 @@ export const MainNav = [
         content: [
           {
             label: "Negotiation 1",
-            to: "/dashboard",
+            to: "/negotiation1",
           },
           {
             label: "Negotiation 2",
-            to: "/dashboard",
+            to: "/negotiation2",
           }
         ],
       },

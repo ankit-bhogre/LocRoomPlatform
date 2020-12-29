@@ -7,7 +7,8 @@ import {
   Route
 } from "react-router-dom";
 import Login from './Components/Login'; 
-import Dashboard from './Components/Dashboard'; 
+import Home from './Components/Home'; 
+import Negotiation1 from './Components/Rooms/Negotiation1'; 
 import configureStore from "./config/configureStore"; 
 
 import { Provider } from "react-redux";
@@ -17,7 +18,8 @@ export default function App() {
     <Provider store={store}>
 		<Router>
 			<Switch>
-				<Route path="/dashboard"><Dashboard /></Route>
+				<Route path="/negotiation1"><Negotiation1 /></Route>
+				<Route path="/home"><Home /></Route>
 				<Route path="/"><Login /></Route>
 			</Switch>
 		</Router>

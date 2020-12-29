@@ -10,10 +10,8 @@ import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
 import PageTitle from "../Layout/AppMain/PageTitle";
 import Footer from "./Footer"; 
-import Optionsdashboard from "./optionsDashboard";
- import Negotiationone from "./sidemenu/negotiation1"
 //import { Route, Switch, Redirect } from 'react-router-dom';  
- class Dashboard extends Component {  
+ class Home extends Component {  
    constructor(props) {
     super(props);
     this.state = {
@@ -53,14 +51,12 @@ import Optionsdashboard from "./optionsDashboard";
 					  <AppHeader /> 
 						<div className="app-main">
 							<AppSidebar />
-              {/* <Negotiationone /> */}
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									{/* <PageTitle heading="Negotiation Rooms"
-										subheading="Wide selection of home"
-										icon="pe-7s-door-lock"/>
-                    <Optionsdashboard />   */}
-                    
+									 <PageTitle heading="Home" subheading="Wide selection of home" icon="pe-7s-home"/>
+									 <div className="row">
+									 	<h3 className="">Home Page</h3>
+									 </div>
 								</div>
 							</div>
 						</div>
@@ -86,4 +82,4 @@ const mapStateToProp = (state) => ({
   enablePageTabsAlt: state.ThemeOptions.enablePageTabsAlt,
 });
 
-export default withRouter(connect(mapStateToProp)(Dashboard));
+export default withRouter(connect(mapStateToProp)(Home));

@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from "react";
+import { Link } from "react-router-dom";
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faFacebook, faYoutube, faTwitter, faInstagram, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Row } from "reactstrap";
@@ -48,9 +49,9 @@ export default class Footer extends Component {
 				</div>
 				<div className="col-6 col-md-3  col-lg-2 mt-auto"><h6  className="footer_followus_text">Follow us on Social Media</h6>
 				<div className="footer_social">
-						<a href="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faYoutube} /></div></a>
-						<a href="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faFacebookSquare} /></div></a>
-						<a href="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faInstagram} /></div></a>
+						<Link to="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faYoutube} /></div></Link>
+						<Link to="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faFacebookSquare} /></div></Link>
+						<Link to="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faInstagram} /></div></Link>
 					</div>
 				{/* <div className="app-footer-logo" /> */}
 				</div>

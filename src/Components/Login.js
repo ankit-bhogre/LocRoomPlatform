@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // faTwitter, faInstagram,
-import {faLinkedinIn, faFacebookSquare,faFacebook, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {faLinkedinIn, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import Dropdown from 'react-bootstrap';
 // import { DropdownButton } from 'react-bootstrap';
@@ -14,7 +14,7 @@ import bg3 from "../assets/utils/images/originals/citynights.jpg";
 // import brazilflag from "../assets/custom_images/brazil-flag.svg";
 // import usflag from "../assets/custom_images/united-states-of-america-flag.svg";
 import toplogo from "../assets/utils/images/logo.png";
-import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
+import { Col, Row, Button, Form, FormGroup, Input } from "reactstrap";
 import Footer from "./Footer"; 
 export default class Login extends Component {
   render() {
@@ -47,12 +47,12 @@ export default class Login extends Component {
 			  <Col lg="2" md="2" sm="4"  className="fl top_social_icons pt-3 col-4">
         <Dropdown className="top_flagicons_dropdown">
           <Dropdown.Toggle variant="light" id="dropdown-basic" className="top_flagicons_togle">
-          <img className="top_flagicons_img" src={require('../assets/custom_images/usaflag.png')}></img>  
+          <img className="top_flagicons_img" alt="" src={require('../assets/custom_images/usaflag.png')}></img>  
           </Dropdown.Toggle>
 
           <Dropdown.Menu className="top_flagicons_menu">
-            <Dropdown.Item href="#/action-1" className="top_flagicons_items"><img className="top_flagicons_img" src={require('../assets/custom_images/usaflag.png')}></img></Dropdown.Item>
-            <Dropdown.Item href="#/action-2" className="top_flagicons_items"><img className="top_flagicons_img" src={require('../assets/custom_images/brazilflag.png')}></img></Dropdown.Item>
+            <Dropdown.Item href="#/action-1" className="top_flagicons_items"><img alt="" className="top_flagicons_img" src={require('../assets/custom_images/usaflag.png')}></img></Dropdown.Item>
+            <Dropdown.Item href="#/action-2" className="top_flagicons_items"><img alt="" className="top_flagicons_img" src={require('../assets/custom_images/brazilflag.png')}></img></Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
 				{/* <a className="" href="#"><FontAwesomeIcon icon={faFacebook} /></a>
@@ -170,7 +170,7 @@ export default class Login extends Component {
                         {/* <Link to="/" className="btn-lg btn btn-link" >
                           Forgot your password?
                         </Link>{" "} */}
-                        <Link to="/dashboard"><Button color="primary" className="loginForm_lg_btn" size="lg">
+                        <Link to="/home"><Button color="primary" className="loginForm_lg_btn" size="lg">
                           Log In
                         </Button></Link>
                       </div>
@@ -182,11 +182,11 @@ export default class Login extends Component {
                     </div>
 					<div className="login_with">
 						<h5 className="lp_cnwith_text">Or continue with:</h5>
-						<a href="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_fb" icon={faFacebookSquare} /><span className="lp_social_text">facebook</span></div></a>
+						<Link to="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_fb" icon={faFacebookSquare} /><span className="lp_social_text">facebook</span></div></Link>
 						{/* <a href="#"><div className="col-md-2 lp_loginwith_icon"><FontAwesomeIcon  className="lp_social_icon lp_social_google" icon={faGoogle} /><span className="lp_social_text">google</span></div></a> */}
-            <a href="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon2"><img className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img><span className="lp_social_text lp_social_google">google</span></div></a>
+            <Link to="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon2"><img alt="" className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img><span className="lp_social_text lp_social_google">google</span></div></Link>
             {/* <div className="col-md-2 lp_loginwith_icon"><img className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img> <span className="lp_social_text lp_google_text">google</span></div> */}
-						<a href="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_linked" icon={faLinkedinIn} /><span className="lp_social_text">linkedin</span></div></a>
+						<Link to="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_linked" icon={faLinkedinIn} /><span className="lp_social_text">linkedin</span></div></Link>
 					</div>
                   </Form>
                 </div>
