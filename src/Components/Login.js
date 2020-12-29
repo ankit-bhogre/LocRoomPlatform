@@ -14,6 +14,9 @@ import bg3 from "../assets/utils/images/originals/citynights.jpg";
 // import brazilflag from "../assets/custom_images/brazil-flag.svg";
 // import usflag from "../assets/custom_images/united-states-of-america-flag.svg";
 import toplogo from "../assets/utils/images/logo.png";
+// E:\cps_indore\admin_dashboard\reactjs\lockroom_cps\ankit_\LocRoomPlatform\src\Layout\AppHeader\index.js
+// src\Layout\AppHeader\Components\HeaderDots.js
+import HeaderDots from "../Layout/AppHeader/Components/HeaderDots";
 import { Col, Row, Button, Form, FormGroup, Input } from "reactstrap";
 import Footer from "./Footer"; 
 export default class Login extends Component {
@@ -44,8 +47,9 @@ export default class Login extends Component {
             <h2>Banner</h2>
           </div>
 			  </Col>		   */}
-			  <Col lg="2" md="2" sm="4"  className="fl top_social_icons pt-3 col-4">
-        <Dropdown className="top_flagicons_dropdown">
+			  <Col lg="2" md="2" sm="4"  className="fl top_social_icons pt-2 col-4">
+          <HeaderDots />
+        {/* <Dropdown className="top_flagicons_dropdown">
           <Dropdown.Toggle variant="light" id="dropdown-basic" className="top_flagicons_togle">
           <img className="top_flagicons_img" alt="" src={require('../assets/custom_images/usaflag.png')}></img>  
           </Dropdown.Toggle>
@@ -54,7 +58,7 @@ export default class Login extends Component {
             <Dropdown.Item href="#/action-1" className="top_flagicons_items"><img alt="" className="top_flagicons_img" src={require('../assets/custom_images/usaflag.png')}></img></Dropdown.Item>
             <Dropdown.Item href="#/action-2" className="top_flagicons_items"><img alt="" className="top_flagicons_img" src={require('../assets/custom_images/brazilflag.png')}></img></Dropdown.Item>
           </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
 				{/* <a className="" href="#"><FontAwesomeIcon icon={faFacebook} /></a>
 				<a className="" href="#"><FontAwesomeIcon icon={faTwitter} /></a>
 				<a className="" href="#"><FontAwesomeIcon icon={faInstagram} /></a> */}
