@@ -10,8 +10,8 @@ import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
 import PageTitle from "../Layout/AppMain/PageTitle";
 import Footer from "./Footer"; 
-
- 
+import Optionsdashboard from "./optionsDashboard";
+ import Negotiationone from "./sidemenu/negotiation1"
 //import { Route, Switch, Redirect } from 'react-router-dom';  
  class Dashboard extends Component {  
    constructor(props) {
@@ -53,11 +53,14 @@ import Footer from "./Footer";
 					  <AppHeader /> 
 						<div className="app-main">
 							<AppSidebar />
+              {/* <Negotiationone /> */}
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									<PageTitle heading="Negotiation Rooms"
+									{/* <PageTitle heading="Negotiation Rooms"
 										subheading="Wide selection of home"
 										icon="pe-7s-door-lock"/>
+                    <Optionsdashboard />   */}
+                    
 								</div>
 							</div>
 						</div>
