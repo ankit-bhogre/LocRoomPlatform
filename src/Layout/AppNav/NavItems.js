@@ -1,5 +1,10 @@
 export const MainNav = [
   {
+    icon: "pe-7s-home",
+    label: "Home",
+    to: "/home"
+  },
+  {
     icon: "pe-7s-door-lock frst_mlnk",
     label: "Rooms",
     content: [

@@ -39,7 +39,7 @@
       white-space: nowrap;
 
       &:hover {
-        background: $dropdown-link-hover-bg;
+        background: $bgthemecolor;
         text-decoration: none;
         //transform: scale(1.02);
 
@@ -54,7 +54,7 @@
 
       &.active {
         color: $primary;
-        background: $dropdown-link-hover-bg;
+        background: $bgthemecolor;
       }
 
       &.has-active-child,
@@ -75,7 +75,6 @@
       top: 50%;
       margin-top: -17px;
       font-size: 1.5rem;
-      opacity: .3;
       transition: color 300ms;
     }
 
@@ -113,9 +112,9 @@
           color: $gray-600;
           margin: 0 0 3px;
 
-          &:hover {
+          /*&:hover {
             color: $primary;
-          }
+          }*/
 
           .metismenu-icon {
             display: none;
