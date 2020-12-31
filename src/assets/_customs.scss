@@ -20,18 +20,18 @@
 .top_social_icons{ display: flex;justify-content: flex-end;align-items: center;}
 .top_social_icons a {color: #333;font-size: 25px; padding: 10px 6px;}
 .top_logo{padding:15px;}
-.header-1{background:#F9F9F9;}
-.footer-1{ background:#F9F9F9; padding:30px;}
+.footer-1{ background:#f9f9f9; padding:30px;color: #4F4F4F;}
 .footer-1 .row{align-items: flex-end;}
+.footer-1 h6{font-weight:700;}
 .footer-1 ul{padding-left:15px;margin-bottom: 0;}
 .footer-1 li{ list-style-type:none; line-height:30px;}
-.footer-2 li{ list-style-type:none; display:inline-block; padding-right:20px;}
+.footer-2 li{ list-style-type:none; display:inline-block; padding-right:50px; color: #4F4F4F;}
 .footer_social>a{ display: inline-block; color: #4F4F4F; display: inline-block;font-size: 26px;margin:0 5px;}
 // padding-top: 55px;
 .footer_followus_text{font-family:'Poppins',sans-serif; font-weight: 400; font-size: 14px;color: #4F4F4F; line-height:25px;    }
 .inner-menu{margin-top:60px;}
-.content-two{background: #ffffff;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
-.content-three{background: #ffffff;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
+.content-two{background: #fff;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
+.content-three{background: #fff;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
 .footer-copyright{text-align:right;}
 .txtcap{font-family: 'Poppins', sans-serif;text-transform:uppercase; margin-bottom:5px;color: #0063E5;font-size: 24px; font-weight: 600;}
 .login_with h5{ font-size:16px; margin:20px 0;}
@@ -50,6 +50,7 @@
 .top_custom_nav{ background: #000;width: 100%;}
 .top_custom_nav li{ display:inline-block;}
 .footer-sec-one-div{ background-color:#c4c4c4; padding:10px; margin-top:10px; text-align:center; font-weight:bold;margin-bottom: 7px;}
+ 
 
 .negr1_headbody{ background-color:#FAFBFC}
 .negr1-page-title{ margin: 10px 30px !important; padding: 0 !important;}

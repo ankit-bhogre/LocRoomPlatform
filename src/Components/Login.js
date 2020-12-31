@@ -14,7 +14,7 @@ import translationBR from '../locales/BR/translation.json';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import Dropdown from 'react-bootstrap';
 // import { DropdownButton } from 'react-bootstrap';
-import Dropdown from 'react-bootstrap/Dropdown';
+//import Dropdown from 'react-bootstrap/Dropdown';
 import bg1 from "../assets/utils/images/originals/city.jpg";
 import bg2 from "../assets/utils/images/originals/citydark.jpg";
 import bg3 from "../assets/utils/images/originals/citynights.jpg";
