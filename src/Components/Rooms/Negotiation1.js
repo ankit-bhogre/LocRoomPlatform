@@ -60,7 +60,7 @@ class Negotiation1 extends Component {
 									<PageTitle heading="Negotiation Room" subheading="Negotiation 1" icon="pe-7s-door-lock"/>
 									<Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
 										<TabPane tab="Timeline" key="1">
-											<h3 className="">Timeline</h3>
+											Timeline
 										</TabPane>
 										<TabPane tab="Details" key="2">
 											Details

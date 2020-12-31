@@ -53,7 +53,7 @@ import Footer from "./Footer";
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									<PageTitle heading="Home" subheading="Wide selection of home" icon="pe-7s-home"/>
+									<PageTitle heading="Home" subheading="Wide selection of home" icon="pe-7s-home" pagenamechk="home"  />
 									<h3 className="">Home Page</h3>									  
 								</div>
 							</div>
