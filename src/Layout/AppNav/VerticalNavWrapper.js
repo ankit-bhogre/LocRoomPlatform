@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import MetisMenu from "react-metismenu";
 import { setEnableMobileMenu } from "../../reducers/ThemeOptions";

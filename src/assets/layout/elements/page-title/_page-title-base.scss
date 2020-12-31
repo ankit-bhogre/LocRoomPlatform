@@ -4,6 +4,7 @@
   padding: $grid-gutter-width;
   margin: (-$grid-gutter-width) (-$grid-gutter-width) ($grid-gutter-width);
   position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
   .page-title-wrapper {
     position: relative;

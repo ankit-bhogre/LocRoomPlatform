@@ -1,4 +1,5 @@
 // Navigation Menu Vertical
+ 
 
 .vertical-nav-menu {
   position: relative;
@@ -57,7 +58,7 @@
         background: $bgthemecolor;
       }
 
-      &.has-active-child,
+      /*&.has-active-child,*/
       &.active {
         font-weight: bold;
 		color:$brand;
@@ -138,3 +139,5 @@
     }
   }
 }
+.vertical-nav-menu>ul>li>a {  color:$primary !important;}
+.vertical-nav-menu>ul>li:last-child {  border-top: 1px solid $sidebordercolor; margin-top: 10px; padding-top: 5px;}
