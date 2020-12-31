@@ -1,7 +1,10 @@
 import React, { Component, Fragment } from 'react'; 
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-//import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+import Tabs, { TabPane } from "rc-tabs";
+import TabContent from "rc-tabs/lib/SwipeableTabContent";
+import ScrollableInkTabBar from "rc-tabs/lib/ScrollableInkTabBar";
 import cx from "classnames";
 
 import ResizeDetector from "react-resize-detector";
@@ -53,10 +56,26 @@ class Negotiation1 extends Component {
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									 <PageTitle heading="Negotiation Room 1" subheading="Wide selection of Room 1" icon="pe-7s-door-lock"/>
-									 <div className="row">
-									 	<h3 className="">Negotiation Room 1</h3>
-									 </div>
+									 <CSSTransitionGroup component="div" transitionName="TabsAnimation" transitionAppear={true} transitionAppearTimeout={0} transitionEnter={false} transitionLeave={false}>
+									<PageTitle heading="Negotiation Room" subheading="Negotiation 1" icon="pe-7s-door-lock"/>
+									<Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
+										<TabPane tab="Timeline" key="1">
+											<h3 className="">Timeline</h3>
+										</TabPane>
+										<TabPane tab="Details" key="2">
+											Details
+										</TabPane>
+										<TabPane tab="Proposal" key="3">
+											Proposal
+										</TabPane>
+										<TabPane tab="Meetings" key="4">
+											Meetings
+										</TabPane>
+										<TabPane tab="Attachments" key="5">
+											Attachments
+										</TabPane>
+									</Tabs>
+									</CSSTransitionGroup>
 								</div>
 							</div>
 						</div>

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'; 
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-//import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+
 import cx from "classnames";
 
 import ResizeDetector from "react-resize-detector";
@@ -53,10 +53,8 @@ import Footer from "./Footer";
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									 <PageTitle heading="Home" subheading="Wide selection of home" icon="pe-7s-home"/>
-									 <div className="row">
-									 	<h3 className="">Home Page</h3>
-									 </div>
+									<PageTitle heading="Home" subheading="Wide selection of home" icon="pe-7s-home"/>
+									<h3 className="">Home Page</h3>									  
 								</div>
 							</div>
 						</div>

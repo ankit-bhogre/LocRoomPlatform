@@ -22,9 +22,9 @@
   margin-top: 0;
   @include border-radius($border-radius);
   box-shadow:
-          0 16px 26px -10px rgba($primary, 0.56),
+          0 16px 26px -10px rgba($TabBgcolor, 0.56),
           0 4px 25px 0px rgba(0, 0, 0, 0.12),
-          0 8px 10px -5px rgba($primary, 0.2);
+          0 8px 10px -5px rgba($TabBgcolor, 0.2);
 }
 
 .rc-tabs-ink-bar-animated {
@@ -115,7 +115,7 @@
 }
 
 .rc-tabs-tab:hover {
-  color: $primary;
+  color: $TabBgcolor;
 }
 
 .rc-tabs-tab-active,
@@ -266,7 +266,7 @@
   height: 35px;
   bottom: 0;
   left: 0;
-  background: $primary;
+  background: $TabBgcolor;
 }
 
 .rc-tabs-top .rc-tabs-tab {
