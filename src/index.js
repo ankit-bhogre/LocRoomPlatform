@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import "./assets/base.scss";
+import "./i18n";
 import {
   BrowserRouter as Router,
   Switch,

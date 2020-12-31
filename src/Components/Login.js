@@ -4,6 +4,13 @@ import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // faTwitter, faInstagram,
 import {faLinkedinIn, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+// the hoc
+import i18nIns from '../i18n';
+import {withNamespaces,initReactI18next, useTranslation,withTranslation,reactI18nextModule} from 'react-i18next';
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector"
+import translationUS from '../locales/US/translation.json';
+import translationBR from '../locales/BR/translation.json';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import Dropdown from 'react-bootstrap';
 // import { DropdownButton } from 'react-bootstrap';
@@ -33,11 +40,47 @@ export default class Login extends Component {
       autoplay: true,
       adaptiveHeight: true,
     };
+    // const {t} = useTranslation('translation');
+    // function App ({ t }) {
+    //   const changeLanguage = (lng) => {
+    //     i18n.changeLanguage(lng);
+    //   }
+    // }
+    // changeLanguage = (lng) => {
+    //   i18n.changeLanguage(lng);
+    // }
+    // function changeLanguage(lang){console.log('fn',lang); i18n.changeData('may');};
+    const changeLanguage = lng => {
+      console.log('+++',lng);
+      i18nIns.changeLanguage('br', (err, t) => {
+        if (err) return console.log('something went wrong loading', err);
+        t('key'); // -> same as i18next.t
+      });
+    };
+  //   const resources = {
+  //     us: {
+  //       translation: translationUS
+  //     },
+  //     br: {
+  //       translation: translationBR
+  //     }
+  //   };
+  //   function switchLang(lang) {
+  //     console.log('----',lang);
+      
+  //     i18nIns.changeLanguage('en-US');
+
+  // }
+
     return (
 	  <Fragment>
         <div className="h-100">
+        {/* <button onClick={() => changeLanguage('br')}>us</button>
+        <button onClick={() => changeLanguage('us')}>br</button>
+        <h1>{i18nIns.t('Welcome to React')}</h1> */}
+
           {/* header code here for login */}
-		  <Row className="no-gutters">	
+		  <Row className="no-gutters header-1">	
 		  	<div className="container-fluid">
 			  <Col lg="10" md="10" sm="8"  className="fl top_logo col-8">
 			  	<div><Link to="/"><img className="" src={toplogo} alt=""/></Link></div>

@@ -20,7 +20,8 @@
 .top_social_icons{ display: flex;justify-content: flex-end;align-items: center;}
 .top_social_icons a {color: #333;font-size: 25px; padding: 10px 6px;}
 .top_logo{padding:15px;}
-.footer-1{ background:#f5f5f5; padding:30px;}
+.header-1{background:#F9F9F9;}
+.footer-1{ background:#F9F9F9; padding:30px;}
 .footer-1 .row{align-items: flex-end;}
 .footer-1 ul{padding-left:15px;margin-bottom: 0;}
 .footer-1 li{ list-style-type:none; line-height:30px;}
@@ -29,8 +30,8 @@
 // padding-top: 55px;
 .footer_followus_text{font-family:'Poppins',sans-serif; font-weight: 400; font-size: 14px;color: #4F4F4F; line-height:25px;    }
 .inner-menu{margin-top:60px;}
-.content-two{background: #C4C4C4;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
-.content-three{background: #ABA3A3;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
+.content-two{background: #ffffff;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
+.content-three{background: #ffffff;width: 100%;text-align: center;padding: 80px;font-weight: bold;font-size: 22px;}
 .footer-copyright{text-align:right;}
 .txtcap{font-family: 'Poppins', sans-serif;text-transform:uppercase; margin-bottom:5px;color: #0063E5;font-size: 24px; font-weight: 600;}
 .login_with h5{ font-size:16px; margin:20px 0;}
@@ -50,4 +51,18 @@
 .top_custom_nav li{ display:inline-block;}
 .footer-sec-one-div{ background-color:#c4c4c4; padding:10px; margin-top:10px; text-align:center; font-weight:bold;margin-bottom: 7px;}
 
+.negr1_headbody{ background-color:#FAFBFC}
+.negr1-page-title{ margin: 10px 30px !important; padding: 0 !important;}
+.negr1_heading_text{font-family:'Poppins',sans-serif;color: #606469;font-size: 24px;  font-weight: 600;}
+.negr1_heading_inner{font-family:'Poppins',sans-serif; color: #606469;font-size: 16px;  font-weight: 400;}
+// .negr1_right_nav>li{  display: inline; margin: 5px;}
+.negr1_right_nav > li {
+    display: inline;
+    /* margin: 5px; */
+    border-right: 1px solid; padding: 0 5px; font-family: 'Poppins', sans-serif;
 
+}
+.negr1_right_nav > li:last-child{ border: none; color:#000!important}
+// .negr1_right_nav>li>a:last-child{color:#000 !important}
+// .negr1_right_nav > li>a:last-child{ border-right: none}
+ul.negr1_right_nav{margin: 5px 0;}

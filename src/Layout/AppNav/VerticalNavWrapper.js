@@ -20,7 +20,7 @@ class Nav extends Component {
     return (
       <Fragment>
         {/*<h5 className="app-sidebar__heading"><Link to="/home"><i className="inav pe-7s-home"></i> Home</Link></h5>*/}
-        <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+        <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu"  iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
       </Fragment>
     );
   }

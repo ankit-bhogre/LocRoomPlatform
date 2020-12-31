@@ -200,7 +200,7 @@ class HeaderDots extends React.Component {
               <div className="icon-wrapper icon-wrapper-alt rounded-circle">
                 <div className="icon-wrapper-bg bg-focus" />
                 <div className="language-icon">
-                  <Flag className="mr-3 opacity-8" country="DE" size="40" />
+                  <Flag className="mr-3 opacity-8" country="US" size="40" />
                 </div>
               </div>
             </DropdownToggle>
@@ -220,12 +220,12 @@ class HeaderDots extends React.Component {
               </div>
               {/*<DropdownItem header>Popular Languages</DropdownItem>*/}
               <DropdownItem active>
-                <Flag className="mr-3 opacity-8" country="US" />
-                USA
+                <Flag className="mr-3 opacity-8" country="BR" />
+                Brazil
               </DropdownItem>
               <DropdownItem>
-                <Flag className="mr-3 opacity-8" country="CH" />
-                Switzerland
+                <Flag className="mr-3 opacity-8" country="US" />
+                EUA
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
