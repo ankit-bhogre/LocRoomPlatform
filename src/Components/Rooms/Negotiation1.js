@@ -74,6 +74,9 @@ class Negotiation1 extends Component {
 										<TabPane tab="Attachments" key="5">
 											Attachments
 										</TabPane>
+										<TabPane tab="General" key="6">
+											General
+										</TabPane>
 									</Tabs>
 									</CSSTransitionGroup>
 								</div>
