@@ -13,6 +13,14 @@ import AppHeader from "../../Layout/AppHeader/";
 import AppSidebar from "../../Layout/AppSidebar/";
 import PageTitle from "../../Layout/AppMain/PageTitle";
 import Footer from "../Footer"; 
+
+import timeline_img from "../../assets/custom_images/nego_timeline.png";
+import details_img from "../../assets/custom_images/nego_details.png";
+import proposal_img from "../../assets/custom_images/nego_proposal.png";
+import meeting_img from "../../assets/custom_images/nego_meeting.png";
+import attachment_img from "../../assets/custom_images/nego_attachment.png";
+import general_img from "../../assets/custom_images/nego_general.png";
+
 //import { Route, Switch, Redirect } from 'react-router-dom';  
 class Negotiation1 extends Component {  
    constructor(props) {
@@ -21,6 +29,7 @@ class Negotiation1 extends Component {
       closedSmallerSidebar: false,
     };
   }
+ 
   render() { 
 	 let {
       colorScheme,
@@ -59,22 +68,22 @@ class Negotiation1 extends Component {
 									 <CSSTransitionGroup component="div" transitionName="TabsAnimation" transitionAppear={true} transitionAppearTimeout={0} transitionEnter={false} transitionLeave={false}>
 									<PageTitle heading="Negotiation Room" subheading="Negotiation 1" icon="pe-7s-door-lock"/>
 									<Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
-										<TabPane tab="Timeline" key="1">
-											Timeline
+										<TabPane tab={<span><img className="tab_head_img" src={timeline_img} alt="" /> Timeline</span>} key="1">
+											  Timeline  
 										</TabPane>
-										<TabPane tab="Details" key="2">
+										<TabPane tab={<span><img className="tab_head_img" src={details_img} alt="" /> Details</span>} key="2">
 											Details
 										</TabPane>
-										<TabPane tab="Proposal" key="3">
+										<TabPane tab={<span><img className="tab_head_img" src={proposal_img} alt="" /> Proposal</span>} key="3">
 											Proposal
 										</TabPane>
-										<TabPane tab="Meetings" key="4">
+										<TabPane tab={<span><img className="tab_head_img" src={meeting_img} alt="" /> Meetings</span>} key="4">
 											Meetings
 										</TabPane>
-										<TabPane tab="Attachments" key="5">
+										<TabPane tab={<span><img className="tab_head_img" src={attachment_img} alt="" /> Attachments</span>} key="5">
 											Attachments
 										</TabPane>
-										<TabPane tab="General" key="6">
+										<TabPane tab={<span><img className="tab_head_img" src={general_img} alt="" /> General</span>} key="6">
 											General
 										</TabPane>
 									</Tabs>

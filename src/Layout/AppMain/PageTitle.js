@@ -6,15 +6,11 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  Nav,
-  NavItem,
-  NavLink,
   Button,
-  UncontrolledTooltip,
 } from "reactstrap";
 
-import { faHome,faStar, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faHome,faStar, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import cx from "classnames";
 
 class PageTitle extends Component {
