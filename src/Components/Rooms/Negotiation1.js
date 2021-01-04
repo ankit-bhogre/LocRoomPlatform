@@ -13,6 +13,11 @@ import AppHeader from "../../Layout/AppHeader/";
 import AppSidebar from "../../Layout/AppSidebar/";
 import PageTitle from "../../Layout/AppMain/PageTitle";
 import Footer from "../Footer"; 
+import MetisMenu from 'react-metismenu';
+import PerfectScrollbar from "react-perfect-scrollbar";
+import testimg from "../../assets/usaflag.png"
+// import { MainNav} from "./Roomnavbar";
+
 import Roomnavbar from "./Roomnavbar";
 //import { Route, Switch, Redirect } from 'react-router-dom';  
 class Negotiation1 extends Component {  
@@ -59,23 +64,29 @@ class Negotiation1 extends Component {
 								<div className="app-main__inner">
 									 <CSSTransitionGroup component="div" transitionName="TabsAnimation" transitionAppear={true} transitionAppearTimeout={0} transitionEnter={false} transitionLeave={false}>
 									<PageTitle heading="Negotiation Room" subheading="Negotiation 1" icon="pe-7s-door-lock"/>
-									<Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
-										<TabPane tab="Timeline" key="1">
-											<h3 className="">Timeline</h3>
+								<div>
+                  {/* ***** */}
+                  {/* <PerfectScrollbar>
+                     <div className="app-sidebar__inner">
+                    <MetisMenu content={MainNav}  className="vertical-nav-menu"   />
+                    </div>
+                  </PerfectScrollbar> */}
+                 
+                 <Roomnavbar />
+              {/* ******* */}
+                </div>
+               
+                	{/* <Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
+										<TabPane tab={<span>  <img className="a" src={testimg} width="20" height="20" />Tab1 </span>} key="1">
+											Timeline
 										</TabPane>
-										<TabPane tab="Details" key="2">
+										<TabPane tab={<span>  <img className="a" src={testimg} width="20" height="20" />Tab2 </span>} key="2">
 											Details
 										</TabPane>
-										<TabPane tab="Proposal" key="3">
+										<TabPane tab={<span>  <img className="a" src={testimg} width="20" height="20" />Tab3 </span>} key="3">
 											Proposal
 										</TabPane>
-										<TabPane tab="Meetings" key="4">
-											Meetings
-										</TabPane>
-										<TabPane tab="Attachments" key="5">
-											Attachments
-										</TabPane>
-									</Tabs>
+									</Tabs> */}
 									</CSSTransitionGroup>
 								</div>
 							</div>

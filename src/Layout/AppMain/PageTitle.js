@@ -1,10 +1,21 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import cx from "classnames";
+import { Link } from "react-router-dom";
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
+import {
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  Nav,
+  NavItem,
+  NavLink,
+  Button,
+  UncontrolledTooltip,
+} from "reactstrap";
 
-import TitleComponent1 from "./PageTitleExamples/Variation1";
-import TitleComponent2 from "./PageTitleExamples/Variation2";
-import TitleComponent3 from "./PageTitleExamples/Variation3";
+import { faHome,faStar, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import cx from "classnames";
 
 class PageTitle extends Component {
   randomize(myArray) {
@@ -21,7 +32,6 @@ class PageTitle extends Component {
       subheading,
     } = this.props;
 
-    var arr = [<TitleComponent1 />, <TitleComponent2 />, <TitleComponent3 />];
 
     return (
       <div className="app-page-title">
@@ -41,7 +51,64 @@ class PageTitle extends Component {
               </div>
             </div>
           </div>
-          <div className="page-title-actions">{this.randomize(arr)}</div>
+          <div className="page-title-actions">
+		  	<Breadcrumb className="PageBreadcrumb">
+			  <BreadcrumbItem>
+				<Link to="/home">
+				  Home
+				</Link>
+			  </BreadcrumbItem>
+			  <BreadcrumbItem>
+				<Link to="#" onClick={(e) => e.preventDefault()}>
+				  Rooms
+				</Link>
+			  </BreadcrumbItem>
+			  <BreadcrumbItem active>Negotiation Room</BreadcrumbItem>
+			</Breadcrumb>
+			
+			<Button className="btn-shadow mr-3 PageTitleBtn" onClick="" color="" >
+				  <i className="pe-7s-plus"></i> New Negotiation
+				</Button>
+				 
+				<UncontrolledDropdown className="d-inline-block">
+				  <DropdownToggle color="" className="btn-shadow PageTitleBtn" caret>
+					 <i className="pe-7s-info"></i> Info
+				  </DropdownToggle>
+				  <DropdownMenu right>
+					<Nav vertical>
+					  <NavItem>
+						<NavLink href="#">
+						  <i className="nav-link-icon lnr-inbox"> </i>
+						  <span>Inbox</span>
+						  <div className="ml-auto badge badge-pill badge-secondary">
+							86
+						  </div>
+						</NavLink>
+					  </NavItem>
+					  <NavItem>
+						<NavLink href="#">
+						  <i className="nav-link-icon lnr-book"> </i>
+						  <span>Book</span>
+						  <div className="ml-auto badge badge-pill badge-danger">5</div>
+						</NavLink>
+					  </NavItem>
+					  <NavItem>
+						<NavLink href="#">
+						  <i className="nav-link-icon lnr-picture"> </i>
+						  <span>Picture</span>
+						</NavLink>
+					  </NavItem>
+					  <NavItem>
+						<NavLink disabled href="#">
+						  <i className="nav-link-icon lnr-file-empty"> </i>
+						  <span>File Disabled</span>
+						</NavLink>
+					  </NavItem>
+					</Nav>
+				  </DropdownMenu>
+				</UncontrolledDropdown>
+				
+		  </div>
         </div>
       </div>
     );
