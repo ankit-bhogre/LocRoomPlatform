@@ -67,7 +67,7 @@ class PageTitle extends Component {
 			</Button>				 
 			<UncontrolledDropdown className="d-inline-block" direction="down" > 
 			  <DropdownToggle caret className="PageTitleBtn" color=""><i className="pe-7s-info"></i> Room Info</DropdownToggle>
-			  <DropdownMenu className="dropdown-menu-lg">
+			  <DropdownMenu className="dropdown-menu-lg title-dropdown">
 					<div className="dropdown-menu-header">
 					  <div className="dropdown-menu-header-inner bg-dark">
 						<div className="menu-header-image" />
