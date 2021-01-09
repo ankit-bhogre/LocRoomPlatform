@@ -81,7 +81,7 @@ ul.negr1_right_nav{margin: 5px 0;}
 .sidebar_closebtninner{transform: rotate(-92deg);  font-family:'Poppins',sans-serif;  font-size: 11px;border-bottom: 1px solid #E9E9EC;}
 .leftside_navitem { list-style: none;}
 .leftside_navbar{padding: 10px;}
-.leftside_linktext { font-family: 'Poppins',sans-serif; color: #606469; font-size: 18px;}
+
 .leftside_linkimg { padding-bottom: 6px;padding-right: 5px; width: 25px;}
 .leftside_navlink:hover{cursor: pointer;}
 .leftside_dropbody{display: inline-block;}
@@ -91,7 +91,7 @@ ul.negr1_right_nav{margin: 5px 0;}
 .leftside_dropmenu{    font-family: Poppins;font-style: normal;font-weight: normal;font-size: 16px;}
 .leftside_dropdownbody{background: #F6F7F8; padding: 5px;}
 .side_dropdown>li{list-style: none;}
-span.leftside_dropheading {font-family: 'Poppins',sans-serif;color: #606469;font-size: 18px;font-weight: 300;text-transform: none;}
+
 .leftside_navbar>li{margin-bottom: 11px;}
 .right_navbar>li{list-style: none; margin-bottom: 20px;}
 ul.right_navbar {padding-top: 14px;padding-left: 14px !important;}
@@ -163,3 +163,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .leftsidebar2 {box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);padding: 6px;}
 .sidebarnewright2_img:hover,.leftsidebar2_img:hover{cursor: pointer;}
+
+.room-left-sidebar .lnk-label { font-family: 'Poppins',sans-serif; color: #606469; font-size: 15px; font-weight: 300;}
+.room-left-sidebar span.drop-heading {font-family: 'Poppins',sans-serif;color: #606469;font-size: 15px;font-weight: 300;text-transform: none;}

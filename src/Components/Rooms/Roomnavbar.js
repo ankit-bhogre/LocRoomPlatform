@@ -130,7 +130,7 @@ class Roomnavbar extends React.Component {
     return (
   <div className="testing1">
     <div id="contents">
-      <div id="sidebar">
+      <div id="sidebar" className="room-left-sidebar">
         <div className="sidebarnew_inner d-flex">
         <div className="leftsidebar1">
           {/* <a href="link1.php">
@@ -139,7 +139,7 @@ class Roomnavbar extends React.Component {
           </div>
         </a> */}
        <ul className="leftside_navbar">
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/user_a.png')} alt="" /></span> <span className="leftside_linktext">Participants </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/user_a.png')} alt="" /></span> <span className="lnk-label">Participants </span> </a></li>
            {/* dropdown */}
            <li className="leftside_navitem"><a className="leftside_navlink">
              <span  className="leftside_linkinside"><img className="leftside_linkimg_dropdown" src={require('../../assets/custom_images/asidebar_image/proposal_grey _b.png')} alt="" /></span>
@@ -147,7 +147,7 @@ class Roomnavbar extends React.Component {
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="leftside_drop_inner">
-                            <span className="leftside_dropheading">Proposals</span>
+                            <span className="drop-heading">Proposals</span>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
                               <Card.Body className="leftside_dropdownbody">
@@ -162,8 +162,8 @@ class Roomnavbar extends React.Component {
               </span> 
               </a></li>
            {/* dropdown close*/}
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/agreement _grey _c.png')} alt="" /></span> <span className="leftside_linktext">Agreement </span> </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/strategy _grey _d.png')} alt="" /></span> <span className="leftside_linktext">Strategies </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/agreement _grey _c.png')} alt="" /></span> <span className="lnk-label">Agreement </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/strategy _grey _d.png')} alt="" /></span> <span className="lnk-label">Strategies </span> </a></li>
           {/* dropdown */}
           <li className="leftside_navitem"><a className="leftside_navlink">
              <span  className="leftside_linkinside"><img className="leftside_linkimg_dropdown" src={require('../../assets/custom_images/asidebar_image/justice _grey _e.png')} alt="" /></span>
@@ -171,7 +171,7 @@ class Roomnavbar extends React.Component {
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="leftside_drop_inner">
-                            <span className="leftside_dropheading">Justice</span>
+                            <span className="drop-heading">Justice</span>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
                               <Card.Body className="leftside_dropdownbody">
@@ -187,9 +187,9 @@ class Roomnavbar extends React.Component {
               </span> 
               </a></li>
            {/* dropdown close*/}
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/shelve _grey _f.png')} alt="" /></span> <span className="leftside_linktext">Shelve </span> </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/historic _grey _g.png')} alt="" /></span> <span className="leftside_linktext">Historic </span> </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/preference _grey _h.png')} alt="" /></span> <span className="leftside_linktext">Preferences </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/shelve _grey _f.png')} alt="" /></span> <span className="lnk-label">Shelve </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/historic _grey _g.png')} alt="" /></span> <span className="lnk-label">Historic </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/preference _grey _h.png')} alt="" /></span> <span className="lnk-label">Preferences </span> </a></li>
        </ul>
       </div>
       {/* align-items-center */}
