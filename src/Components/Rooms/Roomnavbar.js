@@ -4,7 +4,12 @@ import { Accordion,Card,Tab } from 'react-bootstrap';
 import Tabs, { TabPane } from "rc-tabs";
 import TabContent from "rc-tabs/lib/SwipeableTabContent";
 import ScrollableInkTabBar from "rc-tabs/lib/ScrollableInkTabBar";
+import Roomsfooter from "./roomsfooter"
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUsers, faFileAlt, faHandshake, faBullseye, faGavel, faFolderOpen, faHistory, faCog  } from '@fortawesome/free-solid-svg-icons';
+
+
 import PolygonClose from "../../assets/custom_images/Polygon_close.png";
 import PolygonOpen from "../../assets/custom_images/Polygon_open.png";
 import PolygonrightClose from "../../assets/custom_images/Polygon_right_close.png";
@@ -78,14 +83,14 @@ class Roomnavbar extends React.Component {
     else if( this.state.leftOpen == false && this.state.rightOpen == true ){  
       document.getElementById("sidebar").style.transitionDuration = "0s";
       document.getElementById("sidebar").style.marginLeft = "0";
-      document.getElementById("mainContents").style.width = "75%";
+      document.getElementById("mainContents").style.width = "72%";
       this.setState({ imgsrc: PolygonClose });
       console.log('key 2222c');
     }
     else if( this.state.leftOpen == false && this.state.rightOpen == false ){ 
       document.getElementById("sidebar").style.transitionDuration = "0s";
         document.getElementById("sidebar").style.marginLeft = "0";
-        document.getElementById("mainContents").style.width = "79%";
+        document.getElementById("mainContents").style.width = "76%";
         this.setState({ imgsrc: PolygonClose });
        console.log('key 2222d');}
   }
@@ -95,7 +100,7 @@ class Roomnavbar extends React.Component {
     if( this.state.leftOpen == true && this.state.rightOpen == true ){ 
       document.getElementById("sidebar2").style.width = "3%";
       document.getElementById("sidebarnewrightId").style.display = "none";
-      document.getElementById("mainContents").style.width = "79%";
+      document.getElementById("mainContents").style.width = "76%";
       document.getElementById("sidebar2").style.transitionDuration = "0.3s";
       this.setState({ rightimgsrc: PolygonrightClose });
        console.log('key 22221');
@@ -103,7 +108,7 @@ class Roomnavbar extends React.Component {
     else if( this.state.leftOpen == true && this.state.rightOpen == false ){ 
       document.getElementById("sidebar2").style.width = "7%";
       document.getElementById("sidebarnewrightId").style.display = "inline-block";
-      document.getElementById("mainContents").style.width = "75%";
+      document.getElementById("mainContents").style.width = "72%";
       document.getElementById("sidebar2").style.transitionDuration = "0s";
       this.setState({ rightimgsrc: PolygonrightOpen });
        console.log('key 2222');
@@ -139,10 +144,12 @@ class Roomnavbar extends React.Component {
           </div>
         </a> */}
        <ul className="leftside_navbar">
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/user_a.png')} alt="" /></span> <span className="lnk-label">Participants </span> </a></li>
+       {/* <img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/user_a.png')} alt="" /> faYoutube*/}
+         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fause-icon" icon={faUsers} /><span className="lnk-label">Participants </span></a></li>
            {/* dropdown */}
            <li className="leftside_navitem"><a className="leftside_navlink">
-             <span  className="leftside_linkinside"><img className="leftside_linkimg_dropdown" src={require('../../assets/custom_images/asidebar_image/proposal_grey _b.png')} alt="" /></span>
+           {/* <img className="leftside_linkimg_dropdown" src={require('../../assets/custom_images/asidebar_image/proposal_grey _b.png')} alt="" /> */}
+             <span  className="leftside_linkinside"><FontAwesomeIcon className="lift-icon fafile-icon" icon={faFileAlt} /></span>
               <span className="leftside_linktext_dropdown">
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
@@ -162,11 +169,11 @@ class Roomnavbar extends React.Component {
               </span> 
               </a></li>
            {/* dropdown close*/}
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/agreement _grey _c.png')} alt="" /></span> <span className="lnk-label">Agreement </span> </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/strategy _grey _d.png')} alt="" /></span> <span className="lnk-label">Strategies </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahand-icon" icon={faHandshake} /><span className="lnk-label">Agreement </span>  </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fabulleye-icon" icon={faBullseye} /><span className="lnk-label">Strategies </span>  </a></li>
           {/* dropdown */}
           <li className="leftside_navitem"><a className="leftside_navlink">
-             <span  className="leftside_linkinside"><img className="leftside_linkimg_dropdown" src={require('../../assets/custom_images/asidebar_image/justice _grey _e.png')} alt="" /></span>
+             <span  className="leftside_linkinside"><FontAwesomeIcon className="lift-icon fagavel-icon" icon={faGavel} /></span>
               <span className="leftside_linktext_dropdown">
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
@@ -187,13 +194,13 @@ class Roomnavbar extends React.Component {
               </span> 
               </a></li>
            {/* dropdown close*/}
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/shelve _grey _f.png')} alt="" /></span> <span className="lnk-label">Shelve </span> </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/historic _grey _g.png')} alt="" /></span> <span className="lnk-label">Historic </span> </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><span  className="leftside_linkinside"><img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/preference _grey _h.png')} alt="" /></span> <span className="lnk-label">Preferences </span> </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fafolder-icon" icon={faFolderOpen} /><span className="lnk-label">Shelve </span>  </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahistory-icon" icon={faHistory} /><span className="lnk-label">Historic </span>  </a></li>
+         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon facog-icon" icon={faCog} /><span className="lnk-label">Preferences </span> </a></li>
        </ul>
       </div>
-      {/* align-items-center */}
-        <div className="leftsidebar2 h-100 d-flex"><a  className="leftsidebar2_img" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc}></img></a></div>
+      {/* align-items-center h-100  */}
+        <div className="leftsidebar2 d-flex"><a  className="leftsidebar2_img" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc}></img></a></div>
         </div>
      </div>
      <div id="mainContents"> 
@@ -220,10 +227,14 @@ class Roomnavbar extends React.Component {
                                 </TabPane>
                         </Tabs>
                   </div>
+                  
+                     {/* footers  */}
+                  <Roomsfooter  /> 
+                     {/* footer close  */}
               </div>
-      <div id="sidebar2">
+      <div id="sidebar2" className="room-right-sidebar">
           <div className="sidebarnewright_inner d-flex">
-          {/* align-items-center */}
+          {/* align-items-center h-100*/}
           {/* <div className="rightsidebar_new h-100">
             <span className="rightsidebar_center d-flex">
             <a  className="rightsidebar_new_img" onClick={() => {this.selectMe()}}><img classname="rightsidebar_newimg_1" src={this.state.rightimgsrc}></img></a>
@@ -234,7 +245,7 @@ class Roomnavbar extends React.Component {
               <a className="sidebarnewright2_img d-flex" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img>
               <div className="sidebar_closebtninner">Tools</div></a>           
               </div> */}
-              <div className="sidebarnewright2 h-100">
+              <div className="sidebarnewright2 ">
               <a className="sidebarnewright2_img d-flex" onClick={() => {this.selectMe1()}}>
               <img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img>
               <div className="sidebar_closebtninner">Tools</div>
@@ -243,16 +254,15 @@ class Roomnavbar extends React.Component {
 
             <div className="sidebarnewright1" id="sidebarnewrightId">
               <ul className="right_navbar">
-                  <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><img className="rightside_linkimg" src={require('../../assets/custom_images/asidebar_image/rigth_vector_1.png')} alt="" /></span></a></li>
-                  <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><img className="rightside_linkimg" src={require('../../assets/custom_images/asidebar_image/right_vector_2.png')} alt="" /></span></a></li>
+                  <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-video right_vidicon"> </i></span></a></li>
+                  <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-calculator right_calcicon"> </i></span></a></li>
                </ul>
             </div>
         </div>
       </div>
-    
+     
   </div>
-
-
+  
   </div>
     );
   }

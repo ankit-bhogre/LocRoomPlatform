@@ -33,7 +33,7 @@ class AppSidebar extends Component {
         <div className="sidebar-mobile-overlay" onClick={this.toggleMobileSidebar}/>
         <CSSTransitionGroup component="div"
           className={cx("app-sidebar", backgroundColor, {
-            "sidebar-shadow": enableSidebarShadow,
+            "sidebar-shadow1": enableSidebarShadow,
           })}
           transitionName="SidebarAnimation" transitionAppear={true} transitionAppearTimeout={1500}
           transitionEnter={false} transitionLeave={false}>
