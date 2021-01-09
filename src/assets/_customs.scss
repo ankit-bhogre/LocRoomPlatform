@@ -68,7 +68,7 @@
 // .negr1_right_nav > li>a:last-child{ border-right: none}
 ul.negr1_right_nav{margin: 5px 0;}
 .app-page-title{        margin: -35px 0px 0px !important;}
-.app-main__inner {    padding: 30px 0px 0 !important;}
+.app-main__inner {    padding: 33px 0px 0 !important;}
 .app-main__outer{padding: 0 !important;}
 
 // -----------------------------------------------------------------------------------------
@@ -146,6 +146,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    margin: 0px;
   //  background: yellow;
    background: #F6F7F8;
+   position: relative;
   //  background: #fff;
   //  padding-top: 20px;
 }
@@ -176,4 +177,41 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .room-footer-tag{position: absolute; bottom: 0;}
 
 // .roomfooter-div{position: absolute; bottom: 0;}
-.roomfooter-div .dropdown_btn{ display: inline-block;}
+// .roomfooter-div .dropdown_btn{ display: inline-block;}
+.roomfooter-div .roomft-content{    position: absolute; bottom: 0; width: 100%;text-align: right; background: #FFFFFF;padding-bottom: 14px;
+  padding-top: 6px;}
+.roomft_btn{    vertical-align: bottom;    padding: 0.375rem 0.20rem;}
+// .roomfooter-div .roomft_dropbtn{padding: 0;}
+.roomfooter-div .dropdown-toggle::after {vertical-align: -0.1em;border-right: 0.6em solid transparent;border-bottom: 0.6em solid;border-left: 0.6em solid transparent;}
+.roomfooter-div .roomft-content{    padding-right: 23px;}
+.roomfooter-div .roomft-titlename{font-family: 'Poppins',sans-serif;font-size: 16px;color: #ABA3A3;}
+.roomfooter-div .roomft-name{font-family: 'Poppins',sans-serif;font-size: 16px;color: #7AA8E5;}
+// .roomfooter-di .title-dropdown{transform: translate3d(-316px, -129px, 0px) !important;}
+.roomfooter-div .dropdown-menu-header-inner{background: #F0F0F0;}
+.roomfooter-div .menu-header-title{color: #000;}
+.roomfooter-div .title-dropdown {
+  min-width: 22rem;
+  // top: -60px !important;
+  // left: -130px !important;
+  // transform: translate3d(-190px, -129px, 0px) !important;
+  border: none !important;
+  transform:none !important;
+  top: auto!important;
+  bottom: 23px !important;
+    left: -330px !important;
+}
+.roomfooter-div .roomft_innerheading{font-family: 'Poppins',sans-serif;color: #6E777F; font-size: 16px;}
+.roomfooter-div .roomft_bottomicons {
+  width: 20px;
+  font-size: 20px;
+  margin-right: 14px;
+  color: #6E777F;
+}
+.roomfooter-div .roomft_bottomtext{font-family: 'Poppins',sans-serif;color: #6E777F;font-size: 16px;}
+.roomfooter-div .dropdown-menu::before {display: none !important;}
+// button#dropdown-basic {
+//   background: none;
+//   padding: 5px;
+//   border: none;
+//   color: red;
+// }

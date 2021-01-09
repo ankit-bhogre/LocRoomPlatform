@@ -229,7 +229,7 @@ class Roomnavbar extends React.Component {
                   </div>
                   
                      {/* footers  */}
-                  {/* <Roomsfooter  /> */}
+                  <Roomsfooter  />
                      {/* footer close  */}
               </div>
       <div id="sidebar2" className="room-right-sidebar">
