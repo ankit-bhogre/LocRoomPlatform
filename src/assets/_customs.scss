@@ -140,7 +140,6 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 width: 7%;
 padding: 0px;
 background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 // margin-top: 20px;
 }
 
@@ -206,6 +205,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   top: auto!important;
   bottom: 23px !important;
     left: -330px !important;
+	box-shadow:0 0px 10px rgba(0, 0, 0, 0.25);
 }
 .roomfooter-div .roomft_innerheading{font-family: 'Poppins',sans-serif;color: #6E777F; font-size: 16px;}
 .roomfooter-div .roomft_bottomicons {
@@ -214,7 +214,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 14px;
   color: #6E777F;
 }
-.roomfooter-div .roomft_bottomtext{font-family: 'Poppins',sans-serif;color: #6E777F;font-size: 16px;}
+.roomfooter-div .roomft_bottomtext{font-family: 'Poppins',sans-serif;color: #6E777F;font-size: 14px;}
 .roomfooter-div .dropdown-menu::before {display: none !important;}
 // button#dropdown-basic {
 //   background: none;
