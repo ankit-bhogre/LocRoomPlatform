@@ -134,21 +134,14 @@ class Roomnavbar extends React.Component {
   render() {
     return (
   <div className="testing1">
-    <div id="contents">
+    <div id="contents" className="room_main_wrapper">
       <div id="sidebar" className="room-left-sidebar">
-        <div className="sidebarnew_inner d-flex">
+        <div className="sidebarnew_inner">
         <div className="leftsidebar1">
-          {/* <a href="link1.php">
-          <div>
-            55555555
-          </div>
-        </a> */}
-       <ul className="leftside_navbar">
-       {/* <img className="leftside_linkimg" src={require('../../assets/custom_images/asidebar_image/user_a.png')} alt="" /> faYoutube*/}
+            <a  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc}></img></a>
+            <ul className="leftside_navbar">
          <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fause-icon" icon={faUsers} /><span className="lnk-label">Participants </span></a></li>
-           {/* dropdown */}
            <li className="leftside_navitem"><a className="leftside_navlink">
-           {/* <img className="leftside_linkimg_dropdown" src={require('../../assets/custom_images/asidebar_image/proposal_grey _b.png')} alt="" /> */}
              <span  className="leftside_linkinside"><FontAwesomeIcon className="lift-icon fafile-icon" icon={faFileAlt} /></span>
               <span className="leftside_linktext_dropdown">
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
@@ -168,7 +161,6 @@ class Roomnavbar extends React.Component {
                  </Accordion>
               </span> 
               </a></li>
-           {/* dropdown close*/}
          <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahand-icon" icon={faHandshake} /><span className="lnk-label">Agreement </span>  </a></li>
          <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fabulleye-icon" icon={faBullseye} /><span className="lnk-label">Strategies </span>  </a></li>
           {/* dropdown */}
@@ -199,66 +191,44 @@ class Roomnavbar extends React.Component {
          <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon facog-icon" icon={faCog} /><span className="lnk-label">Preferences </span> </a></li>
        </ul>
       </div>
-      {/* align-items-center h-100  */}
-        <div className="leftsidebar2 d-flex"><a  className="leftsidebar2_img" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc}></img></a></div>
-        </div>
+      </div>
      </div>
-     <div id="mainContents"> 
+     <div id="mainContents" className="rooms_tab_warp"> 
                   <div className="center-content-div">
                                                     
                       <Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
                                 <TabPane tab={<span><img className="tab_head_img" src={timeline_img} alt="" /> Timeline</span>} key="1">
-                                    Timeline  
+                                    <div className="tab_wrap_area">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.  </div>
                                 </TabPane>
                                 <TabPane tab={<span><img className="tab_head_img" src={details_img} alt="" /> Details</span>} key="2">
-                                  Details
+                                <div className="tab_wrap_area">Details  </div>
                                 </TabPane>
                                 <TabPane tab={<span><img className="tab_head_img" src={proposal_img} alt="" /> Proposal</span>} key="3">
-                                  Proposal
+                                <div className="tab_wrap_area">Proposal  </div>
                                 </TabPane>
                                 <TabPane tab={<span><img className="tab_head_img" src={meeting_img} alt="" /> Meetings</span>} key="4">
-                                  Meetings
+                                <div className="tab_wrap_area">Meetings  </div>
                                 </TabPane>
                                 <TabPane tab={<span><img className="tab_head_img" src={attachment_img} alt="" /> Attachments</span>} key="5">
-                                  Attachments
+                                <div className="tab_wrap_area">Attachments  </div>
                                 </TabPane>
                                 <TabPane tab={<span><img className="tab_head_img" src={general_img} alt="" /> General</span>} key="6">
-                                  General
+                                <div className="tab_wrap_area">General  </div>
                                 </TabPane>
                         </Tabs>
                   </div>
                   
-                     {/* footers  */}
                   <Roomsfooter  /> 
-                     {/* footer close  */}
               </div>
       <div id="sidebar2" className="room-right-sidebar">
-          <div className="sidebarnewright_inner d-flex">
-          {/* align-items-center h-100*/}
-          {/* <div className="rightsidebar_new h-100">
-            <span className="rightsidebar_center d-flex">
-            <a  className="rightsidebar_new_img" onClick={() => {this.selectMe()}}><img classname="rightsidebar_newimg_1" src={this.state.rightimgsrc}></img></a>
-            <span className="rightside_text">Tools</span>
-            </span>
-            </div> */}
-            {/* <div className="sidebarnewright2 h-100 d-flex align-items-center">
-              <a className="sidebarnewright2_img d-flex" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img>
-              <div className="sidebar_closebtninner">Tools</div></a>           
-              </div> */}
-              <div className="sidebarnewright2 ">
-              <a className="sidebarnewright2_img d-flex" onClick={() => {this.selectMe1()}}>
-              <img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img>
-              <div className="sidebar_closebtninner">Tools</div>
-              </a>           
-              </div>
-
-            <div className="sidebarnewright1" id="sidebarnewrightId">
+      <a className="rgt_bar_close" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img></a>
+      <div className="sidebarnewright1" id="sidebarnewrightId">
+            
               <ul className="right_navbar">
                   <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-video right_vidicon"> </i></span></a></li>
                   <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-calculator right_calcicon"> </i></span></a></li>
                </ul>
             </div>
-        </div>
       </div>
      
   </div>
