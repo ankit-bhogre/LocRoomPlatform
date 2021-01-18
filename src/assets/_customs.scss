@@ -293,7 +293,7 @@ background: #FFFFFF;
   color: #999;
   letter-spacing: 5px; z-index:2;
 }
-.app-header-right div::nth-child(3){ padding-left:0 !important;}
+.app-header-right div:nth-child(3){ padding-left:0 !important;}
 .leftside_dropdownbody .side_dropdown{ margin:0; padding: 0;}
 .leftside_dropdownbody .side_dropdown li{ margin: 10px auto; display: block;}
 .leftside_dropdownbody .side_dropdown li a{ font-size: 15px;}
