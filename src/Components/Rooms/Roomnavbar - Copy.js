@@ -221,7 +221,7 @@ class Roomnavbar extends React.Component {
                   <Roomsfooter  /> 
               </div>
       <div id="sidebar2" className="room-right-sidebar">
-      <a className="rgt_bar_close" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img> <span>Tools</span></a>
+      <a className="rgt_bar_close" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img></a>
       <div className="sidebarnewright1" id="sidebarnewrightId">
             
               <ul className="right_navbar">

@@ -1,11 +1,8 @@
 import React, { Fragment } from "react";
-
+import { Link } from "react-router-dom";
 // import Ionicon from 'react-ionicons';
-
 //import { IoIosCalendar } from "react-icons/io";
-
 import PerfectScrollbar from "react-perfect-scrollbar";
-
 import {
   DropdownToggle,
   DropdownMenu,
@@ -18,13 +15,9 @@ import {
   //UncontrolledTooltip,
   UncontrolledButtonDropdown,
 } from "reactstrap";
-
 import { toast, Bounce } from "react-toastify";
-
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import city3 from "../../../assets/utils/images/dropdown-header/city3.jpg";
 import avatar1 from "../../../assets/utils/images/avatars/1.jpg";
 
@@ -100,74 +93,12 @@ class UserBox extends React.Component {
                       }}>
                       <PerfectScrollbar>
                         <Nav vertical>
-                          <NavItem className="nav-item-header">
-                            Activity
-                          </NavItem>
                           <NavItem>
-                            <NavLink href="#">
-                              Chat
-                              <div className="ml-auto badge badge-pill badge-info">
-                                8
-                              </div>
-                            </NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <NavLink href="#">Recover Password</NavLink>
-                          </NavItem>
-                          <NavItem className="nav-item-header">
-                            My Account
-                          </NavItem>
-                          <NavItem>
-                            <NavLink href="#">
-                              Settings
-                              <div className="ml-auto badge badge-success">
-                                New
-                              </div>
-                            </NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <NavLink href="#">
-                              Messages
-                              <div className="ml-auto badge badge-warning">
-                                512
-                              </div>
-                            </NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <NavLink href="#">Logs</NavLink>
+                            <Link to="/profile">My Profile</Link>
                           </NavItem>
                         </Nav>
                       </PerfectScrollbar>
                     </div>
-                    <Nav vertical>
-                      <NavItem className="nav-item-divider mb-0" />
-                    </Nav>
-                    <div className="grid-menu grid-menu-2col">
-                      <Row className="no-gutters">
-                        <Col sm="6">
-                          <Button className="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2"
-                            outline color="warning">
-                            <i className="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"> {" "} </i>
-                            Message Inbox
-                          </Button>
-                        </Col>
-                        <Col sm="6">
-                          <Button className="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2"
-                            outline color="danger">
-                            <i className="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"> {" "} </i>
-                            <b>Support Tickets</b>
-                          </Button>
-                        </Col>
-                      </Row>
-                    </div>
-                    <Nav vertical>
-                      <NavItem className="nav-item-divider" />
-                      <NavItem className="nav-item-btn text-center">
-                        <Button size="sm" className="btn-wide" color="primary">
-                          Open Messages
-                        </Button>
-                      </NavItem>
-                    </Nav>
                   </DropdownMenu>
                 </UncontrolledButtonDropdown>
               </div>

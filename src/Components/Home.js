@@ -11,7 +11,7 @@ import AppSidebar from "../Layout/AppSidebar/";
 import PageTitle from "../Layout/AppMain/PageTitle";
 import Footer from "./Footer"; 
 //import { Route, Switch, Redirect } from 'react-router-dom';  
- class Home extends Component {  
+export class Home extends Component {  
    constructor(props) {
     super(props);
     this.state = {
@@ -53,7 +53,7 @@ import Footer from "./Footer";
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									<PageTitle heading="Home" subheading="Wide selection of home" icon="pe-7s-home" pagenamechk="home"  />
+									<PageTitle heading="Home" subheading="" icon="" pagenamechk="home"  />
 									<h3 className="">Home Page</h3>									  
 								</div>
 							</div>

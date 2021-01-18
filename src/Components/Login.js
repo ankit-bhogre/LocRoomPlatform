@@ -26,7 +26,7 @@ import toplogo from "../assets/utils/images/logo.png";
 import HeaderDots from "../Layout/AppHeader/Components/HeaderDots";
 import { Col, Row, Button, Form, FormGroup, Input } from "reactstrap";
 import Footer from "./Footer"; 
-export default class Login extends Component {
+export class Login extends Component {
   render() {
     let settings = {
       dots: true,
@@ -117,25 +117,27 @@ export default class Login extends Component {
 			  </div>
 			</Row>
 			<Row className="no-gutters">
-		  <nav className="navbar navbar-expand-lg navbar-dark  bg-dark  w-100">
-		  <div className="container-fluid">
-			  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon"></span>
-			  </button>
-			  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
-				<ul className="navbar-nav ml-auto">
-				  <li className="nav-item active">
-					<Link className="nav-link" to="#">The Platform</Link>
-				  </li>
-				  <li className="nav-item">
-					<Link className="nav-link" to="#">Plan</Link>
-				  </li>
-				  <li className="nav-item">
-					<Link className="nav-link" to="#">Support</Link>
-				  </li>
-				</ul>
-			  </div></div>
-			</nav>
+		<div className="top_custom_nav">
+			  <nav className="navbar navbar-expand-lg navbar-dark w-100">
+			  <div className="container-fluid">
+				  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon"></span>
+				  </button>
+				  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
+					<ul className="navbar-nav ml-auto">
+					  <li className="nav-item active">
+						<Link className="nav-link" to="#">The Platform</Link>
+					  </li>
+					  <li className="nav-item">
+						<Link className="nav-link" to="#">Plan</Link>
+					  </li>
+					  <li className="nav-item">
+						<Link className="nav-link" to="#">Support</Link>
+					  </li>
+					</ul>
+				  </div></div>
+				</nav>				
+			  </div>
 			</Row>
 
       {/* header code close here  */}
@@ -246,3 +248,4 @@ export default class Login extends Component {
     );
   }
 }
+export default Login

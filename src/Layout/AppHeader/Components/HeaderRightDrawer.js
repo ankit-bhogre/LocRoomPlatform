@@ -19,6 +19,7 @@ class HeaderRightDrawer extends React.Component {
       width: 450,
       noTouchOpen: false,
       noTouchClose: false,
+	  paddingLeft:0,
     };
   }
 

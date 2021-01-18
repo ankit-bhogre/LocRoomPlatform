@@ -21,31 +21,6 @@ export const MainNav = [
           }
         ],
       },
-      {
-        label: "Project Rooms",
-        content: [
-          {
-            label: "Project 1",
-            to: "/",
-          },
-          {
-            label: "Project 2",
-            to: "/",
-          }
-        ],
-      },{
-        label: "Event Rooms",
-        content: [
-          {
-            label: "Event 1",
-            to: "/",
-          },
-          {
-            label: "Event 2",
-            to: "/",
-          }
-        ],
-      },
     ],
   },
   {

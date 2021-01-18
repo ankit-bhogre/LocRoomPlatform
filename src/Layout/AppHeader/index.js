@@ -41,7 +41,7 @@ class Header extends React.Component {
           </div>
 		  </div>
 		   <div className="top_custom_nav">
-			  <nav className="navbar navbar-expand-lg navbar-dark  bg-dark  w-100">
+			  <nav className="navbar navbar-expand-lg navbar-dark w-100">
 			  <div className="container-fluid">
 				  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>

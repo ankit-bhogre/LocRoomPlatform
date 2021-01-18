@@ -8,6 +8,7 @@ import {
   DropdownMenu,
   Button,
 } from "reactstrap";
+import negoroom from "../../assets/custom_images/page-title-img-room.png";
 
 //import { faHome,faStar, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,24 +21,30 @@ class PageTitle extends Component {
 
   render() {
     let {
-      enablePageTitleIcon,
-      enablePageTitleSubheading,
-
-      heading,
-      icon,
-      subheading,
+		enablePageTitleIcon,
+		enablePageTitleSubheading,
+		imgsts,
+		heading,
+		icon,
+		subheading,
     } = this.props;
 
-
+	if ({imgsts}=='nego-room-one') { 
+	}
     return (
       <div className="app-page-title">
         <div className="page-title-wrapper">
           <div className="page-title-heading">
-            <div className={cx("page-title-icon", {
+            
+				{ this.props.imgsts === 'negoroomone' ?
+						<img width={75} className="" src={negoroom} alt=""/>
+				   :
+				   <div className={cx("page-title-icon", {
                 "d-none": !enablePageTitleIcon,
-              })}>
-              <i className={icon} />
-            </div>
+              })}><i className={icon} /></div>
+			 }
+             
+            
             <div>
               {heading}
               <div className={cx("page-title-subheading", {

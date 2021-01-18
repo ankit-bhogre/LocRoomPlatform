@@ -27,8 +27,7 @@ render() {
     return (
         <div className="roomfooter-div">
           <div className="roomft-content">
-              {/* <p> */}
-              <span className="roomft-titlename">Sala de propriedade do usuário</span> <span className="roomft-name">John Smith</span>
+              <span className="roomft-titlename">Room belonging to </span> <span className="roomft-name">Cleria Jonh Smith</span>
               <span>
                 <UncontrolledDropdown className="d-inline-block" direction="up" > 
                     <DropdownToggle caret className="roomft_btn" color=""></DropdownToggle>
@@ -42,17 +41,16 @@ render() {
                                 </div>
                             </div>
                             <div className="grid-menu grid-menu-2col">
-                                 <a class="dropdown-item roomft_innerheading" href="#">ATIVIDADE</a>
+                                 <a class="dropdown-item roomft_innerheading" href="#">ACTIVITY</a>
                                  <a class="dropdown-item" href="#"><i className="pe-7s-chat roomft_bottomicons"></i><span className="roomft_bottomtext">Chat</span></a>
-                                 <a class="dropdown-item" href="#"><i className="pe-7s-coffee roomft_bottomicons"></i><span className="roomft_bottomtext">Mensagens</span></a>
-                                 <a class="dropdown-item" href="#"><i className="pe-7s-video roomft_bottomicons"></i><span className="roomft_bottomtext">Chamada de Video</span></a>
-                                 <a class="dropdown-item" href="#"><i className="pe-7s-key roomft_bottomicons"></i><span className="roomft_bottomtext">Proprietário</span></a>
-                                <a class="dropdown-item" href="#"><i className="pe-7s-door-lock roomft_bottomicons"></i><span className="roomft_bottomtext">Informações da Sala</span></a>
+                                 <a class="dropdown-item" href="#"><i className="pe-7s-coffee roomft_bottomicons"></i><span className="roomft_bottomtext">Messages</span></a>
+                                 <a class="dropdown-item" href="#"><i className="pe-7s-video roomft_bottomicons"></i><span className="roomft_bottomtext">Videocall</span></a>
+                                 <a class="dropdown-item" href="#"><i className="pe-7s-key roomft_bottomicons"></i><span className="roomft_bottomtext">Owner</span></a>
+                                <a class="dropdown-item" href="#"><i className="pe-7s-door-lock roomft_bottomicons"></i><span className="roomft_bottomtext">Room Info</span></a>
                             </div> 
                         </DropdownMenu>
                 </UncontrolledDropdown>
             </span>
-             {/* </p> */}
           </div>
       </div>
         );
@@ -60,6 +58,3 @@ render() {
 }
 
 export default Roomsfooter;
-
-
-
