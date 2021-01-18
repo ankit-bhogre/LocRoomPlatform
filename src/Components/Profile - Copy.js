@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react'; 
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Sticky from 'react-stickynode';
@@ -27,11 +26,19 @@ export class Profile extends Component {
             activeTab: '1',
             active: false,
             collapse: false,
+            accordion: [true, false, false],
             custom: [true, false],
             status: 'Closed',
             fadeIn: true,
             timeout: 300,
         };
+    }
+    toggleAccordion(tab) {
+        const prevState = this.state.accordion;
+        const state = prevState.map((x, index) => tab === index ? !x : false);
+        this.setState({
+            accordion: state,
+        });
     }
 
     toggle(tab) {
@@ -77,11 +84,9 @@ export class Profile extends Component {
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-								<CSSTransitionGroup className={cx("app-inner-layout chat-layout", { 'open-mobile-menu': this.state.active, })}
-                    component="div" transitionName="TabsAnimation" transitionAppear={true}
-                    transitionAppearTimeout={0} transitionEnter={false} transitionLeave={false}>
-                    <div>
+									<Sticky enabled={!this.state.active} top='.app-header' innerZ="12" activeClass="sticky-active-class">
 									<ProfilePageTitle heading="My Profile" subheading="Alina Mcloughlin" icon="" pagenamechk="profile"  />
+									</Sticky>
 									
 									<div className="app-inner-layout__wrapper row-fluid no-gutters">
 										<Card className="app-inner-layout__sidebar bg-transparent">
@@ -193,11 +198,6 @@ export class Profile extends Component {
 											</div>
 										</Card>
 									</div>
-									
-									</div>
-									</CSSTransitionGroup>
-									
-									
 								</div>
 							</div>
 						</div>
