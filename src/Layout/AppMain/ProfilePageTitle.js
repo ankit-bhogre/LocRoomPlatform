@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import { Row, Col, Breadcrumb, BreadcrumbItem } from "reactstrap";
-import {
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  Button,
-} from "reactstrap";
-import negoroom from "../../assets/custom_images/page-title-img-room.png";
+//import { Link } from "react-router-dom";
+//import { Row, Col, Breadcrumb, BreadcrumbItem } from "reactstrap";
+//import {  UncontrolledDropdown,  DropdownToggle,  DropdownMenu,  Button,} from "reactstrap";
+//import negoroom from "../../assets/custom_images/page-title-img-room.png";
 import cx from "classnames";
 class ProfilePageTitle extends Component {
 
@@ -16,7 +11,6 @@ class ProfilePageTitle extends Component {
     let {
 		enablePageTitleIcon,
 		enablePageTitleSubheading,
-		imgsts,
 		heading,
 		icon,
 		subheading,

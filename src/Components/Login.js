@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // faTwitter, faInstagram,
 import {faLinkedinIn, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 // the hoc
-import i18nIns from '../i18n';
-import {withNamespaces,initReactI18next, useTranslation,withTranslation,reactI18nextModule} from 'react-i18next';
-import i18n from "i18next";
-import LanguageDetector from "i18next-browser-languagedetector"
-import translationUS from '../locales/US/translation.json';
-import translationBR from '../locales/BR/translation.json';
+//import i18nIns from '../i18n';
+//import {withNamespaces,initReactI18next, useTranslation,withTranslation,reactI18nextModule} from 'react-i18next';
+//import i18n from "i18next";
+//import LanguageDetector from "i18next-browser-languagedetector"
+//import translationUS from '../locales/US/translation.json';
+//import translationBR from '../locales/BR/translation.json';
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import Dropdown from 'react-bootstrap';
 // import { DropdownButton } from 'react-bootstrap';
@@ -25,6 +25,9 @@ import toplogo from "../assets/utils/images/logo.png";
 // src\Layout\AppHeader\Components\HeaderDots.js
 import HeaderDots from "../Layout/AppHeader/Components/HeaderDots";
 import { Col, Row, Button, Form, FormGroup, Input } from "reactstrap";
+
+import RegModal from "./RegModal";
+import ForgotPasswordModal from "./ForgotPasswordModal";
 import Footer from "./Footer"; 
 export class Login extends Component {
   render() {
@@ -50,13 +53,13 @@ export class Login extends Component {
     //   i18n.changeLanguage(lng);
     // }
     // function changeLanguage(lang){console.log('fn',lang); i18n.changeData('may');};
-    const changeLanguage = lng => {
+   /* const changeLanguage = lng => {
       console.log('+++',lng);
       i18nIns.changeLanguage('br', (err, t) => {
         if (err) return console.log('something went wrong loading', err);
         t('key'); // -> same as i18next.t
       });
-    };
+    };*/
   //   const resources = {
   //     us: {
   //       translation: translationUS
@@ -188,29 +191,26 @@ export class Login extends Component {
             </Col>
             <Col lg="5" md="12" className="h-100  bg-white justify-content-center align-items-center">
               <Col lg="11" md="11" sm="12" className="mx-auto app-login-box">
-			  	<p className="lp_sub_title"></p>
+			  	<p className="lp_sub_title"></p>				
 			  	<h4 className="mb-0">
                   <div className="txtcap">Welcome to a</div>
                 </h4>				
                   <div className="lp_title">New Concept of Digital Platform</div>
                 <h6 className="mt-3 lp_register">
                   Not registred?{" "}
-                  <Link href="https://colorlib.com/" onClick={(e) => e.preventDefault()} className="text-primary">
-                    Register Now!
-                  </Link>
+                  <RegModal />
                 </h6>
-                <Row className="divider" />
                 <div>
                   <Form>
                     <Row form>
                       <Col md={12}>
                         <FormGroup>
-                          <Input type="email" name="email" className="lp_form_input" id="exampleEmail" placeholder="Username or email"/>
+                          <Input type="email" name="email" className="login-fds" id="exampleEmail" placeholder="Username or email"/>
                         </FormGroup>
                       </Col>
                       <Col md={12}>
                         <FormGroup>
-                          <Input type="password" name="password" className="lp_form_input" id="examplePassword" placeholder="Password"/>
+                          <Input type="password" name="password" className="login-fds" id="examplePassword" placeholder="Password"/>
                         </FormGroup>
                       </Col>
                     </Row>
@@ -224,18 +224,16 @@ export class Login extends Component {
                         </Button></Link>
                       </div>
                       <div className="lp_forgotpassword">
-                          <Link to="/" className="btn-lg btn btn-link lp_forgotps_link" >
-                          Forgot your password?
-                        </Link>{" "}
+                         <ForgotPasswordModal />
                       </div>
                     </div>
 					<div className="login_with">
 						<h5 className="lp_cnwith_text">Or continue with:</h5>
-						<Link to="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_fb" icon={faFacebookSquare} /><span className="lp_social_text">facebook</span></div></Link>
+						<Link to="#"><div className="col-md-3 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_fb" icon={faFacebookSquare} /><span className="lp_social_text">facebook</span></div></Link>
 						{/* <a href="#"><div className="col-md-2 lp_loginwith_icon"><FontAwesomeIcon  className="lp_social_icon lp_social_google" icon={faGoogle} /><span className="lp_social_text">google</span></div></a> */}
-            <Link to="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon2"><img alt="" className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img><span className="lp_social_text lp_social_google">google</span></div></Link>
+            <Link to="#"><div className="col-md-3 lp_loginwith_icon lp_login_icon2"><img alt="" className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img><span className="lp_social_text lp_social_google">google</span></div></Link>
             {/* <div className="col-md-2 lp_loginwith_icon"><img className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img> <span className="lp_social_text lp_google_text">google</span></div> */}
-						<Link to="#"><div className="col-md-2 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_linked" icon={faLinkedinIn} /><span className="lp_social_text">linkedin</span></div></Link>
+						<Link to="#"><div className="col-md-3 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_linked" icon={faLinkedinIn} /><span className="lp_social_text">linkedin</span></div></Link>
 					</div>
                   </Form>
                 </div>

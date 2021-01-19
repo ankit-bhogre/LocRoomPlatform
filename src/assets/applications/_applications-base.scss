@@ -97,10 +97,10 @@ $app-layout-header-height         : 50px;
       &.card {
         box-shadow: 0 0 0 0 transparent;
         border-radius: 0;
-        background: $gray-100;
+        background: $AppInnerLeftBgcolor !important;
         border: 0;
-        border-right: $gray-200 solid 1px;
-        border-left: $gray-200 solid 1px;
+        border-right: $AppInnerLeftBgcolor solid 1px;
+        border-left: $AppInnerLeftBgcolor solid 1px;
       }
 
       .app-inner-layout__sidebar-footer,

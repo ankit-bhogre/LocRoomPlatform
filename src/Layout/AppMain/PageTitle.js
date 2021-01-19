@@ -29,7 +29,7 @@ class PageTitle extends Component {
 		subheading,
     } = this.props;
 
-	if ({imgsts}=='nego-room-one') { 
+	if ({imgsts}==='nego-room-one') { 
 	}
     return (
       <div className="app-page-title">

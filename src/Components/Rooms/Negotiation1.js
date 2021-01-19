@@ -2,10 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
-import { useState,Tab, Sonnet } from 'react-bootstrap';
-import Tabs, { TabPane } from "rc-tabs";
-import TabContent from "rc-tabs/lib/SwipeableTabContent";
-import ScrollableInkTabBar from "rc-tabs/lib/ScrollableInkTabBar";
 import cx from "classnames";
 
 import ResizeDetector from "react-resize-detector";
@@ -15,12 +11,12 @@ import AppSidebar from "../../Layout/AppSidebar/";
 import PageTitle from "../../Layout/AppMain/PageTitle";
 import Footer from "../Footer"; 
 import Roomnavbar from "./Roomnavbar";
-import timeline_img from "../../assets/custom_images/nego_timeline.png";
-import details_img from "../../assets/custom_images/nego_details.png";
-import proposal_img from "../../assets/custom_images/nego_proposal.png";
-import meeting_img from "../../assets/custom_images/nego_meeting.png";
-import attachment_img from "../../assets/custom_images/nego_attachment.png";
-import general_img from "../../assets/custom_images/nego_general.png";
+//import timeline_img from "../../assets/custom_images/nego_timeline.png";
+//import details_img from "../../assets/custom_images/nego_details.png";
+//import proposal_img from "../../assets/custom_images/nego_proposal.png";
+//import meeting_img from "../../assets/custom_images/nego_meeting.png";
+//import attachment_img from "../../assets/custom_images/nego_attachment.png";
+//import general_img from "../../assets/custom_images/nego_general.png";
 
 //import { Route, Switch, Redirect } from 'react-router-dom';  
 class Negotiation1 extends Component {  

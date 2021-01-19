@@ -8,7 +8,7 @@ import ResizeDetector from "react-resize-detector";
 //import AppMain from "../Layout/AppMain";
 import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
-import PageTitle from "../Layout/AppMain/PageTitle";
+import ProfilePageTitle from "../Layout/AppMain/ProfilePageTitle";
 import Footer from "./Footer"; 
 //import { Route, Switch, Redirect } from 'react-router-dom';  
 export class Home extends Component {  
@@ -53,8 +53,8 @@ export class Home extends Component {
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									<PageTitle heading="Home" subheading="" icon="" pagenamechk="home"  />
-									<h3 className="">Home Page</h3>									  
+									<ProfilePageTitle heading="Home" subheading="" icon="" pagenamechk="home"  />
+									<h3 className="pl-20 pt-20">Home Page</h3>									  
 								</div>
 							</div>
 						</div>

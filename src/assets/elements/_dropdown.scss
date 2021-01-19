@@ -82,7 +82,7 @@
   .dropdown-item {
     &:hover {
       background: none;
-      color: $primary;
+      color: $TabBgcolor;
     }
   }
 }
@@ -90,7 +90,7 @@
 .dropdown-menu-hover-primary {
   .dropdown-item {
     &:hover {
-      background: $primary;
+      background: $TabBgcolor;
       color: $white;
     }
   }

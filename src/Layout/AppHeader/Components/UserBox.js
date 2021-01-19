@@ -7,11 +7,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   Nav,
-  Col,
-  Row,
   Button,
   NavItem,
-  NavLink,
   //UncontrolledTooltip,
   UncontrolledButtonDropdown,
 } from "reactstrap";
@@ -89,10 +86,10 @@ class UserBox extends React.Component {
                     </div>
                     <div className="scroll-area-xs"
                       style={{
-                        height: "150px",
+                        height: "auto",
                       }}>
                       <PerfectScrollbar>
-                        <Nav vertical>
+                        <Nav vertical  className="pl-20">
                           <NavItem>
                             <Link to="/profile">My Profile</Link>
                           </NavItem>

@@ -1,11 +1,12 @@
 import React  from 'react';
+import { Link } from "react-router-dom";
 // import './index.scss';
-import { Accordion,Card,Tab } from 'react-bootstrap';
+import { Accordion,Card } from 'react-bootstrap';
 import Tabs, { TabPane } from "rc-tabs";
 import TabContent from "rc-tabs/lib/SwipeableTabContent";
 import ScrollableInkTabBar from "rc-tabs/lib/ScrollableInkTabBar";
 import Roomsfooter from "./roomsfooter"
-import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+//import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUsers, faFileAlt, faHandshake, faBullseye, faGavel, faFolderOpen, faHistory, faCog  } from '@fortawesome/free-solid-svg-icons';
 
@@ -49,19 +50,19 @@ class Roomnavbar extends React.Component {
     // this.setState({ [key]: !this.state[key] });
 
     
-    if( this.state.leftOpen == true && this.state.rightOpen == true ){  console.log('key 2222');}
+    if( this.state.leftOpen === true && this.state.rightOpen === true ){  console.log('key 2222');}
  
     
   }
 
   selectMe(){ 
     this.setState({ leftOpen: !this.state.leftOpen })
-    if( this.state.leftOpen == true && this.state.rightOpen == true ){ 
+    if( this.state.leftOpen === true && this.state.rightOpen === true ){ 
       this.setState(prevState => ({
         hideLabel: true
       }));
   
-        // document.getElementById("sidebar").style.marginLeft = "-15%";
+        // document.getElementById("sidebar").style.marginLeft = "-15%"; leftside_linktext_dropdown
         // document.getElementById("mainContents").style.width = "90%";
         // document.getElementById("sidebar").style.transitionDuration = "0.3s";
 
@@ -73,7 +74,7 @@ class Roomnavbar extends React.Component {
         this.setState({ imgsrc: PolygonOpen });
         console.log('key 2222a');
       }
-    else if( this.state.leftOpen == true && this.state.rightOpen == false ){ 
+    else if( this.state.leftOpen === true && this.state.rightOpen === false ){ 
       this.setState(prevState => ({
         hideLabel: true
       }));
@@ -83,7 +84,7 @@ class Roomnavbar extends React.Component {
       this.setState({ imgsrc: PolygonOpen });
        console.log('key 2222b');
       }
-    else if( this.state.leftOpen == false && this.state.rightOpen == true ){  
+    else if( this.state.leftOpen === false && this.state.rightOpen === true ){  
       this.setState(prevState => ({
         hideLabel: false
       }));
@@ -97,7 +98,7 @@ class Roomnavbar extends React.Component {
       this.setState({ imgsrc: PolygonClose });
       console.log('key 2222c');
     }
-    else if( this.state.leftOpen == false && this.state.rightOpen == false ){ 
+    else if( this.state.leftOpen === false && this.state.rightOpen === false ){ 
       this.setState(prevState => ({
         hideLabel: false
       }));
@@ -110,7 +111,7 @@ class Roomnavbar extends React.Component {
 
   selectMe1(){ 
     this.setState({ rightOpen: !this.state.rightOpen })
-    if( this.state.leftOpen == true && this.state.rightOpen == true ){ 
+    if( this.state.leftOpen === true && this.state.rightOpen === true ){ 
       document.getElementById("sidebar2").style.width = "3%";
       document.getElementById("sidebarnewrightId").style.display = "none";
       document.getElementById("mainContents").style.width = "76%";
@@ -118,7 +119,7 @@ class Roomnavbar extends React.Component {
       this.setState({ rightimgsrc: PolygonrightClose });
        console.log('key 22221');
       }
-    else if( this.state.leftOpen == true && this.state.rightOpen == false ){ 
+    else if( this.state.leftOpen === true && this.state.rightOpen === false ){ 
       document.getElementById("sidebar2").style.width = "7%";
       document.getElementById("sidebarnewrightId").style.display = "inline-block";
       document.getElementById("mainContents").style.width = "72%";
@@ -126,7 +127,7 @@ class Roomnavbar extends React.Component {
       this.setState({ rightimgsrc: PolygonrightOpen });
        console.log('key 2222');
       }
-    else if( this.state.leftOpen == false && this.state.rightOpen == true ){  
+    else if( this.state.leftOpen === false && this.state.rightOpen === true ){  
       document.getElementById("sidebar2").style.width = "3%";
       document.getElementById("sidebarnewrightId").style.display = "none";
       document.getElementById("mainContents").style.width = "91%";
@@ -134,7 +135,7 @@ class Roomnavbar extends React.Component {
       this.setState({ rightimgsrc: PolygonrightClose });
       console.log('key 2223');
     }
-    else if( this.state.leftOpen == false && this.state.rightOpen == false ){ 
+    else if( this.state.leftOpen === false && this.state.rightOpen === false ){ 
       document.getElementById("sidebar2").style.width = "7%";
       document.getElementById("mainContents").style.width = "87%";
       document.getElementById("sidebarnewrightId").style.display = "inline-block";
@@ -153,18 +154,18 @@ class Roomnavbar extends React.Component {
       <div id="sidebar" className="room-left-sidebar">
         <div className="sidebarnew_inner">
         <div className="leftsidebar1">
-            <a  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc}></img></a>
+            <Link  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc} alt=""></img></Link>
             <ul className="leftside_navbar">
            <li className="leftside_navitem">
-             <a className="leftside_navlink">
+             <Link className="leftside_navlink">
                <FontAwesomeIcon className="lift-icon fause-icon" icon={faUsers} />
                <span className={`lnk-label ${hideLabel}`}>Participants </span>
                
-             </a>
+             </Link>
            </li>
-           <li className="leftside_navitem"><a className="leftside_navlink">
+           <li className="leftside_navitem"><Link className="leftside_navlink">
              <span  className="leftside_linkinside"><FontAwesomeIcon className="lift-icon fafile-icon" icon={faFileAlt} /></span>
-              <span className="leftside_linktext_dropdown">
+              <span className={`lnk-label ${hideLabel} leftside_linktext_dropdown` }>
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="leftside_drop_inner">
@@ -173,21 +174,21 @@ class Roomnavbar extends React.Component {
                             <Accordion.Collapse eventKey="1">
                               <Card.Body className="leftside_dropdownbody">
                               <ul className="side_dropdown">
-                                <li><a className="leftside_dropmenu">Proposal 1</a></li>
-                                <li><a className="leftside_dropmenu">Proposal 2</a></li>
+                                <li><Link className="leftside_dropmenu">Proposal 1</Link></li>
+                                <li><Link className="leftside_dropmenu">Proposal 2</Link></li>
                               </ul>  
                               </Card.Body>
                             </Accordion.Collapse>
                           </Card>
                  </Accordion>
               </span> 
-              </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahand-icon" icon={faHandshake} /><span className={`lnk-label ${hideLabel}`}>Agreement </span>  </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fabulleye-icon" icon={faBullseye} /><span className={`lnk-label ${hideLabel}`}>Strategies </span>  </a></li>
+              </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahand-icon" icon={faHandshake} /><span className={`lnk-label ${hideLabel}`}>Agreement </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fabulleye-icon" icon={faBullseye} /><span className={`lnk-label ${hideLabel}`}>Strategies </span>  </Link></li>
           {/* dropdown */}
-          <li className="leftside_navitem"><a className="leftside_navlink">
+          <li className="leftside_navitem"><Link className="leftside_navlink">
              <span  className="leftside_linkinside"><FontAwesomeIcon className="lift-icon fagavel-icon" icon={faGavel} /></span>
-              <span className="leftside_linktext_dropdown">
+              <span className={`lnk-label ${hideLabel} leftside_linktext_dropdown` }>
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="leftside_drop_inner">
@@ -196,20 +197,20 @@ class Roomnavbar extends React.Component {
                             <Accordion.Collapse eventKey="1">
                               <Card.Body className="leftside_dropdownbody">
                               <ul className="side_dropdown">
-                                <li><a className="leftside_dropmenu">Send</a></li>
-                                <li><a className="leftside_dropmenu">Progress</a></li>
-                                <li><a className="leftside_dropmenu">Recapture</a></li>
+                                <li><Link className="leftside_dropmenu">Send</Link></li>
+                                <li><Link className="leftside_dropmenu">Progress</Link></li>
+                                <li><Link className="leftside_dropmenu">Recapture</Link></li>
                               </ul>  
                               </Card.Body>
                             </Accordion.Collapse>
                           </Card>
                  </Accordion>
               </span> 
-              </a></li>
+              </Link></li>
            {/* dropdown close*/}
-         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fafolder-icon" icon={faFolderOpen} /><span className={`lnk-label ${hideLabel}`}>Shelve </span>  </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahistory-icon" icon={faHistory} /><span className={`lnk-label ${hideLabel}`}>Historic </span>  </a></li>
-         <li className="leftside_navitem"><a className="leftside_navlink"><FontAwesomeIcon className="lift-icon facog-icon" icon={faCog} /><span className={`lnk-label ${hideLabel}`}>Preferences </span> </a></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fafolder-icon" icon={faFolderOpen} /><span className={`lnk-label ${hideLabel}`}>Shelve </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahistory-icon" icon={faHistory} /><span className={`lnk-label ${hideLabel}`}>Historic </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon facog-icon" icon={faCog} /><span className={`lnk-label ${hideLabel}`}>Preferences </span> </Link></li>
        </ul>
       </div>
       </div>
@@ -242,12 +243,12 @@ class Roomnavbar extends React.Component {
                   <Roomsfooter  /> 
               </div>
       <div id="sidebar2" className="room-right-sidebar">
-      <a className="rgt_bar_close" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc}></img> <span>Tools</span></a>
+      <Link className="rgt_bar_close" onClick={() => {this.selectMe1()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc} alt=""></img> <span>Tools</span></Link>
       <div className="sidebarnewright1" id="sidebarnewrightId">
             
               <ul className="right_navbar">
-                  <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-video right_vidicon"> </i></span></a></li>
-                  <li className="rightside_navitem"><a className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-calculator right_calcicon"> </i></span></a></li>
+                  <li className="rightside_navitem"><Link className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-video right_vidicon"> </i></span></Link></li>
+                  <li className="rightside_navitem"><Link className="rightside_navlink"><span  className="right_linkinside"><i class="pe-7s-calculator right_calcicon"> </i></span></Link></li>
                </ul>
             </div>
       </div>
