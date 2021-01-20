@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //import { faFacebook, faYoutube, faTwitter, faInstagram, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Row } from "reactstrap";
 import footerlogo from "../assets/utils/images/footer-logo.svg";
+import tocaproject from "../assets/custom_images/Toca-projetos.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faFacebookSquare,faYoutube } from '@fortawesome/free-brands-svg-icons';
 export default class Footer extends Component {
@@ -71,7 +72,8 @@ export default class Footer extends Component {
 					</div>
 				 </div>
 				 <div className="col-4">
-					<div class="footer-copyright py-3">By Toca Projetos</div>
+				 
+					<div class="footer-copyright py-3">By <img className="" src={tocaproject} alt=""/></div>
 				 </div>
 			 </div>
 		  </div>

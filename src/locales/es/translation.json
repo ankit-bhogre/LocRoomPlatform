@@ -1,3 +1,11 @@
 {
-  "Welcome to React": "Willkommen bei react und react-i18next"
+  "Welcome to React": "Willkommen bei react und react-i18next",
+  "lbl_top_nav_platform": "A Plataforma",
+  "lbl_top_nav_plans": "Planos",
+  "lbl_top_nav_support": "Suporte",
+  "lbl_login_welcome": "Bem-vindo a um",
+  "lbl_login_tagline": "Novo conceito de Plataforma Digital",
+  "lbl_login_not_reg": "Ainda nao tem registro?",
+  "lbl_login_reg_now": "Registre-se agora!",
+  "lbl_login_frgt_pass": "Esqueceu a senha?"
 }

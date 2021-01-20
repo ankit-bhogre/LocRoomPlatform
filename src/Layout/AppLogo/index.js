@@ -1,10 +1,7 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
-
 import { Slider } from "react-burgers";
-
 import AppMobileMenu from "../AppMobileMenu";
-
 import {
   setEnableClosedSidebar,
   setEnableMobileMenu,

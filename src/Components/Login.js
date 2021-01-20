@@ -5,12 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // faTwitter, faInstagram,
 import {faLinkedinIn, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 // the hoc
-//import i18nIns from '../i18n';
-//import {withNamespaces,initReactI18next, useTranslation,withTranslation,reactI18nextModule} from 'react-i18next';
-//import i18n from "i18next";
-//import LanguageDetector from "i18next-browser-languagedetector"
-//import translationUS from '../locales/US/translation.json';
-//import translationBR from '../locales/BR/translation.json';
+ 
 //import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import Dropdown from 'react-bootstrap';
 // import { DropdownButton } from 'react-bootstrap';
@@ -29,8 +24,12 @@ import { Col, Row, Button, Form, FormGroup, Input } from "reactstrap";
 import RegModal from "./RegModal";
 import ForgotPasswordModal from "./ForgotPasswordModal";
 import Footer from "./Footer"; 
+
+import { withNamespaces } from 'react-i18next';
+
 export class Login extends Component {
   render() {
+	  
     let settings = {
       dots: true,
       infinite: true,
@@ -43,45 +42,10 @@ export class Login extends Component {
       autoplay: true,
       adaptiveHeight: true,
     };
-    // const {t} = useTranslation('translation');
-    // function App ({ t }) {
-    //   const changeLanguage = (lng) => {
-    //     i18n.changeLanguage(lng);
-    //   }
-    // }
-    // changeLanguage = (lng) => {
-    //   i18n.changeLanguage(lng);
-    // }
-    // function changeLanguage(lang){console.log('fn',lang); i18n.changeData('may');};
-   /* const changeLanguage = lng => {
-      console.log('+++',lng);
-      i18nIns.changeLanguage('br', (err, t) => {
-        if (err) return console.log('something went wrong loading', err);
-        t('key'); // -> same as i18next.t
-      });
-    };*/
-  //   const resources = {
-  //     us: {
-  //       translation: translationUS
-  //     },
-  //     br: {
-  //       translation: translationBR
-  //     }
-  //   };
-  //   function switchLang(lang) {
-  //     console.log('----',lang);
-      
-  //     i18nIns.changeLanguage('en-US');
-
-  // }
-
+	const { t } = this.props; 
     return (
 	  <Fragment>
         <div className="h-100">
-        {/* <button onClick={() => changeLanguage('br')}>us</button>
-        <button onClick={() => changeLanguage('us')}>br</button>
-        <h1>{i18nIns.t('Welcome to React')}</h1> */}
-
           {/* header code here for login */}
 		  <Row className="no-gutters header-1">	
 		  	<div className="container-fluid">
@@ -129,13 +93,13 @@ export class Login extends Component {
 				  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
 					<ul className="navbar-nav ml-auto">
 					  <li className="nav-item active">
-						<Link className="nav-link" to="#">The Platform</Link>
+						<Link className="nav-link" to="#">{t('lbl_top_nav_platform')}</Link>
 					  </li>
 					  <li className="nav-item">
-						<Link className="nav-link" to="#">Plan</Link>
+						<Link className="nav-link" to="#">{t('lbl_top_nav_plans')}</Link>
 					  </li>
 					  <li className="nav-item">
-						<Link className="nav-link" to="#">Support</Link>
+						<Link className="nav-link" to="#">{t('lbl_top_nav_support')}</Link>
 					  </li>
 					</ul>
 				  </div></div>
@@ -193,12 +157,12 @@ export class Login extends Component {
               <Col lg="11" md="11" sm="12" className="mx-auto app-login-box">
 			  	<p className="lp_sub_title"></p>				
 			  	<h4 className="mb-0">
-                  <div className="txtcap">Welcome to a</div>
+                  <div className="txtcap">{t('lbl_login_welcome')}</div>
                 </h4>				
-                  <div className="lp_title">New Concept of Digital Platform</div>
+                  <div className="lp_title">{t('lbl_login_tagline')}</div>
                 <h6 className="mt-3 lp_register">
-                  Not registred?{" "}
-                  <RegModal />
+                  {t('lbl_login_not_reg')}{" "}
+                  <RegModal /> 
                 </h6>
                 <div>
                   <Form>
@@ -246,4 +210,4 @@ export class Login extends Component {
     );
   }
 }
-export default Login
+export default withNamespaces()(Login);
