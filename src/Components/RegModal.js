@@ -23,7 +23,7 @@ class RegModal extends React.Component {
           Register Now!
         </Link>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="reg-modal">
-          <ModalHeader toggle={this.toggle} className="">Registation Info</ModalHeader>
+          <ModalHeader toggle={this.toggle} className="">Registration Info</ModalHeader>
           <ModalBody>
              <Form>
 			  <Row form>

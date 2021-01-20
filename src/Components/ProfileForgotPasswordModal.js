@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from "reactstrap";
 
 import { withNamespaces } from 'react-i18next';
-class ForgotPasswordModal extends React.Component {
+class ProfileForgotPasswordModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,11 +17,11 @@ class ForgotPasswordModal extends React.Component {
     });
   }
   render() {
-	const { t } = this.props;
+	//const { t } = this.props;
     return (
       <Fragment>
-        <Link to="/" className="btn-lg btn btn-link lp_forgotps_link" onClick={this.toggle}>
-		  {t('lbl_login_frgt_pass')}
+        <Link onClick={this.toggle}>
+		  Reset via e-mail
 		</Link>{" "}
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="reg-modal forgot-pass">
           <ModalHeader toggle={this.toggle} className="pt-20">Forgot your password?</ModalHeader>
@@ -41,4 +41,4 @@ class ForgotPasswordModal extends React.Component {
     );
   }
 }
-export default withNamespaces()(ForgotPasswordModal);
+export default withNamespaces()(ProfileForgotPasswordModal);

@@ -72,7 +72,7 @@ function getTabs() {
     key: index,
   }));
 }*/
-
+import i18n from '../../../i18n';
 class HeaderDots extends React.Component {
   constructor(props) {
     super(props);
@@ -82,6 +82,9 @@ class HeaderDots extends React.Component {
   }
 
   render() {
+	const changeLanguage = (lng) => {
+		i18n.changeLanguage(lng);
+	}
     return (
       <Fragment>
         <div className="header-dots">
@@ -219,13 +222,13 @@ class HeaderDots extends React.Component {
                 </div>
               </div>
               {/*<DropdownItem header>Popular Languages</DropdownItem>*/}
-              <DropdownItem active>
+              <DropdownItem onClick={() => changeLanguage('es')}>
                 <Flag className="mr-3 opacity-8" country="BR" />
-                Brazil
+                Portuguese (Brazil)
               </DropdownItem>
-              <DropdownItem>
+              <DropdownItem active onClick={() => changeLanguage('en')}>
                 <Flag className="mr-3 opacity-8" country="US" />
-                EUA
+                English
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux"; 
@@ -7,6 +7,7 @@ import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
 import ProfilePageTitle from "../Layout/AppMain/ProfilePageTitle";
 import Footer from "./Footer";
+import ProfileForgotPasswordModal from "./ProfileForgotPasswordModal";
 import { Elastic } from 'react-burgers'
 import {
     TabContent, TabPane, 
@@ -138,14 +139,14 @@ export class Profile extends Component {
 														  </Row>
 														  <FormGroup>
 															<Label for="email" className="cntrl-lbl">Email</Label>
-															<Input type="text" name="email" id="email" className="txt_bg" placeholder="1234 Main St"/>
+															<Input type="text" name="email" id="email" className="txt_bg" readonly="readonly" placeholder="1234 Main St"/>
 														  </FormGroup>
 														  <FormGroup>
 															<Label for="username" className="cntrl-lbl">Username</Label>
-															<Input type="text" name="username" id="username" className="txt_bg" placeholder="alina-mcloughlin"/>
+															<Input type="text" name="username" id="username" className="txt_bg" readonly="readonly" placeholder="alina-mcloughlin"/>
 														  </FormGroup>
 														  <Button color="primary" className="mt-2">
-															Sign in
+															Save
 														  </Button>
 														</Form>
 													</TabPane>
@@ -167,7 +168,7 @@ export class Profile extends Component {
 															Change Password
 														  </Button>
 														</Form> 
-														<p className="mt-20 reset-lnk fw-600">Can't remember your current password? <Link to="/">Reset via e-mail</Link></p>
+														<p className="mt-20 reset-lnk fw-600">Can't remember your current password? <ProfileForgotPasswordModal /></p>
 													</TabPane>
 													<TabPane tabId="3">
 														
