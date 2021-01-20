@@ -285,3 +285,79 @@ export default Roomnavbar;
 //     },
 //   ];
   
+
+
+
+// --------------------------------------------------------------------------------
+
+
+// selectMe(){ 
+//   this.setState({ leftOpen: !this.state.leftOpen })
+//   if( this.state.leftOpen == true && this.state.rightOpen == true ){ 
+//     this.setState(prevState => ({
+//       hideLabel: true
+//     }));
+
+//       document.getElementById("sidebar").style.marginLeft = "-15%";
+//       document.getElementById("mainContents").style.width = "90%";
+//       document.getElementById("sidebar").style.transitionDuration = "0.3s";
+//       this.setState({ imgsrc: PolygonOpen });
+//       console.log('key 2222a');
+//     }
+//   else if( this.state.leftOpen == true && this.state.rightOpen == false ){ 
+//     document.getElementById("sidebar").style.marginLeft = "-15%";
+//     document.getElementById("mainContents").style.width = "94%";
+//     document.getElementById("sidebar").style.transitionDuration = "0.3s";
+//     this.setState({ imgsrc: PolygonOpen });
+//      console.log('key 2222b');
+//     }
+//   else if( this.state.leftOpen == false && this.state.rightOpen == true ){  
+//     document.getElementById("sidebar").style.transitionDuration = "0s";
+//     document.getElementById("sidebar").style.marginLeft = "0";
+//     document.getElementById("mainContents").style.width = "72%";
+//     this.setState({ imgsrc: PolygonClose });
+//     console.log('key 2222c');
+//   }
+//   else if( this.state.leftOpen == false && this.state.rightOpen == false ){ 
+//     document.getElementById("sidebar").style.transitionDuration = "0s";
+//       document.getElementById("sidebar").style.marginLeft = "0";
+//       document.getElementById("mainContents").style.width = "76%";
+//       this.setState({ imgsrc: PolygonClose });
+//      console.log('key 2222d');}
+// }
+
+// selectMe1(){ 
+//   this.setState({ rightOpen: !this.state.rightOpen })
+//   if( this.state.leftOpen == true && this.state.rightOpen == true ){ 
+//     document.getElementById("sidebar2").style.width = "3%";
+//     document.getElementById("sidebarnewrightId").style.display = "none";
+//     document.getElementById("mainContents").style.width = "76%";
+//     document.getElementById("sidebar2").style.transitionDuration = "0.3s";
+//     this.setState({ rightimgsrc: PolygonrightClose });
+//      console.log('key 22221');
+//     }
+//   else if( this.state.leftOpen == true && this.state.rightOpen == false ){ 
+//     document.getElementById("sidebar2").style.width = "7%";
+//     document.getElementById("sidebarnewrightId").style.display = "inline-block";
+//     document.getElementById("mainContents").style.width = "72%";
+//     document.getElementById("sidebar2").style.transitionDuration = "0s";
+//     this.setState({ rightimgsrc: PolygonrightOpen });
+//      console.log('key 2222');
+//     }
+//   else if( this.state.leftOpen == false && this.state.rightOpen == true ){  
+//     document.getElementById("sidebar2").style.width = "3%";
+//     document.getElementById("sidebarnewrightId").style.display = "none";
+//     document.getElementById("mainContents").style.width = "94%";
+//     document.getElementById("sidebar2").style.transitionDuration = "0.3s";
+//     this.setState({ rightimgsrc: PolygonrightClose });
+//     console.log('key 2223');
+//   }
+//   else if( this.state.leftOpen == false && this.state.rightOpen == false ){ 
+//     document.getElementById("sidebar2").style.width = "7%";
+//     document.getElementById("mainContents").style.width = "90%";
+//     document.getElementById("sidebarnewrightId").style.display = "inline-block";
+//     document.getElementById("sidebar2").style.transitionDuration = "0s";
+//     this.setState({ rightimgsrc: PolygonrightOpen });
+//      console.log('key 22224');
+//     }
+// }

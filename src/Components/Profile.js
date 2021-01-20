@@ -7,6 +7,8 @@ import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
 import ProfilePageTitle from "../Layout/AppMain/ProfilePageTitle";
 import Footer from "./Footer";
+import { OverlayTrigger , Tooltip,Overlay, Popover } from "react-bootstrap";
+
 import { Elastic } from 'react-burgers'
 import {
     TabContent, TabPane, 
@@ -155,9 +157,30 @@ export class Profile extends Component {
 														  <FormGroup>
 															<Input type="password" name="current_password" id="current_password" className="txt_bg" placeholder="Enter current password"/>
 														  </FormGroup>
-														  <FormGroup>
+														  <FormGroup  className="reg-password" >
 															<Label for="new_password" className="cntrl-lbl">New Password</Label>
 															<Input type="password" name="new_password" id="new_password" className="txt_bg" placeholder="Create new password"/>
+															{['top'].map((placement) => (
+																		<OverlayTrigger
+																		trigger="click"
+																		key={placement}
+																		placement={placement}
+																		overlay={
+																			<Popover id={`popover-positioned-${placement}`}>
+																			<Popover.Content>
+																				<ul>
+																					<li>Your password must be 8 characters long.</li>
+																					<li>Your password must contain at least one capital letter.</li>
+																					<li>Your password must contain at least one special character (Ex.!, @, #, $,%, &).</li>
+																					<li>Your password must contain at least one number (0,1,2,3, etc.).</li>
+																				</ul>
+																			</Popover.Content>
+																			</Popover>
+																		}
+																		>
+																		<Button variant="secondary"> <span className="reg-infoicon">i</span></Button>
+																		</OverlayTrigger>
+																))}
 														  </FormGroup>
 														  <FormGroup>
 															<Label for="confirm_password" className="cntrl-lbl">Confirm new password</Label>

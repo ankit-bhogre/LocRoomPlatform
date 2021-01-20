@@ -49,13 +49,13 @@ class Header extends React.Component {
 				  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
 					<ul className="navbar-nav ml-auto">
 					  <li className="nav-item active">
-						<Link className="nav-link" to="#">The Platform</Link>
+						<Link className="nav-link navheader-2" to="#">The Platform</Link>
 					  </li>
 					  <li className="nav-item">
-						<Link className="nav-link" to="#">Plan</Link>
+						<Link className="nav-link navheader-2" to="#">Plan</Link>
 					  </li>
 					  <li className="nav-item">
-						<Link className="nav-link" to="#">Support</Link>
+						<Link className="nav-link navheader-2" to="#">Support</Link>
 					  </li>
 					</ul>
 				  </div></div>
