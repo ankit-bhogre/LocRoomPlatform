@@ -160,7 +160,7 @@ export class Profile extends Component {
 														  </FormGroup>
 														  <FormGroup  className="reg-password" >
 															<Label for="new_password" className="cntrl-lbl">New Password</Label>
-															<Input type="password" name="new_password" id="new_password" className="txt_bg" placeholder="Create new password"/>
+															<Input type="password" name="new_password" id="new_password" className="txt_bg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
 															{['top'].map((placement) => (
 																		<OverlayTrigger
 																		trigger="click"
@@ -185,7 +185,7 @@ export class Profile extends Component {
 														  </FormGroup>
 														  <FormGroup>
 															<Label for="confirm_password" className="cntrl-lbl">Confirm new password</Label>
-															<Input type="password" name="confirm_password" id="confirm_password" className="txt_bg" placeholder="Confirm new password"/>
+															<Input type="password" name="confirm_password" id="confirm_password" className="txt_bg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
 														  </FormGroup>
 														  <Button color="primary" className="mt-2">
 															Change Password
