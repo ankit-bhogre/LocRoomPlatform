@@ -11,5 +11,11 @@
   "lbl_login_username_fd": "Username or email",
   "lbl_login_pass_fd": "Password",
   "lbl_login_login_btn": "Log In",
-  "lbl_login_continue_social": "Or continue with"
+  "lbl_login_continue_social": "Or continue with",
+  "lbl_room_tab_timeline": "Timeline",
+  "lbl_room_tab_details": "Details",
+  "lbl_room_tab_proposal": "Proposal",
+  "lbl_room_tab_meetings": "Meetings",
+  "lbl_room_tab_attachments": "Attachments",
+  "lbl_room_tab_general": "General"
 }

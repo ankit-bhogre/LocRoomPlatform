@@ -281,3 +281,13 @@
   height: 0;
   overflow: visible;
 }
+
+.center-content-div .rc-tabs-ink-bar {
+	box-shadow:none;
+}
+.center-content-div .rc-tabs-tab:hover {
+	color: $gray-100;
+}
+.center-content-div .rc-tabs-top .rc-tabs-ink-bar {
+	background: $gray-100;  
+}

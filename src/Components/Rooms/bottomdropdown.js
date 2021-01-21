@@ -45,81 +45,61 @@ export default class DropdownGridMenus extends React.Component {
   render() {
     return (
       <Fragment>
-                    <UncontrolledButtonDropdown >
-                      <DropdownToggle caret color="info" className="mb-2 mr-2">
-                        Info
-                      </DropdownToggle>
-                      <DropdownMenu className="dropdown-menu-xl">
-                        <div className="dropdown-menu-header">
-                          <div className="dropdown-menu-header-inner bg-info">
-                            <div
-                              className="menu-header-image"
-                              style={{
-                                backgroundImage: "url(" + bg14 + ")",
-                              }}>
-                            </div>
-                            <div className="menu-header-content">
-                              <h5 className="menu-header-title">Settings</h5>
-                            </div>
-                          </div>
-                        </div>
-                        <Nav vertical>
-                          <Nav vertical>
-                            <NavItem className="nav-item-header">
-                              Activity
-                            </NavItem>
-                            <NavItem>
-                              <NavLink href="#">
-                                <i className="nav-link-icon pe-7s-chat"> </i>
-                                <span>Chat</span>
-                                <div className="ml-auto badge badge-pill badge-info">
-                                  8
-                                </div>
-                              </NavLink>
-                            </NavItem>
-                            <NavItem>
-                              <NavLink href="#">
-                                <i className="nav-link-icon pe-7s-wallet"> </i>
-                                <span>Recover Password</span>
-                              </NavLink>
-                            </NavItem>
-                            <NavItem className="nav-item-header">
-                              My Account
-                            </NavItem>
-                            <NavItem>
-                              <NavLink href="#">
-                                <i className="nav-link-icon pe-7s-config"> </i>
-                                <span>Settings</span>
-                                <div className="ml-auto badge badge-success">
-                                  New
-                                </div>
-                              </NavLink>
-                            </NavItem>
-                            <NavItem>
-                              <NavLink href="#">
-                                <i className="nav-link-icon pe-7s-coffee"> </i>
-                                <span>Messages</span>
-                                <div className="ml-auto badge badge-warning">
-                                  512
-                                </div>
-                              </NavLink>
-                            </NavItem>
-                            <NavItem>
-                              <NavLink href="#">
-                                <i className="nav-link-icon pe-7s-box2"> </i>
-                                <span>Logs</span>
-                              </NavLink>
-                            </NavItem>
-                            <NavItem className="nav-item-divider" />
-                            <NavItem className="nav-item-btn text-right">
-                              <Button size="sm" className="btn-pill" color="success">
-                                Save
-                              </Button>
-                            </NavItem>
-                          </Nav>
-                        </Nav>
-                      </DropdownMenu>
-                    </UncontrolledButtonDropdown>
+		<UncontrolledButtonDropdown >
+		  <DropdownToggle caret color="info" className="mt-2 mr-2">
+			Alina Mcloughlin
+		  </DropdownToggle>
+		  <DropdownMenu className="dropdown-menu">
+			<div className="dropdown-menu-header">
+			  <div className="dropdown-menu-header-inner bg-info">
+				<div
+				  className="menu-header-image"
+				  style={{
+					backgroundImage: "url(" + bg14 + ")",
+				  }}>
+				</div>
+				<div className="menu-header-content">
+				  <h5 className="menu-header-title">TALK WITH US</h5>
+				</div>
+			  </div>
+			</div>
+			<Nav vertical>
+				<NavItem className="nav-item-header">
+				  Activity
+				</NavItem>
+				<NavItem>
+				  <NavLink href="#">
+					<i className="nav-link-icon pe-7s-chat"> </i>
+					<span>Chat</span>
+				  </NavLink>
+				</NavItem>
+				<NavItem>
+				  <NavLink href="#">
+					<i className="nav-link-icon pe-7s-coffee"> </i>
+					<span>Messages</span>
+				  </NavLink>
+				</NavItem>
+				<NavItem>
+				  <NavLink href="#">
+					<i className="nav-link-icon pe-7s-video"> </i>
+					<span>Videocall</span>
+				  </NavLink>
+				</NavItem>
+				<NavItem>
+				  <NavLink href="#">
+					<i className="nav-link-icon pe-7s-key"> </i>
+					<span>Owner</span>
+				  </NavLink>
+				</NavItem>
+				<NavItem>
+				  <NavLink href="#">
+					<i className="nav-link-icon pe-7s-door-lock"> </i>
+					<span>Room Info</span>
+				  </NavLink>
+				</NavItem>
+			  </Nav>
+		  </DropdownMenu>
+		</UncontrolledButtonDropdown>
       </Fragment>
     );
   }

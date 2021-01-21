@@ -9,6 +9,7 @@ import {
   Button,
 } from "reactstrap";
 import negoroom from "../../assets/custom_images/page-title-img-room.png";
+import bg4 from "../../assets/utils/images/dropdown-header/city5.jpg";
 
 //import { faHome,faStar, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -69,33 +70,39 @@ class PageTitle extends Component {
 			  <BreadcrumbItem active>Negotiation Room</BreadcrumbItem>
 			</Breadcrumb>
 			
-			<Button className="btn-shadow mr-3 PageTitleBtn" onClick="" color="" >
+			<Button className="mr-3 btn btn-outline-dark PageTitleBtn" onClick="" color="" >
 			  <i className="pe-7s-plus"></i> New Negotiation
 			</Button>				 
 			<UncontrolledDropdown className="d-inline-block" direction="down" > 
-			  <DropdownToggle caret className="PageTitleBtn" color=""><i className="pe-7s-info"></i> Room Info</DropdownToggle>
+			  <DropdownToggle caret className="PageTitleBtn btn btn-outline-dark" color=""><i className="pe-7s-info"></i> Room Info</DropdownToggle>
 			  <DropdownMenu className="dropdown-menu-lg title-dropdown">
 					<div className="dropdown-menu-header">
-					  <div className="dropdown-menu-header-inner bg-dark">
-						<div className="menu-header-image" />
-						<div className="menu-header-content">
-						  <h5 className="menu-header-title">Example</h5>
+					  <div className="dropdown-menu-header-inner bg-tempting-azure">
+						<div className="menu-header-image opacity-1"
+						  style={{
+							backgroundImage: "url(" + bg4 + ")",
+						  }}/>
+						<div className="menu-header-content text-dark">
+						  <h5 className="menu-header-title">Room Info</h5>
+						  {/*<h6 className="menu-header-subtitle">
+							Easy grid navigation inside popovers
+						  </h6>*/}
 						</div>
 					  </div>
 					</div>
 					<div className="grid-menu grid-menu-2col">
 					  <Row className="no-gutters">
 						<Col sm="6">
-						  <Button className="btn-icon-vertical btn-transition" outline color=""><i className="pe-7s-copy-file btn-icon-wrapper"></i> Models</Button>
+						  <Button className="btn-icon-vertical btn-transition" outline color="dark"><i className="pe-7s-copy-file btn-icon-wrapper"></i> Models</Button>
 						</Col>
 						<Col sm="6">
-						  <Button className="btn-icon-vertical btn-transition" outline color=""><i className="pe-7s-box1 btn-icon-wrapper"></i> Memory</Button>
+						  <Button className="btn-icon-vertical btn-transition" outline color="danger"><i className="pe-7s-box1 btn-icon-wrapper"></i> Memory</Button>
 						</Col>
 						<Col sm="6">
-						  <Button className="btn-icon-vertical btn-transition" outline color=""><i className="pe-7s-graph btn-icon-wrapper"></i> Statistics</Button>
+						  <Button className="btn-icon-vertical btn-transition" outline color="success"><i className="pe-7s-graph btn-icon-wrapper"></i> Statistics</Button>
 						</Col>
 						<Col sm="6">
-						  <Button className="btn-icon-vertical btn-transition" outline color=""><i className="pe-7s-settings btn-icon-wrapper"></i> Settings</Button>
+						  <Button className="btn-icon-vertical btn-transition" outline color="info"><i className="pe-7s-settings btn-icon-wrapper"></i> Settings</Button>
 						</Col>
 					  </Row>
 					</div> 

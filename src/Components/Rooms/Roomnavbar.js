@@ -23,6 +23,7 @@ import proposal_img from "../../assets/custom_images/nego_proposal.png";
 import meeting_img from "../../assets/custom_images/nego_meeting.png";
 import attachment_img from "../../assets/custom_images/nego_attachment.png";
 import general_img from "../../assets/custom_images/nego_general.png";
+import { withNamespaces } from 'react-i18next';
 class Roomnavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -146,6 +147,7 @@ class Roomnavbar extends React.Component {
 }
 
   render() {
+	const { t } = this.props;  	
     let hideLabel = this.state.hideLabel ? 'hide-label' : 'show-label';
     // let rightOpen = this.state.rightOpen ? 'open' : 'closed';
     return (
@@ -154,7 +156,7 @@ class Roomnavbar extends React.Component {
       <div id="sidebar" className="room-left-sidebar">
         <div className="sidebarnew_inner">
         <div className="leftsidebar1">
-            <Link  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc} alt=""></img></Link>
+            <Link  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc} alt=""></img></Link>
             <ul className="leftside_navbar">
            <li className="leftside_navitem">
              <Link className="leftside_navlink">
@@ -219,22 +221,22 @@ class Roomnavbar extends React.Component {
                   <div className="center-content-div">
                                                     
                       <Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
-                                <TabPane tab={<span><img className="tab_head_img" src={timeline_img} alt="" /> Timeline</span>} key="1">
+                                <TabPane tab={<span><img className="tab_head_img" src={timeline_img} alt="" /> {t('lbl_room_tab_timeline')}</span>} key="1">
                                     <div className="tab_wrap_area">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={details_img} alt="" /> Details</span>} key="2">
+                                <TabPane tab={<span><img className="tab_head_img" src={details_img} alt="" /> {t('lbl_room_tab_details')}</span>} key="2">
                                 <div className="tab_wrap_area">Details  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={proposal_img} alt="" /> Proposal</span>} key="3">
+                                <TabPane tab={<span><img className="tab_head_img" src={proposal_img} alt="" /> {t('lbl_room_tab_proposal')}</span>} key="3">
                                 <div className="tab_wrap_area">Proposal  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={meeting_img} alt="" /> Meetings</span>} key="4">
+                                <TabPane tab={<span><img className="tab_head_img" src={meeting_img} alt="" /> {t('lbl_room_tab_meetings')}</span>} key="4">
                                 <div className="tab_wrap_area">Meetings  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={attachment_img} alt="" /> Attachments</span>} key="5">
+                                <TabPane tab={<span><img className="tab_head_img" src={attachment_img} alt="" /> {t('lbl_room_tab_attachments')}</span>} key="5">
                                 <div className="tab_wrap_area">Attachments  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={general_img} alt="" /> General</span>} key="6">
+                                <TabPane tab={<span><img className="tab_head_img" src={general_img} alt="" /> {t('lbl_room_tab_general')}</span>} key="6">
                                 <div className="tab_wrap_area">General  </div>
                                 </TabPane>
                         </Tabs>
@@ -259,8 +261,4 @@ class Roomnavbar extends React.Component {
     );
   }
 }
-
-export default Roomnavbar;
-
-
-
+export default withNamespaces()(Roomnavbar);
