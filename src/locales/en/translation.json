@@ -7,5 +7,9 @@
   "lbl_login_tagline": "New concept of Digital Platform",
   "lbl_login_not_reg": "Not registred?",
   "lbl_login_reg_now": "Register Now!",
-  "lbl_login_frgt_pass": "Forgot your password?"
+  "lbl_login_frgt_pass": "Forgot your password?",
+  "lbl_login_username_fd": "Username or email",
+  "lbl_login_pass_fd": "Password",
+  "lbl_login_login_btn": "Log In",
+  "lbl_login_continue_social": "Or continue with"
 }

@@ -169,12 +169,12 @@ export class Login extends Component {
                     <Row form>
                       <Col md={12}>
                         <FormGroup>
-                          <Input type="email" name="email" className="login-fds" id="exampleEmail" placeholder="Username or email"/>
+                          <Input type="email" name="email" className="login-fds" id="exampleEmail" placeholder={t('lbl_login_username_fd')}/>
                         </FormGroup>
                       </Col>
                       <Col md={12}>
                         <FormGroup>
-                          <Input type="password" name="password" className="login-fds" id="examplePassword" placeholder="Password"/>
+                          <Input type="password" name="password" className="login-fds" id="examplePassword" placeholder={t('lbl_login_pass_fd')}/>
                         </FormGroup>
                       </Col>
                     </Row>
@@ -184,7 +184,7 @@ export class Login extends Component {
                           Forgot your password?
                         </Link>{" "} */}
                         <Link to="/home"><Button color="primary" className="loginForm_lg_btn" size="lg">
-                          Log In
+                          {t('lbl_login_login_btn')}
                         </Button></Link>
                       </div>
                       <div className="lp_forgotpassword">
@@ -192,7 +192,7 @@ export class Login extends Component {
                       </div>
                     </div>
 					<div className="login_with">
-						<h5 className="lp_cnwith_text">Or continue with:</h5>
+						<h5 className="lp_cnwith_text">{t('lbl_login_continue_social')}:</h5>
 						<Link to="#"><div className="col-md-3 lp_loginwith_icon lp_login_icon1"><FontAwesomeIcon  className="lp_social_icon lp_social_fb" icon={faFacebookSquare} /><span className="lp_social_text">facebook</span></div></Link>
 						{/* <a href="#"><div className="col-md-2 lp_loginwith_icon"><FontAwesomeIcon  className="lp_social_icon lp_social_google" icon={faGoogle} /><span className="lp_social_text">google</span></div></a> */}
             <Link to="#"><div className="col-md-3 lp_loginwith_icon lp_login_icon2"><img alt="" className="lp_social_google" src={require('../assets/custom_images/google_icon.png')}></img><span className="lp_social_text lp_social_google">google</span></div></Link>

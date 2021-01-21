@@ -5,7 +5,11 @@
   "lbl_top_nav_support": "Suporte",
   "lbl_login_welcome": "Bem-vindo a um",
   "lbl_login_tagline": "Novo conceito de Plataforma Digital",
-  "lbl_login_not_reg": "Ainda nao tem registro?",
+  "lbl_login_not_reg": "Ainda não tem registro?",
   "lbl_login_reg_now": "Registre-se agora!",
-  "lbl_login_frgt_pass": "Esqueceu a senha?"
+  "lbl_login_frgt_pass": "Esqueceu a senha?",
+  "lbl_login_username_fd": "Nome de usuário ou email",
+  "lbl_login_pass_fd": "Senha",
+  "lbl_login_login_btn": "Conecte-se",
+  "lbl_login_continue_social": "Ou continue com"
 }
