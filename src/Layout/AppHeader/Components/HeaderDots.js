@@ -224,7 +224,7 @@ class HeaderDots extends React.Component {
               {/*<DropdownItem header>Popular Languages</DropdownItem> active */}
               <DropdownItem  onClick={() => changeLanguage('es')}>
                 <Flag className="mr-3 opacity-8" country="BR" />
-                Português (Brasil)
+                PortuguÃªs (Brasil)
               </DropdownItem>
               <DropdownItem  onClick={() => changeLanguage('en')}>
                 <Flag className="mr-3 opacity-8" country="US" />
