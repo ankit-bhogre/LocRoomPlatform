@@ -2,7 +2,7 @@ import React,{useState ,useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Col, Row } from "reactstrap";
 import { OverlayTrigger , Tooltip,Overlay, Popover } from "react-bootstrap";
-
+import { withNamespaces } from 'react-i18next';
 
 class RegModal extends React.Component {
   constructor(props) {
@@ -18,15 +18,13 @@ class RegModal extends React.Component {
 	});
 	
   }
-
-
   render() {
-
+	const { t } = this.props;
     return (
 		
       <span className="d-inline-block mb-2 mr-2">
         <Link color="text-primary" onClick={this.toggle}>
-          Register Now!
+          {t('lbl_login_reg_now')}
         </Link>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="reg-modal">
           <ModalHeader toggle={this.toggle} className="">Registration Info</ModalHeader>
@@ -94,5 +92,4 @@ class RegModal extends React.Component {
     );
   }
 }
-
-export default RegModal;
+export default withNamespaces()(RegModal);
