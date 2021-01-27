@@ -37,10 +37,10 @@ export class Home extends Component {
     const { t } = this.props; 
     // const { t } = useTranslation();
          return (
-			<Fragment>
 			<ResizeDetector
 				handleWidth
 				render={({ width }) => (
+			<Fragment>
 					<div
               className={cx(
                 "app-container app-theme-" + colorScheme,
@@ -67,10 +67,12 @@ export class Home extends Component {
 							</div>
 						</div>
 					</div>
+					<Footer />	
+					</Fragment>  
 				)}
 			  />
-			<Footer />	
-            </Fragment>  
+			
+            
         )  
     }  
 }  

@@ -123,9 +123,12 @@
         }
       ]
     }
-  ]
+  ],
   
-
-  
-  
+  "lbl_room_tab_timeline": "Timeline",
+  "lbl_room_tab_details": "Details",
+  "lbl_room_tab_proposal": "Proposal",
+  "lbl_room_tab_meetings": "Meetings",
+  "lbl_room_tab_attachments": "Attachments",
+  "lbl_room_tab_general": "General"
 }

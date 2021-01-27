@@ -146,7 +146,13 @@
         }
       ]
     }
-  ]
+  ],
 
 
+  "lbl_room_tab_timeline": "Linha do Tempo",
+  "lbl_room_tab_details": "Detalhes",
+  "lbl_room_tab_proposal": "Propostas",
+  "lbl_room_tab_meetings": "Reuniões",
+  "lbl_room_tab_attachments": "Anexos",
+  "lbl_room_tab_general": "Geral"
 }

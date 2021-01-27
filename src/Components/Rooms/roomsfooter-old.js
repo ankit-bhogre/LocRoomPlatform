@@ -62,31 +62,3 @@ export default Roomsfooter;
 
 
 
-<UncontrolledDropdown className="d-inline-block" direction="up" > 
-<DropdownToggle caret className="btn-primary roomft-dropbtn" color="">Info</DropdownToggle>
-   <DropdownMenu className="dropdown-menu-lg title-dropdown">
-          <div className="dropdown-menu-header">
-             <div className="dropdown-menu-header-inner">
-                 <div className="menu-header-image" />
-                     <div className="menu-header-content">
-                     <h5 className="menu-header-title">Settings</h5>
-                </div>
-            </div>
-         </div>
-         <div className="grid-menu grid-menu-2col">
-             <Link class="dropdown-item roomft_innerheading" to="#">ACTIVITY</Link>
-             <div className="roomft_drmenu"><Link class="dropdown-item" to="#"><i className="pe-7s-chat roomft_bottomicons"></i><span className="roomft_bottomtext">Chat</span></Link><div className="roomft_chatdiv"><button type="button" class="btn btn-primary roomft-chatbtn">8</button></div></div>
-             <div className="roomft_drmenu"><Link class="dropdown-item" to="#"><i className="pe-7s-wallet roomft_bottomicons"></i><span className="roomft_bottomtext">Recover Password</span></Link><div className="roomft_chatdiv"></div></div>
-             <Link class="dropdown-item roomft_innerheading" to="#">MY ACCOUNT</Link>
-             <div className="roomft_drmenu"><Link class="dropdown-item" to="#"><i className="pe-7s-config roomft_bottomicons"></i><span className="roomft_bottomtext">Setting</span></Link><div className="roomft_chatdiv"><button type="button" class="btn  roomft-settingbtn">New</button></div></div>
-             <div className="roomft_drmenu"><Link class="dropdown-item" to="#"><i className="pe-7s-coffee roomft_bottomicons"></i><span className="roomft_bottomtext">Messages</span></Link><div className="roomft_chatdiv"><button type="button" class="btn  roomft-messagebtn">512</button></div></div>
-             <div className="roomft_drmenu"><Link class="dropdown-item" to="#"><i className="pe-7s-box2 roomft_bottomicons"></i><span className="roomft_bottomtext">Logs</span></Link><div className="roomft_chatdiv"></div></div>
-             <div className="roomft_drmenu roomft_savediv"><Link class="dropdown-item" to="#"></Link><div className="roomft_chatdiv"><button type="button" class="btn roomft-savebtn">Save</button></div></div>
-             {/* <Link class="dropdown-item" to="#"><i className="pe-7s-coffee roomft_bottomicons"></i><span className="roomft_bottomtext">Messages</span></Link>
-             <Link class="dropdown-item" to="#"><i className="pe-7s-video roomft_bottomicons"></i><span className="roomft_bottomtext">Videocall</span></Link>
-             <Link class="dropdown-item" to="#"><i className="pe-7s-key roomft_bottomicons"></i><span className="roomft_bottomtext">Owner</span></Link>
-             <Link class="dropdown-item" to="#"><i className="pe-7s-door-lock roomft_bottomicons"></i><span className="roomft_bottomtext">Room Info</span></Link> */}
-        </div> 
-    </DropdownMenu>
-</UncontrolledDropdown>
-               

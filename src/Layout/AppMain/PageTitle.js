@@ -10,6 +10,8 @@ import {
 } from "reactstrap";
 import negoroom from "../../assets/custom_images/page-title-img-room.png";
 import {withNamespaces } from 'react-i18next';
+import bg4 from "../../assets/utils/images/dropdown-header/city5.jpg";
+
 //import { faHome,faStar, faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import cx from "classnames";

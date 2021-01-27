@@ -2,17 +2,14 @@ import React, { Fragment } from "react";
 import cx from "classnames";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
-
 import HeaderLogo from "../AppLogo";
-
 //import SearchBox from "./Components/SearchBox";
 //import MegaMenu from "./Components/MegaMenu";
 import UserBox from "./Components/UserBox";
 import HeaderRightDrawer from "./Components/HeaderRightDrawer";
 import HeaderDots from "./Components/HeaderDots";
-
+import TopNavbar from "../../Components/TopNavbar";
 class Header extends React.Component {
   render(){
     let{
@@ -40,40 +37,17 @@ class Header extends React.Component {
             </div>
           </div>
 		  </div>
-		   <div className="top_custom_nav">
-			  <nav className="navbar navbar-expand-lg navbar-dark w-100">
-			  <div className="container-fluid">
-				  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				  </button>
-				  <div className="collapse navbar-collapse tp_nav" id="navbarNav">
-					<ul className="navbar-nav ml-auto">
-					  <li className="nav-item active">
-						<Link className="nav-link navheader-2" to="#">The Platform</Link>
-					  </li>
-					  <li className="nav-item">
-						<Link className="nav-link navheader-2" to="#">Plan</Link>
-					  </li>
-					  <li className="nav-item">
-						<Link className="nav-link navheader-2" to="#">Support</Link>
-					  </li>
-					</ul>
-				  </div></div>
-				</nav>				
-			  </div>
+		  <TopNavbar />
         </CSSTransitionGroup>
       </Fragment>
     );
   }
 }
-
 const mapStateToProps = (state) => ({
   enableHeaderShadow: state.ThemeOptions.enableHeaderShadow,
   closedSmallerSidebar: state.ThemeOptions.closedSmallerSidebar,
   headerBackgroundColor: state.ThemeOptions.headerBackgroundColor,
   enableMobileMenuSmall: state.ThemeOptions.enableMobileMenuSmall,
 });
-
 const mapDispatchToProps = (dispatch) => ({});
-
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

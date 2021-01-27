@@ -147,6 +147,7 @@ class Roomnavbar extends React.Component {
 }
 
   render() {
+	const { t } = this.props;  	
     let hideLabel = this.state.hideLabel ? 'hide-label' : 'show-label';
     // let rightOpen = this.state.rightOpen ? 'open' : 'closed';
     const { t } = this.props; 
@@ -156,7 +157,7 @@ class Roomnavbar extends React.Component {
       <div id="sidebar" className="room-left-sidebar">
         <div className="sidebarnew_inner">
         <div className="leftsidebar1">
-            <Link  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.imgsrc} alt=""></img></Link>
+            <Link  className="left_bar_close" onClick={() => {this.selectMe()}}><img classname="leftsidebar2_img1" src={this.state.rightimgsrc} alt=""></img></Link>
             <ul className="leftside_navbar">
            <li className="leftside_navitem">
              <Link className="leftside_navlink">
