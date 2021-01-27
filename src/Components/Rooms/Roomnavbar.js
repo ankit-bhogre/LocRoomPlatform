@@ -149,8 +149,7 @@ class Roomnavbar extends React.Component {
   render() {
 	const { t } = this.props;  	
     let hideLabel = this.state.hideLabel ? 'hide-label' : 'show-label';
-    // let rightOpen = this.state.rightOpen ? 'open' : 'closed';
-    const { t } = this.props; 
+    // let rightOpen = this.state.rightOpen ? 'open' : 'closed'; 
     return (
   <div className="testing1">
     <div id="contents" className="room_main_wrapper">
