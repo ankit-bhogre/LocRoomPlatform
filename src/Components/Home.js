@@ -18,8 +18,9 @@ export class Home extends Component {
       closedSmallerSidebar: false,
     };
   }
-  render() { 
-	 let {
+
+  render() {
+    let {
       colorScheme,
       enableFixedHeader,
       enableFixedSidebar,
@@ -29,11 +30,12 @@ export class Home extends Component {
       enableMobileMenu,
       enablePageTabsAlt,
     } = this.props;
-         return (
-			<Fragment>
+	
+         return (			
 			<ResizeDetector
 				handleWidth
 				render={({ width }) => (
+			<Fragment>
 					<div
               className={cx(
                 "app-container app-theme-" + colorScheme,
@@ -58,12 +60,14 @@ export class Home extends Component {
 								</div>
 							</div>
 						</div>
-				
+						
 					</div>
+					<Footer />	
+					</Fragment>  
 				)}
 			  />
-			<Footer />	
-            </Fragment>  
+			
+            
         )  
     }  
 }  
