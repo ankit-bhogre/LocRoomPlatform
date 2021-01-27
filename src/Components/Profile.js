@@ -19,7 +19,7 @@ import {
 import cx from "classnames";
 import classnames from 'classnames';
 import ResizeDetector from "react-resize-detector";
-
+import {withNamespaces } from 'react-i18next';
 //import { Route, Switch, Redirect } from 'react-router-dom';  
 export class Profile extends Component {  
    constructor(props) {
@@ -53,7 +53,8 @@ export class Profile extends Component {
       closedSmallerSidebar,
       enableMobileMenu,
       enablePageTabsAlt,
-    } = this.props;
+	} = this.props;
+	const { t } = this.props; 
          return (
 			<Fragment>
 			<ResizeDetector
@@ -82,7 +83,7 @@ export class Profile extends Component {
                     component="div" transitionName="TabsAnimation" transitionAppear={true}
                     transitionAppearTimeout={0} transitionEnter={false} transitionLeave={false}>
                     <div>
-									<ProfilePageTitle heading="My Profile" subheading="Alina Mcloughlin" icon="" pagenamechk="profile"  />
+									<ProfilePageTitle heading={t('profile_title_heading')} subheading={t('profile_title_subheading')} icon="" pagenamechk="profile"  />
 									
 									<div className="app-inner-layout__wrapper row-fluid no-gutters my-profile-page">
 										<Card className="app-inner-layout__sidebar bg-transparent">
@@ -94,21 +95,21 @@ export class Profile extends Component {
 															onClick={() => {
 																this.toggle('1');
 															}}>
-															Registration Info
+														{t('profile_menu1')}
 														</Button>
 														<Button color=""
 															className={classnames("mb-1 dropdown-item", { active: this.state.activeTab === '2' })}
 															onClick={() => {
 																this.toggle('2');
 															}}>
-															Change Password
+															{t('profile_menu2')}
 														</Button>
 														<Button color=""
 															className={classnames("mb-1 dropdown-item", { active: this.state.activeTab === '3' })}
 															onClick={() => {
 																this.toggle('3');
 															}}>
-															Close
+															{t('profile_menu3')}
 														</Button>
 													</div>
 												</div>
@@ -122,48 +123,48 @@ export class Profile extends Component {
 												</div>
 												<TabContent activeTab={this.state.activeTab}>
 													<TabPane tabId="1">														 
-														 <h4 className="t-title">Registration Info</h4>
-														 <p>Keeping your profile updated ensures the full use of the platform</p>
+														 <h4 className="t-title">{t('profile_mu1_heading')}</h4>
+														 <p>{t('profile_mu1_subheading')}</p>
 														 <Form>
 														  <Row form>
 															<Col md={3}>
 															  <FormGroup>
-																<Label for="fist_name" className="cntrl-lbl">First Name</Label>
+																<Label for="fist_name" className="cntrl-lbl">{t('profile_mu1_namelable')}</Label>
 																<Input type="text" name="fist_name" id="fist_name" className="txt_bg" placeholder="Alina"/>
 															  </FormGroup>
 															</Col>
 															<Col md={9}>
 															  <FormGroup>
-																<Label for="last_name" className="cntrl-lbl">Last Name</Label>
+																<Label for="last_name" className="cntrl-lbl">{t('profile_mu1_l_namelable')}</Label>
 																<Input type="text" name="last_name" id="last_name" className="txt_bg" placeholder="Mcloughlin"/>
 															  </FormGroup>
 															</Col>
 														  </Row>
 														  <FormGroup>
-															<Label for="email" className="cntrl-lbl">Email</Label>
+															<Label for="email" className="cntrl-lbl">{t('profile_mu1_emaillable')}</Label>
 															<Input type="text" name="email" id="email" className="txt_bg" readonly="readonly" placeholder="1234 Main St"/>
 														  </FormGroup>
 														  <FormGroup>
-															<Label for="username" className="cntrl-lbl">Username</Label>
+															<Label for="username" className="cntrl-lbl">{t('profile_mu1_usernamelable')}</Label>
 															<Input type="text" name="username" id="username" className="txt_bg" readonly="readonly" placeholder="alina-mcloughlin"/>
 														  </FormGroup>
 														  <Button color="primary" className="mt-2">
-															Save
+														  {t('profile_mu1_btn')}
 														  </Button>
 														</Form>
 													</TabPane>
 													<TabPane tabId="2">
-														<h4 className="t-title">Change Password</h4>
+														<h4 className="t-title"> {t('profile_mu2_heading')}</h4>
 														<Form>														  
 														  <FormGroup>
-															<Input type="password" name="current_password" id="current_password" className="txt_bg" placeholder="Enter current password"/>
+															<Input type="password" name="current_password" id="current_password" className="txt_bg" placeholder={t('profile_mu2_plcholder1')}/>
 														  </FormGroup>
 														  <FormGroup  className="reg-password" >
-															<Label for="new_password" className="cntrl-lbl">New Password</Label>
+															<Label for="new_password" className="cntrl-lbl"> {t('profile_mu2_newpassword')}</Label>
 															<Input type="password" name="new_password" id="new_password" className="txt_bg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
-															{['top'].map((placement) => (
+															{['left'].map((placement) => (
 																		<OverlayTrigger
-																		trigger="click"
+																		// trigger="click"
 																		key={placement}
 																		placement={placement}
 																		overlay={
@@ -181,17 +182,19 @@ export class Profile extends Component {
 																		>
 																		<Button variant="secondary"> <span className="reg-infoicon">i</span></Button>
 																		</OverlayTrigger>
-																))}
+																			
+																			))}
+																				
 														  </FormGroup>
 														  <FormGroup>
-															<Label for="confirm_password" className="cntrl-lbl">Confirm new password</Label>
+															<Label for="confirm_password" className="cntrl-lbl">{t('profile_mu2_cf_password')}</Label>
 															<Input type="password" name="confirm_password" id="confirm_password" className="txt_bg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
 														  </FormGroup>
 														  <Button color="primary" className="mt-2">
-															Change Password
+														  {t('profile_mu2_btn')}
 														  </Button>
 														</Form> 
-														<p className="mt-20 reset-lnk fw-600">Can't remember your current password? <ProfileForgotPasswordModal /></p>
+														<p className="mt-20 reset-lnk fw-600"> {t('profile_mu2_btn')} <ProfileForgotPasswordModal /></p>
 													</TabPane>
 													<TabPane tabId="3">
 														
@@ -226,4 +229,5 @@ const mapStateToProp = (state) => ({
   enableClosedSidebar: state.ThemeOptions.enableClosedSidebar,
   enablePageTabsAlt: state.ThemeOptions.enablePageTabsAlt,
 });
-export default withRouter(connect(mapStateToProp)(Profile));
+// export default withRouter(connect(mapStateToProp)(Profile));
+export default withRouter(connect(mapStateToProp)(withNamespaces()(Profile))) ;

@@ -11,5 +11,121 @@
   "lbl_login_username_fd": "Username or email",
   "lbl_login_pass_fd": "Password",
   "lbl_login_login_btn": "Log In",
-  "lbl_login_continue_social": "Or continue with"
+  "lbl_login_continue_social": "Or continue with",
+  "lbl_banner_heading1": "Perfect Balance",
+  "lbl_banner_text1": "ArchitectUI is like a dream. Some think its too good to be true! Extensive collection of unified React Boostrap Components and Elements.",
+  "lbl_banner_heading2": "Scalable, Modular, Consistent",
+  "lbl_banner_text2": " Easily exclude the components you don require. Lightweight, consistent Bootstrap based styles across all elements and components",
+  "lbl_banner_heading3": "Complex, but lightweight",
+  "lbl_banner_text3": " Weve included a lot of components that cover almost all use cases for any type of application.",
+  "home_comp_bodytext1":"Home page",
+  "home_title_heading":"Home",
+  "navigation1_title_heading":"Negotiation Room",
+  "navigation1_title_subheading":"Negotiation 1",
+  "ng1_pgtitle_navigation1":"Home",
+  "ng1_pgtitle_navigation2":"Rooms",
+  "ng1_pgtitle_navigation3":"Negotiation Room",
+  "ng1_pgtitle_btn1":"New Negotiation",
+  "ng1_pgtitle_btn2":"Room Info",
+  "ng1_pgtitle_bt2_heading":"Example",
+  "ng1_pgtitle_bt2_sec1":"Models",
+  "ng1_pgtitle_bt2_sec2":"Memory",
+  "ng1_pgtitle_bt2_sec3":"Statistics",
+  "ng1_pgtitle_bt2_sec4":"Setting",
+
+  "ng1_roomnavbar_navigate1":"Participants",
+  "ng1_roomnavbar_navigate2":"Proposals",
+  "ng1_roomnavbar_sub2_nav1":"Proposal 1",
+  "ng1_roomnavbar_sub2_nav2":"Proposal 2",
+  "ng1_roomnavbar_navigate3":"Agreement",
+  "ng1_roomnavbar_navigate4":"Strategies",
+  "ng1_roomnavbar_navigate5":"Justice",
+  "ng1_roomnavbar_sub5_nav1":"Send",
+  "ng1_roomnavbar_sub5_nav2":"Progress",
+  "ng1_roomnavbar_sub5_nav3":"Recapture",
+  "ng1_roomnavbar_navigate6":"Shelve",
+  "ng1_roomnavbar_navigate7":"Historic",
+  "ng1_roomnavbar_navigate8":"Preferences",
+
+  "ng1_tab_heading1":"Timeline",
+  "ng1_tab_heading2":"Details",
+  "ng1_tab_heading3":"Proposal",
+  "ng1_tab_heading4":"Meetings",
+  "ng1_tab_heading5":"Attachments",
+  "ng1_tab_heading6":"General",
+
+  "ng1_roomsfooter_text1":"Room belonging to",
+
+  "ng1_ft_dropdown_btn":"Info",
+  "ng1_ft_dropdown_Heading":"Settings",
+  "ng1_ft_dropdown_in_Heading1":"ACTIVITY",
+  "ng1_ft_dropdown_h1_menu1":"Chat",
+  "ng1_ft_dropdown_h1_menu2":"Recover Password",
+  "ng1_ft_dropdown_in_Heading2":"MY ACCOUNT",
+  "ng1_ft_dropdown_h2_menu1":"Settings",
+  "ng1_ft_dropdown_h2_menu2":"Messages",
+  "ng1_ft_dropdown_h2_menu3":"Logs",
+  "ng1_ft_dropdown_in_btntext":"Save",
+
+  "footer_nav_heading1":"Rooms",
+  "footer_nav_heading2":"Services",
+  "footer_nav_heading3":"Documentation",
+  "footer_nav_heading4":"Follow us on Social Media",
+  "footer_nav_headig1_link1":"Link 1",
+  "footer_nav_headig1_link2":"Link 2",
+  "footer_nav_headig1_link3":"Link 3",
+  "footer_nav_headig2_link1":"Link 1",
+  "footer_nav_headig2_link2":"Link 2",
+  "footer_nav_headig2_link3":"Link 3",
+  "footer_nav_headig3_link1":"Link 1",
+  "footer_nav_headig3_link2":"Link 2",
+  "footer_nav_headig3_link3":"Link 3",
+  "footer_bottom_terms1":"2020 Locroom Platform",
+  "footer_bottom_terms2":"Use Terms",
+  "footer_bottom_terms3":"Security Policies",
+  
+   "MainNav" : [
+    {
+      "icon": "pe-7s-home",
+      "label": "Home",
+      "to": "/home"
+    },
+    {
+      "icon": "pe-7s-door-lock frst_mlnk",
+      "label": "Rooms",
+      "content": [
+        {
+          "label": "Negotiation Rooms",
+          "content": [
+            {
+              "label": "Negotiation 1",
+              "to": "/negotiation1"
+            },
+            {
+              "label": "Negotiation 2",
+              "to": "/negotiation2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "pe-7s-video",
+      "label": "Video Conference",
+      "content": [
+        {
+          "label": "Contract 1",
+          "to": "/dashboard"
+        },
+        {
+          "label": "Contract 2",
+          "to": "/"
+        }
+      ]
+    }
+  ]
+  
+
+  
+  
 }

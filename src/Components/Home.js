@@ -10,15 +10,20 @@ import AppHeader from "../Layout/AppHeader/";
 import AppSidebar from "../Layout/AppSidebar/";
 import ProfilePageTitle from "../Layout/AppMain/ProfilePageTitle";
 import Footer from "./Footer"; 
+import {withNamespaces } from 'react-i18next';
 //import { Route, Switch, Redirect } from 'react-router-dom';  
+
 export class Home extends Component {  
    constructor(props) {
     super(props);
     this.state = {
       closedSmallerSidebar: false,
     };
+   
   }
+ 
   render() { 
+  
 	 let {
       colorScheme,
       enableFixedHeader,
@@ -29,6 +34,8 @@ export class Home extends Component {
       enableMobileMenu,
       enablePageTabsAlt,
     } = this.props;
+    const { t } = this.props; 
+    // const { t } = useTranslation();
          return (
 			<Fragment>
 			<ResizeDetector
@@ -53,12 +60,12 @@ export class Home extends Component {
 							<AppSidebar />
 							<div className="app-main__outer">
 								<div className="app-main__inner">
-									<ProfilePageTitle heading="Home" subheading="" icon="" pagenamechk="home"  />
-									<h3 className="pl-20 pt-20">Home Page</h3>									  
+									{/* <ProfilePageTitle heading="Home" subheading="" icon="" pagenamechk="home"  /> */}
+                  <ProfilePageTitle heading={t('home_title_heading')} subheading="" icon="" pagenamechk="home"  />
+									<h3 className="pl-20 pt-20">{t('home_comp_bodytext1')}</h3>									  
 								</div>
 							</div>
 						</div>
-				
 					</div>
 				)}
 			  />
@@ -80,4 +87,5 @@ const mapStateToProp = (state) => ({
   enablePageTabsAlt: state.ThemeOptions.enablePageTabsAlt,
 });
 
-export default withRouter(connect(mapStateToProp)(Home));
+export default withRouter(connect(mapStateToProp)(withNamespaces()(Home))) ;
+

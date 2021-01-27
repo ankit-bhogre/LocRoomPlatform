@@ -11,5 +11,142 @@
   "lbl_login_username_fd": "Nome de usuário ou email",
   "lbl_login_pass_fd": "Senha",
   "lbl_login_login_btn": "Conecte-se",
-  "lbl_login_continue_social": "Ou continue com"
+  "lbl_login_continue_social": "Ou continue com",
+  "lbl_banner_heading1": "Equilíbrio Perfeito",
+  "lbl_banner_text1": "ArchitectUI é como um sonho. Alguns acham que é bom demais para ser verdade! Coleção extensa de componentes e elementos React Boostrap unificados.",
+  "lbl_banner_heading2": "Escalável, Modular, Consistente",
+  "lbl_banner_text2": "Exclua facilmente os componentes de que você não precisa. Estilos leves e consistentes baseados em Bootstrap em todos os elementos e componentes",
+  "lbl_banner_heading3": "Complexo, mas leve",
+  "lbl_banner_text3": "Incluímos muitos componentes que cobrem quase todos os casos de uso para qualquer tipo de aplicativo.",
+  "home_comp_bodytext1":"Pagina inicial",
+  "home_title_heading":"Casa",
+  "navigation1_title_heading":"Sala de Negociação",
+  "navigation1_title_subheading":"Negociação 1",
+  "ng1_pgtitle_navigation1":"Casa",
+  "ng1_pgtitle_navigation2":"Quartas",
+  "ng1_pgtitle_navigation3":"Sala de Negociação",
+  "ng1_pgtitle_btn1":"Nova Negociação",
+  "ng1_pgtitle_btn2":"Informações da sala",
+  "ng1_pgtitle_bt2_heading":"Exemplo",
+  "ng1_pgtitle_bt2_sec1":"Modelos",
+  "ng1_pgtitle_bt2_sec2":"Memória",
+  "ng1_pgtitle_bt2_sec3":"Estatisticas",
+  "ng1_pgtitle_bt2_sec4":"Configuração",
+
+  "ng1_roomnavbar_navigate1":"Participantes",
+  "ng1_roomnavbar_navigate2":"Propostas",
+  "ng1_roomnavbar_sub2_nav1":"Proposta 1",
+  "ng1_roomnavbar_sub2_nav2":"Proposta 2",
+  "ng1_roomnavbar_navigate3":"Acordo",
+  "ng1_roomnavbar_navigate4":"Estratégias",
+  "ng1_roomnavbar_navigate5":"Justiça",
+  "ng1_roomnavbar_sub5_nav1":"Enviar",
+  "ng1_roomnavbar_sub5_nav2":"Progresso",
+  "ng1_roomnavbar_sub5_nav3":"Recaptura",
+  "ng1_roomnavbar_navigate6":"Arquivar",
+  "ng1_roomnavbar_navigate7":"Histórica",
+  "ng1_roomnavbar_navigate8":"Preferências",
+
+  "ng1_tab_heading1":"Linha do tempo",
+  "ng1_tab_heading2":"Detalhes",
+  "ng1_tab_heading3":"Proposta",
+  "ng1_tab_heading4":"Encontros",
+  "ng1_tab_heading5":"Anexos",
+  "ng1_tab_heading6":"Geral",
+
+  "ng1_roomsfooter_text1":"Quarto pertencente a",
+
+  "ng1_ft_dropdown_btn":"Informações",
+  "ng1_ft_dropdown_Heading":"Configurações",
+  "ng1_ft_dropdown_in_Heading1":"ATIVIDADE",
+  "ng1_ft_dropdown_h1_menu1":"Bate-papo",
+  "ng1_ft_dropdown_h1_menu2":"Recuperar senha",
+  "ng1_ft_dropdown_in_Heading2":"MINHA CONTA",
+  "ng1_ft_dropdown_h2_menu1":"Configurações",
+  "ng1_ft_dropdown_h2_menu2":"Mensagens",
+  "ng1_ft_dropdown_h2_menu3":"Histórica",
+  "ng1_ft_dropdown_in_btntext":"Salvar",
+
+  "footer_nav_heading1":"Quartas",
+  "footer_nav_heading2":"Serviços",
+  "footer_nav_heading3":"Documentação",
+  "footer_nav_heading4":"Siga-nos nas redes sociais",
+  "footer_nav_headig1_link1":"Ligação 1",
+  "footer_nav_headig1_link2":"Ligação 2",
+  "footer_nav_headig1_link3":"Ligação 3",
+  "footer_nav_headig2_link1":"Ligação 1",
+  "footer_nav_headig2_link2":"Ligação 2",
+  "footer_nav_headig2_link3":"Ligação 3",
+  "footer_nav_headig3_link1":"Ligação 1",
+  "footer_nav_headig3_link2":"Ligação 2",
+  "footer_nav_headig3_link3":"Ligação 3",
+  "footer_bottom_terms1":"2020 Locroom Platform",
+  "footer_bottom_terms2":"Termos de Uso",
+  "footer_bottom_terms3":"Políticas de Segurança",
+
+  "profile_title_heading":"Meu perfil",
+  "profile_title_subheading":"Alina Mcloughlin",
+  "profile_menu1":"Informações de registro",
+  "profile_menu2":"Mudar senha",
+  "profile_menu3":"Fechar",
+
+  "profile_mu1_heading":"Informações de registro",
+  "profile_mu1_subheading":"Manter seu perfil atualizado garante o pleno uso da plataforma",
+  "profile_mu1_namelable":"Primeiro nome",
+  "profile_mu1_l_namelable":"Último nome",
+  "profile_mu1_emaillable":"O email",
+  "profile_mu1_usernamelable":"Nome do usuário",
+  "profile_mu1_btn":"salvar",
+
+  "profile_mu2_heading":"Mudar senha",
+  "profile_mu2_newpassword":"New Password",
+  "profile_mu2_cf_password":"Nova senha",
+  "profile_mu2_btn":"Mudar senha",
+  "profile_mu2_text1":"Não consegue lembrar sua senha atual?",
+  "profile_mu2_text2":"Reiniciar via e-mail",
+  "profile_mu2_plcholder1":"Digite a senha atual",
+
+
+  "MainNav" : [
+    {
+      "icon": "pe-7s-home",
+      "label": "Casa",
+      "to": "/home"
+    },
+    {
+      "icon": "pe-7s-door-lock frst_mlnk",
+      "label": "Quartas",
+      "content": [
+        {
+          "label": "Salas de negociação",
+          "content": [
+            {
+              "label": "Negociação 1",
+              "to": "/negotiation1"
+            },
+            {
+              "label": "Negociação 2",
+              "to": "/negotiation2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "pe-7s-video",
+      "label": "Videoconferência",
+      "content": [
+        {
+          "label": "Contrato 1",
+          "to": "/dashboard"
+        },
+        {
+          "label": "Contrato 2",
+          "to": "/"
+        }
+      ]
+    }
+  ]
+
+
 }

@@ -55,9 +55,9 @@ class RegModal extends React.Component {
 			  <FormGroup className="reg-password" >
 				<Label for="new_password" className="cntrl-lbl">Password</Label>
 				<Input type="password" name="new_password" id="new_password" className="txt_bg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
-				    {['top'].map((placement) => (
+				    {['left'].map((placement) => (
 						<OverlayTrigger
-						trigger="click"
+						// trigger="click"
 						key={placement}
 						placement={placement}
 						overlay={
@@ -83,7 +83,7 @@ class RegModal extends React.Component {
 					</FormGroup>
 			  <FormGroup className="terms-lnk"><label><input type="checkbox" /> I agree all statements in Terms of Service</label></FormGroup>
 			  <FormGroup className="terms-lnk"><label><input type="checkbox" /> I confirm I am over 18 years old</label></FormGroup>
-			  <div className="sub_btn"><Button color="primary" className="mt-2">Register</Button></div>
+			  <div className="sub_btn"><Button type="submit" color="primary" className="mt-2">Register</Button></div>
 			</Form>
 			<p className="alrdy-mem">Already registered? <Link to="/">Sign in</Link></p>
           </ModalBody>

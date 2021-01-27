@@ -17,12 +17,12 @@ class ProfileForgotPasswordModal extends React.Component {
     });
   }
   render() {
-	//const { t } = this.props;
+	const { t } = this.props;
     return (
       <Fragment>
         <Link onClick={this.toggle}>
-		  Reset via e-mail
-		</Link>{" "}
+		    {t('profile_mu2_text2')}
+	  	</Link>{" "}
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="reg-modal forgot-pass">
           <ModalHeader toggle={this.toggle} className="pt-20">Forgot your password?</ModalHeader>
           <ModalBody>

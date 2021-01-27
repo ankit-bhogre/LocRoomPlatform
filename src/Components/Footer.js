@@ -7,8 +7,11 @@ import footerlogo from "../assets/utils/images/footer-logo.svg";
 import tocaproject from "../assets/custom_images/Toca-projetos.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faInstagram, faFacebookSquare,faYoutube } from '@fortawesome/free-brands-svg-icons';
-export default class Footer extends Component {
+import { withNamespaces } from 'react-i18next';
+// default
+export  class Footer extends Component {
   render() {
+	const { t } = this.props; 
     return (
       <Fragment>		  
 		<Row className="no-gutters">	
@@ -25,30 +28,30 @@ export default class Footer extends Component {
 					<div className="footer-sec-one-div">Div</div>
 				</div>
 				<div className="col-4 col-md-2 col-lg-2">
-				  <h6>Rooms</h6>
+				  <h6>{t('footer_nav_heading1')}</h6>
 				  <ul>
-				  	<li>Link 1</li>
-					<li>Link 2</li>
-					<li>Link 3</li>
+				  	<li>{t('footer_nav_headig1_link1')}</li>
+					<li>{t('footer_nav_headig1_link2')}</li>
+					<li>{t('footer_nav_headig1_link3')}</li>
 				  </ul>
 				</div>
 				<div className="col-4 col-md-2 col-lg-2">
-				  <h6>Services</h6>
+				  <h6>{t('footer_nav_heading2')}</h6>
 				  <ul>
-				  	<li>Link 1</li>
-					<li>Link 2</li>
-					<li>Link 3</li>
+				  	<li>{t('footer_nav_headig2_link1')}</li>
+					<li>{t('footer_nav_headig2_link2')}</li>
+					<li>{t('footer_nav_headig2_link3')}</li>
 				  </ul>
 				</div>
 				<div className="col-6 pt-2 col-md-2 col-lg-2">
-				  <h6>Documentation</h6>
+				  <h6>{t('footer_nav_heading3')}</h6>
 				  <ul>
-				  	<li>Link 1</li>
-					<li>Link 2</li>
-					<li>Link 3</li>
+				  	<li>{t('footer_nav_headig3_link1')}</li>
+					<li>{t('footer_nav_headig3_link2')}</li>
+					<li>{t('footer_nav_headig3_link3')}</li>
 				  </ul>
 				</div>
-				<div className="col-6 pt-2 col-md-2 col-lg-2"><h6  className="footer_followus_text">Follow us on<br /> Social Media</h6>
+				<div className="col-6 pt-2 col-md-2 col-lg-2"><h6  className="footer_followus_text">{t('footer_nav_heading4')}</h6>
 				<div className="footer_social">
 						<Link to="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faYoutube} /></div></Link>
 						<Link to="#"><div className="footer_social_inner"><FontAwesomeIcon  className="" icon={faFacebookSquare} /></div></Link>
@@ -65,9 +68,9 @@ export default class Footer extends Component {
 				 <div className="col-8">
 				 	<div class="text-left py-3">
 						<ul>
-							<li>2020 Locroom Platform</li>
-							<li>Use Terms</li>
-							<li>Security Policies</li>
+							<li>{t('footer_bottom_terms1')}</li>
+							<li>{t('footer_bottom_terms2')}</li>
+							<li>{t('footer_bottom_terms3')}</li>
 						</ul>
 					</div>
 				 </div>
@@ -82,3 +85,5 @@ export default class Footer extends Component {
     );
   }
 }
+
+export default withNamespaces()(Footer);

@@ -3,14 +3,20 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import MetisMenu from "react-metismenu";
 import { setEnableMobileMenu } from "../../reducers/ThemeOptions";
-
+import {withNamespaces } from 'react-i18next';
 import {
   MainNav,
   //ComponentsNav,
 } from "./NavItems";
 
 class Nav extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+
+    this.state = {
+     
+    }
+  }
 
   toggleMobileSidebar = () => {
     let { enableMobileMenu, setEnableMobileMenu } = this.props;
@@ -18,10 +24,12 @@ class Nav extends Component {
   };
 
   render() {
+    const { t } = this.props; 
     return (
       <Fragment>
         {/*<h5 className="app-sidebar__heading"><Link to="/home"><i className="inav pe-7s-home"></i> Home</Link></h5>*/}
-        <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu"  iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+        {/* <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu"  iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/> */}
+        <MetisMenu content= {t('MainNav',{ returnObjects: true })} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu"  iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
       </Fragment>
     );
   }
@@ -37,4 +45,5 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   setEnableMobileMenu: (enable) => dispatch(setEnableMobileMenu(enable)),
 });
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Nav));
+// export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Nav));
+export default connect(mapDispatchToProps)(withNamespaces()(Nav)) ;

@@ -23,6 +23,7 @@ import proposal_img from "../../assets/custom_images/nego_proposal.png";
 import meeting_img from "../../assets/custom_images/nego_meeting.png";
 import attachment_img from "../../assets/custom_images/nego_attachment.png";
 import general_img from "../../assets/custom_images/nego_general.png";
+import {withNamespaces } from 'react-i18next';
 class Roomnavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -148,6 +149,7 @@ class Roomnavbar extends React.Component {
   render() {
     let hideLabel = this.state.hideLabel ? 'hide-label' : 'show-label';
     // let rightOpen = this.state.rightOpen ? 'open' : 'closed';
+    const { t } = this.props; 
     return (
   <div className="testing1">
     <div id="contents" className="room_main_wrapper">
@@ -159,7 +161,7 @@ class Roomnavbar extends React.Component {
            <li className="leftside_navitem">
              <Link className="leftside_navlink">
                <FontAwesomeIcon className="lift-icon fause-icon" icon={faUsers} />
-               <span className={`lnk-label ${hideLabel}`}>Participants </span>
+               <span className={`lnk-label ${hideLabel}`}>{t('ng1_roomnavbar_navigate1')} </span>
                
              </Link>
            </li>
@@ -169,13 +171,13 @@ class Roomnavbar extends React.Component {
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="leftside_drop_inner">
-                            <span className={`drop-heading ${hideLabel}`}>Proposals</span>
+                            <span className={`drop-heading ${hideLabel}`}>{t('ng1_roomnavbar_navigate2')}</span>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
                               <Card.Body className="leftside_dropdownbody">
                               <ul className="side_dropdown">
-                                <li><Link className="leftside_dropmenu">Proposal 1</Link></li>
-                                <li><Link className="leftside_dropmenu">Proposal 2</Link></li>
+                                <li><Link className="leftside_dropmenu">{t('ng1_roomnavbar_sub2_nav1')}</Link></li>
+                                <li><Link className="leftside_dropmenu">{t('ng1_roomnavbar_sub2_nav2')}</Link></li>
                               </ul>  
                               </Card.Body>
                             </Accordion.Collapse>
@@ -183,8 +185,8 @@ class Roomnavbar extends React.Component {
                  </Accordion>
               </span> 
               </Link></li>
-         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahand-icon" icon={faHandshake} /><span className={`lnk-label ${hideLabel}`}>Agreement </span>  </Link></li>
-         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fabulleye-icon" icon={faBullseye} /><span className={`lnk-label ${hideLabel}`}>Strategies </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahand-icon" icon={faHandshake} /><span className={`lnk-label ${hideLabel}`}>{t('ng1_roomnavbar_navigate3')} </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fabulleye-icon" icon={faBullseye} /><span className={`lnk-label ${hideLabel}`}>{t('ng1_roomnavbar_navigate4')} </span>  </Link></li>
           {/* dropdown */}
           <li className="leftside_navitem"><Link className="leftside_navlink">
              <span  className="leftside_linkinside"><FontAwesomeIcon className="lift-icon fagavel-icon" icon={faGavel} /></span>
@@ -192,14 +194,14 @@ class Roomnavbar extends React.Component {
               <Accordion defaultActiveKey="0" className="leftside_dropbody">
                           <Card className="leftside_drop_card">
                             <Accordion.Toggle as={Card.Header} eventKey="1" className="leftside_drop_inner">
-                            <span className={`drop-heading ${hideLabel}`}>Justice</span>
+                            <span className={`drop-heading ${hideLabel}`}>{t('ng1_roomnavbar_navigate5')} </span>
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
                               <Card.Body className="leftside_dropdownbody">
                               <ul className="side_dropdown">
-                                <li><Link className="leftside_dropmenu">Send</Link></li>
-                                <li><Link className="leftside_dropmenu">Progress</Link></li>
-                                <li><Link className="leftside_dropmenu">Recapture</Link></li>
+                                <li><Link className="leftside_dropmenu">{t('ng1_roomnavbar_sub5_nav1')}</Link></li>
+                                <li><Link className="leftside_dropmenu">{t('ng1_roomnavbar_sub5_nav2')}</Link></li>
+                                <li><Link className="leftside_dropmenu">{t('ng1_roomnavbar_sub5_nav3')}</Link></li>
                               </ul>  
                               </Card.Body>
                             </Accordion.Collapse>
@@ -208,9 +210,9 @@ class Roomnavbar extends React.Component {
               </span> 
               </Link></li>
            {/* dropdown close*/}
-         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fafolder-icon" icon={faFolderOpen} /><span className={`lnk-label ${hideLabel}`}>Shelve </span>  </Link></li>
-         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahistory-icon" icon={faHistory} /><span className={`lnk-label ${hideLabel}`}>Historic </span>  </Link></li>
-         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon facog-icon" icon={faCog} /><span className={`lnk-label ${hideLabel}`}>Preferences </span> </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fafolder-icon" icon={faFolderOpen} /><span className={`lnk-label ${hideLabel}`}>{t('ng1_roomnavbar_navigate6')} </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon fahistory-icon" icon={faHistory} /><span className={`lnk-label ${hideLabel}`}>{t('ng1_roomnavbar_navigate7')} </span>  </Link></li>
+         <li className="leftside_navitem"><Link className="leftside_navlink"><FontAwesomeIcon className="lift-icon facog-icon" icon={faCog} /><span className={`lnk-label ${hideLabel}`}>{t('ng1_roomnavbar_navigate8')} </span> </Link></li>
        </ul>
       </div>
       </div>
@@ -219,22 +221,22 @@ class Roomnavbar extends React.Component {
                   <div className="center-content-div">
                                                     
                       <Tabs defaultActiveKey="1" renderTabBar={() => <ScrollableInkTabBar />} renderTabContent={() => <TabContent />}>
-                                <TabPane tab={<span><img className="tab_head_img" src={timeline_img} alt="" /> Timeline</span>} key="1">
+                                <TabPane tab={<span><img className="tab_head_img" src={timeline_img} alt="" /> {t('ng1_tab_heading1')}</span>} key="1">
                                     <div className="tab_wrap_area">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={details_img} alt="" /> Details</span>} key="2">
+                                <TabPane tab={<span><img className="tab_head_img" src={details_img} alt="" /> {t('ng1_tab_heading2')}</span>} key="2">
                                 <div className="tab_wrap_area">Details  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={proposal_img} alt="" /> Proposal</span>} key="3">
+                                <TabPane tab={<span><img className="tab_head_img" src={proposal_img} alt="" /> {t('ng1_tab_heading3')}</span>} key="3">
                                 <div className="tab_wrap_area">Proposal  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={meeting_img} alt="" /> Meetings</span>} key="4">
+                                <TabPane tab={<span><img className="tab_head_img" src={meeting_img} alt="" /> {t('ng1_tab_heading4')}</span>} key="4">
                                 <div className="tab_wrap_area">Meetings  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={attachment_img} alt="" /> Attachments</span>} key="5">
+                                <TabPane tab={<span><img className="tab_head_img" src={attachment_img} alt="" /> {t('ng1_tab_heading5')}</span>} key="5">
                                 <div className="tab_wrap_area">Attachments  </div>
                                 </TabPane>
-                                <TabPane tab={<span><img className="tab_head_img" src={general_img} alt="" /> General</span>} key="6">
+                                <TabPane tab={<span><img className="tab_head_img" src={general_img} alt="" /> {t('ng1_tab_heading6')}</span>} key="6">
                                 <div className="tab_wrap_area">General  </div>
                                 </TabPane>
                         </Tabs>
@@ -260,7 +262,8 @@ class Roomnavbar extends React.Component {
   }
 }
 
-export default Roomnavbar;
+// export default Roomnavbar;
+export default withNamespaces()(Roomnavbar) ;
 
 
 

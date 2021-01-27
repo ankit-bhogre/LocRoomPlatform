@@ -120,9 +120,9 @@ export class Login extends Component {
                         backgroundImage: "url(" + bg1 + ")",
                       }}/>
                     <div className="slider-content">
-                      <h3>Perfect Balance</h3>
+                      <h3>{t('lbl_banner_heading1')}</h3>
                       <p>
-                        ArchitectUI is like a dream. Some think its too good to be true! Extensive collection of unified React Boostrap Components and Elements.
+                      {t('lbl_banner_text1')}
                       </p>
                     </div>
                   </div>
@@ -132,9 +132,9 @@ export class Login extends Component {
                         backgroundImage: "url(" + bg3 + ")",
                       }}/>
                     <div className="slider-content">
-                      <h3>Scalable, Modular, Consistent</h3>
+                      <h3>{t('lbl_banner_heading2')}</h3>
                       <p>
-                        Easily exclude the components you don require. Lightweight, consistent Bootstrap based styles across all elements and components
+                      {t('lbl_banner_text2')}
                       </p>
                     </div>
                   </div>
@@ -144,9 +144,9 @@ export class Login extends Component {
                         backgroundImage: "url(" + bg2 + ")",
                       }}/>
                     <div className="slider-content">
-                      <h3>Complex, but lightweight</h3>
+                      <h3>{t('lbl_banner_heading3')}</h3>
                       <p>
-                        Weve included a lot of components that cover almost all use cases for any type of application.
+                      {t('lbl_banner_text3')}
                       </p>
                     </div>
                   </div>

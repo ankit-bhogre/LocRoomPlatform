@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+import {withNamespaces } from 'react-i18next';
 import {
   Button,
   UncontrolledButtonDropdown,
@@ -16,7 +17,7 @@ import {
 import { Row, Col } from "reactstrap";
 import bg14 from "../../assets/utils/images/dropdown-header/city4.jpg";
 
-export default class DropdownGridMenus extends React.Component {
+export class DropdownGridMenus extends React.Component {
   constructor(props) {
     super(props);
 
@@ -43,11 +44,12 @@ export default class DropdownGridMenus extends React.Component {
   }
 
   render() {
+    const { t } = this.props; 
     return (
       <Fragment>
                     <UncontrolledButtonDropdown >
                       <DropdownToggle caret color="info" className="mb-2 mr-2">
-                        Info
+                      {t('ng1_ft_dropdown_btn')}
                       </DropdownToggle>
                       <DropdownMenu className="dropdown-menu-xl">
                         <div className="dropdown-menu-header">
@@ -59,19 +61,19 @@ export default class DropdownGridMenus extends React.Component {
                               }}>
                             </div>
                             <div className="menu-header-content">
-                              <h5 className="menu-header-title">Settings</h5>
+                              <h5 className="menu-header-title">{t('ng1_ft_dropdown_Heading')}</h5>
                             </div>
                           </div>
                         </div>
                         <Nav vertical>
                           <Nav vertical>
                             <NavItem className="nav-item-header">
-                              Activity
+                            {t('ng1_ft_dropdown_in_Heading1')}
                             </NavItem>
                             <NavItem>
                               <NavLink href="#">
                                 <i className="nav-link-icon pe-7s-chat"> </i>
-                                <span>Chat</span>
+                                <span> {t('ng1_ft_dropdown_h1_menu1')}</span>
                                 <div className="ml-auto badge badge-pill badge-info">
                                   8
                                 </div>
@@ -80,16 +82,16 @@ export default class DropdownGridMenus extends React.Component {
                             <NavItem>
                               <NavLink href="#">
                                 <i className="nav-link-icon pe-7s-wallet"> </i>
-                                <span>Recover Password</span>
+                                <span>{t('ng1_ft_dropdown_h1_menu2')}</span>
                               </NavLink>
                             </NavItem>
                             <NavItem className="nav-item-header">
-                              My Account
+                            {t('ng1_ft_dropdown_in_Heading2')}
                             </NavItem>
                             <NavItem>
                               <NavLink href="#">
                                 <i className="nav-link-icon pe-7s-config"> </i>
-                                <span>Settings</span>
+                                <span> {t('ng1_ft_dropdown_h2_menu1')}</span>
                                 <div className="ml-auto badge badge-success">
                                   New
                                 </div>
@@ -98,7 +100,7 @@ export default class DropdownGridMenus extends React.Component {
                             <NavItem>
                               <NavLink href="#">
                                 <i className="nav-link-icon pe-7s-coffee"> </i>
-                                <span>Messages</span>
+                                <span>{t('ng1_ft_dropdown_h2_menu2')}</span>
                                 <div className="ml-auto badge badge-warning">
                                   512
                                 </div>
@@ -107,13 +109,13 @@ export default class DropdownGridMenus extends React.Component {
                             <NavItem>
                               <NavLink href="#">
                                 <i className="nav-link-icon pe-7s-box2"> </i>
-                                <span>Logs</span>
+                                <span>{t('ng1_ft_dropdown_h2_menu3')}</span>
                               </NavLink>
                             </NavItem>
                             <NavItem className="nav-item-divider" />
                             <NavItem className="nav-item-btn text-right">
                               <Button size="sm" className="btn-pill" color="success">
-                                Save
+                              {t('ng1_ft_dropdown_in_btntext')}
                               </Button>
                             </NavItem>
                           </Nav>
@@ -124,3 +126,5 @@ export default class DropdownGridMenus extends React.Component {
     );
   }
 }
+
+export default withNamespaces()(DropdownGridMenus) ;

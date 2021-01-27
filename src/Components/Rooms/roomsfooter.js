@@ -1,6 +1,7 @@
 import React  from 'react';
 import { Link } from "react-router-dom";
 import DropdownGridMenus  from './bottomdropdown';
+import {withNamespaces } from 'react-i18next';
 // import './index.scss';
 //import { Accordion,Card,Tab ,Dropdown} from 'react-bootstrap';
 //import Tabs, { TabPane } from "rc-tabs";
@@ -25,11 +26,12 @@ class Roomsfooter extends React.Component {
   }
 
 render() {
+  const { t } = this.props; 
     return (
         <div className="roomfooter-div">
          
           <div className="roomft-content">
-              <span className="roomft-titlename">Room belonging to </span> 
+              <span className="roomft-titlename"> {t('ng1_roomsfooter_text1')} </span> 
               <span>
               <DropdownGridMenus />
                
@@ -40,4 +42,5 @@ render() {
      }
 }
 
-export default Roomsfooter;
+
+export default withNamespaces()(Roomsfooter) ;

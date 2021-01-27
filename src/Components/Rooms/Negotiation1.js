@@ -11,6 +11,7 @@ import AppSidebar from "../../Layout/AppSidebar/";
 import PageTitle from "../../Layout/AppMain/PageTitle";
 import Footer from "../Footer"; 
 import Roomnavbar from "./Roomnavbar";
+import {withNamespaces } from 'react-i18next';
 //import timeline_img from "../../assets/custom_images/nego_timeline.png";
 //import details_img from "../../assets/custom_images/nego_details.png";
 //import proposal_img from "../../assets/custom_images/nego_proposal.png";
@@ -38,6 +39,7 @@ class Negotiation1 extends Component {
       enableMobileMenu,
       enablePageTabsAlt,
     } = this.props;
+    const { t } = this.props; 
          return (
 			<Fragment>
 			<ResizeDetector
@@ -63,7 +65,7 @@ class Negotiation1 extends Component {
 							<div className="app-main__outer">
 								<div className="app-main__inner">
                 <CSSTransitionGroup component="div" transitionName="TabsAnimation" transitionAppear={true} transitionAppearTimeout={0} transitionEnter={false} transitionLeave={false}>
-                <PageTitle heading="Negotiation Room" subheading="Negotiation 1" icon="pe-7s-door-lock" imgsts="negoroomone" />
+                <PageTitle heading={t('navigation1_title_heading')} subheading={t('navigation1_title_subheading')} icon="pe-7s-door-lock" imgsts="negoroomone" />
                 <Roomnavbar />
                   </CSSTransitionGroup>							  
 								</div>
@@ -91,4 +93,5 @@ const mapStateToProp = (state) => ({
   enablePageTabsAlt: state.ThemeOptions.enablePageTabsAlt,
 });
 
-export default withRouter(connect(mapStateToProp)(Negotiation1));
+
+export default withRouter(connect(mapStateToProp)(withNamespaces()(Negotiation1))) ;
