@@ -18,6 +18,8 @@
   "lbl_banner_text2": " Easily exclude the components you don require. Lightweight, consistent Bootstrap based styles across all elements and components",
   "lbl_banner_heading3": "Complex, but lightweight",
   "lbl_banner_text3": " Weve included a lot of components that cover almost all use cases for any type of application.",
+
+  
   "home_comp_bodytext1":"Home page",
   "home_title_heading":"Home",
   "navigation1_title_heading":"Negotiation Room",
@@ -71,19 +73,46 @@
   "footer_nav_heading2":"Services",
   "footer_nav_heading3":"Documentation",
   "footer_nav_heading4":"Follow us on Social Media",
-  "footer_nav_headig1_link1":"Link 1",
-  "footer_nav_headig1_link2":"Link 2",
-  "footer_nav_headig1_link3":"Link 3",
-  "footer_nav_headig2_link1":"Link 1",
-  "footer_nav_headig2_link2":"Link 2",
-  "footer_nav_headig2_link3":"Link 3",
-  "footer_nav_headig3_link1":"Link 1",
-  "footer_nav_headig3_link2":"Link 2",
-  "footer_nav_headig3_link3":"Link 3",
+  "footer_nav_headig1_link1":"Lorem Ipsum",
+  "footer_nav_headig1_link2":"Lorem Ipsum",
+  "footer_nav_headig1_link3":"Lorem Ipsum",
+  "footer_nav_headig2_link1":"Lorem Ipsum",
+  "footer_nav_headig2_link2":"Lorem Ipsum",
+  "footer_nav_headig2_link3":"Lorem Ipsum",
+  "footer_nav_headig3_link1":"Lorem Ipsum",
+  "footer_nav_headig3_link2":"Lorem Ipsum",
+  "footer_nav_headig3_link3":"Lorem Ipsum",
   "footer_bottom_terms1":"2020 Locroom Platform",
   "footer_bottom_terms2":"Use Terms",
   "footer_bottom_terms3":"Security Policies",
   
+  "reg_modal_heading":"Registration Info",
+  "reg_modal_fname":"First Name",
+  "reg_modal_lname":"Last Name",
+  "reg_modal_email":"Email",
+  "reg_modal_username":"Username",
+  "reg_modal_password":"Password",
+  "reg_modal_cf_password":"Confirm password",
+  "reg_modal_condition1":"I agree all statements in Terms of Service",
+  "reg_modal_condition2":"I confirm I am over 18 years old",
+  "reg_modal_btn":"Register",
+  "reg_modal_regtext1":"Already registered?",
+  "reg_modal_regtext2":"Sign in",
+  "reg_modal_p_holder1":"",
+  "reg_modal_p_holder2":"",
+  "reg_modal_p_holder3":"",
+  "reg_modal_p_holder4":"",
+  "reg_modal_p_validation1":"Your password must be 8 characters long.",
+  "reg_modal_p_validation2":"Your password must contain at least one capital letter.",
+  "reg_modal_p_validation3":"Your password must contain at least one special character (Ex.!, @, #, $,%, &).",
+  "reg_modal_p_validation4":"Your password must contain at least one number (0,1,2,3, etc.).",
+
+  "forgot_modal_heading":"Forgot your password?",
+  "forgot_modal_subheading":"Fill in with your email and we will send a link to redefine your password.",
+  "forgot_modal_email":"Email Address",
+  "forgot_modal_btn":"Reset password",
+
+
    "MainNav" : [
     {
       "icon": "pe-7s-home",
@@ -92,7 +121,7 @@
     },
     {
       "icon": "pe-7s-door-lock frst_mlnk",
-      "label": "Rooms",
+      "label": "My Rooms",
       "content": [
         {
           "label": "Negotiation Rooms",

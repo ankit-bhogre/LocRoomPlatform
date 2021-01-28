@@ -18,20 +18,23 @@
   "lbl_banner_text2": "Exclua facilmente os componentes de que você não precisa. Estilos leves e consistentes baseados em Bootstrap em todos os elementos e componentes",
   "lbl_banner_heading3": "Complexo, mas leve",
   "lbl_banner_text3": "Incluímos muitos componentes que cobrem quase todos os casos de uso para qualquer tipo de aplicativo.",
-  "home_comp_bodytext1":"Pagina inicial",
-  "home_title_heading":"Casa",
+
+
+  "home_comp_bodytext1":"Página Inicial",
+  "home_title_heading":"Página Inicial",
   "navigation1_title_heading":"Sala de Negociação",
   "navigation1_title_subheading":"Negociação 1",
-  "ng1_pgtitle_navigation1":"Casa",
-  "ng1_pgtitle_navigation2":"Quartas",
-  "ng1_pgtitle_navigation3":"Sala de Negociação",
+  "ng1_pgtitle_navigation1":"Home",
+  "ng1_pgtitle_navigation2":"Salas",
+  "ng1_pgtitle_navigation3":"Sala de negociação",
   "ng1_pgtitle_btn1":"Nova Negociação",
-  "ng1_pgtitle_btn2":"Informações da sala",
-  "ng1_pgtitle_bt2_heading":"Exemplo",
+  "ng1_pgtitle_btn2":"Informação",
+  "ng1_pgtitle_bt2_heading":"Exemplo de Título",
   "ng1_pgtitle_bt2_sec1":"Modelos",
   "ng1_pgtitle_bt2_sec2":"Memória",
-  "ng1_pgtitle_bt2_sec3":"Estatisticas",
+  "ng1_pgtitle_bt2_sec3":"Estatísticas",
   "ng1_pgtitle_bt2_sec4":"Configuração",
+
 
   "ng1_roomnavbar_navigate1":"Participantes",
   "ng1_roomnavbar_navigate2":"Propostas",
@@ -41,20 +44,27 @@
   "ng1_roomnavbar_navigate4":"Estratégias",
   "ng1_roomnavbar_navigate5":"Justiça",
   "ng1_roomnavbar_sub5_nav1":"Enviar",
-  "ng1_roomnavbar_sub5_nav2":"Progresso",
-  "ng1_roomnavbar_sub5_nav3":"Recaptura",
+  "ng1_roomnavbar_sub5_nav2":"Andamento",
+  "ng1_roomnavbar_sub5_nav3":"Retornar",
   "ng1_roomnavbar_navigate6":"Arquivar",
-  "ng1_roomnavbar_navigate7":"Histórica",
+  "ng1_roomnavbar_navigate7":"Histórico",
   "ng1_roomnavbar_navigate8":"Preferências",
 
-  "ng1_tab_heading1":"Linha do tempo",
+
+
+
+
+  "ng1_tab_heading1":"Linha do Tempo",
   "ng1_tab_heading2":"Detalhes",
-  "ng1_tab_heading3":"Proposta",
-  "ng1_tab_heading4":"Encontros",
+  "ng1_tab_heading3":"Propostas",
+  "ng1_tab_heading4":"Reuniões",
   "ng1_tab_heading5":"Anexos",
   "ng1_tab_heading6":"Geral",
 
-  "ng1_roomsfooter_text1":"Quarto pertencente a",
+
+
+  "ng1_roomsfooter_text1":"Sala de propriedade do usuário",
+
 
   "ng1_ft_dropdown_btn":"Informações",
   "ng1_ft_dropdown_Heading":"Configurações",
@@ -70,19 +80,23 @@
   "footer_nav_heading1":"Quartas",
   "footer_nav_heading2":"Serviços",
   "footer_nav_heading3":"Documentação",
-  "footer_nav_heading4":"Siga-nos nas redes sociais",
-  "footer_nav_headig1_link1":"Ligação 1",
-  "footer_nav_headig1_link2":"Ligação 2",
-  "footer_nav_headig1_link3":"Ligação 3",
-  "footer_nav_headig2_link1":"Ligação 1",
-  "footer_nav_headig2_link2":"Ligação 2",
-  "footer_nav_headig2_link3":"Ligação 3",
-  "footer_nav_headig3_link1":"Ligação 1",
-  "footer_nav_headig3_link2":"Ligação 2",
-  "footer_nav_headig3_link3":"Ligação 3",
+  "footer_nav_heading4":"Nos siga nas Redes Sociais!",
+  "footer_nav_headig1_link1":"Lorem Ipsum",
+  "footer_nav_headig1_link2":"Lorem Ipsum",
+  "footer_nav_headig1_link3":"Lorem Ipsum",
+  "footer_nav_headig2_link1":"Lorem Ipsum",
+  "footer_nav_headig2_link2":"Lorem Ipsum",
+  "footer_nav_headig2_link3":"Lorem Ipsum",
+  "footer_nav_headig3_link1":"Lorem Ipsum",
+  "footer_nav_headig3_link2":"Lorem Ipsum",
+  "footer_nav_headig3_link3":"Lorem Ipsum",
   "footer_bottom_terms1":"2020 Locroom Platform",
-  "footer_bottom_terms2":"Termos de Uso",
-  "footer_bottom_terms3":"Políticas de Segurança",
+  "footer_bottom_terms2":"Use Terms",
+  "footer_bottom_terms3":"Security Policies",
+
+
+
+
 
   "profile_title_heading":"Meu perfil",
   "profile_title_subheading":"Alina Mcloughlin",
@@ -105,6 +119,30 @@
   "profile_mu2_text1":"Não consegue lembrar sua senha atual?",
   "profile_mu2_text2":"Reiniciar via e-mail",
   "profile_mu2_plcholder1":"Digite a senha atual",
+   
+  "reg_modal_heading":"Informações de Registro",
+  "reg_modal_fname":"Primeiro Nome",
+  "reg_modal_lname":"Sobrenome",
+  "reg_modal_email":"Email",
+  "reg_modal_username":"Nome de usuário",
+  "reg_modal_password":"Senha",
+  "reg_modal_cf_password":"Confirme sua senha",
+  "reg_modal_condition1":"Concordo com os Termos de Serviço",
+  "reg_modal_condition2":"Eu declaro ter mais de 18 anos de idade",
+  "reg_modal_btn":"Register",
+  "reg_modal_regtext1":"Já tem registro?",
+  "reg_modal_regtext2":"Entrar",
+  "reg_modal_p_validation1":"",
+  "reg_modal_p_validation2":"",
+  "reg_modal_p_validation3":"",
+  "reg_modal_p_validation4":"",
+
+
+  "forgot_modal_heading":"Esqueceu a senha?",
+  "forgot_modal_subheading":"Digite o endereço de e-mail associado ao seu cadastro na LocRoom e enviaremos um e-mail com um link para redefinir sua senha.",
+  "forgot_modal_email":"Email",
+  "forgot_modal_btn":"Redefinir senha",
+
 
 
   "MainNav" : [
@@ -115,17 +153,17 @@
     },
     {
       "icon": "pe-7s-door-lock frst_mlnk",
-      "label": "Quartas",
+      "label": "My Rooms",
       "content": [
         {
-          "label": "Salas de negociação",
+          "label": "Negotiation Room",
           "content": [
             {
-              "label": "Negociação 1",
+              "label": "Negotiation 1",
               "to": "/negotiation1"
             },
             {
-              "label": "Negociação 2",
+              "label": "Negotiation 2",
               "to": "/negotiation2"
             }
           ]
@@ -137,11 +175,11 @@
       "label": "Videoconferência",
       "content": [
         {
-          "label": "Contrato 1",
+          "label": "Contract 1",
           "to": "/dashboard"
         },
         {
-          "label": "Contrato 2",
+          "label": "Contract 2",
           "to": "/"
         }
       ]

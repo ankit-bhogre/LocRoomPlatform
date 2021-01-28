@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import MetisMenu from "react-metismenu";
 import { setEnableMobileMenu } from "../../reducers/ThemeOptions";
 import {withNamespaces } from 'react-i18next';
+import RouterLink from 'react-metismenu-router-link';
 import {
   MainNav,
   //ComponentsNav,
@@ -27,9 +28,10 @@ class Nav extends Component {
     const { t } = this.props; 
     return (
       <Fragment>
+         {/* LinkComponent={RouterLink}  */}
         {/*<h5 className="app-sidebar__heading"><Link to="/home"><i className="inav pe-7s-home"></i> Home</Link></h5>*/}
         {/* <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu"  iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/> */}
-        <MetisMenu content= {t('MainNav',{ returnObjects: true })} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu"  iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+        <MetisMenu content= {t('MainNav',{ returnObjects: true })} onSelected={this.toggleMobileSidebar} activeLinkFromLocation className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
       </Fragment>
     );
   }
