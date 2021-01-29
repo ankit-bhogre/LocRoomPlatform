@@ -30,10 +30,10 @@
   "ng1_pgtitle_btn1":"New Negotiation",
   "ng1_pgtitle_btn2":"Room Info",
   "ng1_pgtitle_bt2_heading":"Example",
-  "ng1_pgtitle_bt2_sec1":"Models",
+  "ng1_pgtitle_bt2_sec1":"Templates",
   "ng1_pgtitle_bt2_sec2":"Memory",
   "ng1_pgtitle_bt2_sec3":"Statistics",
-  "ng1_pgtitle_bt2_sec4":"Setting",
+  "ng1_pgtitle_bt2_sec4":"Configurations",
 
   "ng1_roomnavbar_navigate1":"Participants",
   "ng1_roomnavbar_navigate2":"Proposals",
@@ -85,6 +85,34 @@
   "footer_bottom_terms1":"2020 Locroom Platform",
   "footer_bottom_terms2":"Use Terms",
   "footer_bottom_terms3":"Security Policies",
+
+
+  "profile_title_heading":"MY Profile",
+  "profile_title_subheading":"Alina Mcloughlin",
+  "profile_menu1":"Registration Info",
+  "profile_menu2":"Change Password",
+  "profile_menu3":"Close",
+
+  "profile_mu1_heading":"Registration Info",
+  "profile_mu1_subheading":"Keeping your profile updated ensures the full use of the platform",
+  "profile_mu1_namelable":"First Name",
+  "profile_mu1_l_namelable":"Last Name",
+  "profile_mu1_emaillable":"Email",
+  "profile_mu1_usernamelable":"Username",
+  "profile_mu1_btn":"Save",
+
+  "profile_mu2_heading":"Change Password",
+  "profile_mu2_newpassword":"New Password",
+  "profile_mu2_cf_password":"Confirm new password",
+  "profile_mu2_btn":"Change Password",
+  "profile_mu2_text1":"Can´t remember your current password?",
+  "profile_mu2_text2":"Reset via e-mail",
+
+  "profile_mu2_plcholder1":"Enter current password",
+  
+
+
+
   
   "reg_modal_heading":"Registration Info",
   "reg_modal_fname":"First Name",

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import HeaderLogo from "../AppLogo";
-//import SearchBox from "./Components/SearchBox";
+import SearchBox from "./Components/SearchBox";
 //import MegaMenu from "./Components/MegaMenu";
 import UserBox from "./Components/UserBox";
 import HeaderRightDrawer from "./Components/HeaderRightDrawer";
@@ -30,6 +30,9 @@ class Header extends React.Component {
           <div className={cx("app-header__content", {
               "header-mobile-open": enableMobileMenuSmall,
             })}>
+              <div className="app-header-left">
+              <SearchBox />
+            </div>
             <div className="app-header-right">
               <HeaderDots />
               <UserBox />

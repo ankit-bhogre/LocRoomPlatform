@@ -98,27 +98,31 @@
 
 
 
-  "profile_title_heading":"Meu perfil",
+  "profile_title_heading":"Meu Perfil",
   "profile_title_subheading":"Alina Mcloughlin",
-  "profile_menu1":"Informações de registro",
-  "profile_menu2":"Mudar senha",
+  "profile_menu1":"Informações de Registro",
+  "profile_menu2":"Mudar a senha",
   "profile_menu3":"Fechar",
 
-  "profile_mu1_heading":"Informações de registro",
-  "profile_mu1_subheading":"Manter seu perfil atualizado garante o pleno uso da plataforma",
-  "profile_mu1_namelable":"Primeiro nome",
-  "profile_mu1_l_namelable":"Último nome",
-  "profile_mu1_emaillable":"O email",
-  "profile_mu1_usernamelable":"Nome do usuário",
-  "profile_mu1_btn":"salvar",
+  "profile_mu1_heading":"Informações de Registro",
+  "profile_mu1_subheading":"Deixar seu perfil atualizado garante o uso integral da plataforma",
+  "profile_mu1_namelable":"Nome",
+  "profile_mu1_l_namelable":"Sobrenome",
+  "profile_mu1_emaillable":"Email",
+  "profile_mu1_usernamelable":"Usuário",
+  "profile_mu1_btn":"Salvar",
 
-  "profile_mu2_heading":"Mudar senha",
-  "profile_mu2_newpassword":"New Password",
-  "profile_mu2_cf_password":"Nova senha",
-  "profile_mu2_btn":"Mudar senha",
-  "profile_mu2_text1":"Não consegue lembrar sua senha atual?",
-  "profile_mu2_text2":"Reiniciar via e-mail",
-  "profile_mu2_plcholder1":"Digite a senha atual",
+
+  "profile_mu2_heading":"Trocar a Senha",
+  "profile_mu2_newpassword":"Nova senha",
+  "profile_mu2_cf_password":"Confirme sua senha",
+  "profile_mu2_btn":"Mudar a senha",
+  "profile_mu2_text1":"Não se lembra da senha?",
+  "profile_mu2_text2":"Redefinir via email",
+
+  "profile_mu2_plcholder1":"Digite sua senha atual",
+
+
    
   "reg_modal_heading":"Informações de Registro",
   "reg_modal_fname":"Primeiro Nome",
@@ -172,7 +176,7 @@
     },
     {
       "icon": "pe-7s-video",
-      "label": "Videoconferência",
+      "label": "Videoconference",
       "content": [
         {
           "label": "Contract 1",

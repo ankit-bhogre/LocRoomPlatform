@@ -26,7 +26,7 @@ import ForgotPasswordModal from "./ForgotPasswordModal";
 import Footer from "./Footer"; 
 import TopNavbar from "./TopNavbar"; 
 import { withNamespaces } from 'react-i18next';
-
+import SearchBox from "../Layout/AppHeader/Components/SearchBox";
 export class Login extends Component {
   render() {
 	  
@@ -50,7 +50,8 @@ export class Login extends Component {
 		  <Row className="no-gutters header-1">	
 		  	<div className="container-fluid">
 			  <Col lg="10" md="10" sm="8"  className="fl top_logo col-8">
-			  	<div><Link to="/"><img className="" src={toplogo} alt=""/></Link></div>
+			  	<div><Link to="/"><img className="login_header_logo" src={toplogo} alt=""/></Link>    <SearchBox className="login_header_search" /></div>
+       
 			  </Col>		  
 			  {/* <Col lg="7" md="7" sm="12" className="fl">
 			  	<div className="">
