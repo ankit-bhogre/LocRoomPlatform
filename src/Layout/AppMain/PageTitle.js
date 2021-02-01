@@ -159,24 +159,8 @@ class PageTitle extends Component {
                 </Col>
               </Row>
             </div>
-            {/* <Nav vertical>
-              <NavItem className="nav-item-divider" />
-              <NavItem className="nav-item-btn clearfix">
-                <div className="float-left">
-                  <Button size="sm" color="link">
-                    Link Button
-                  </Button>
-                </div>
-                <div className="float-right">
-                  <Button size="sm" className="btn-shadow" color="info">
-                    Info Button
-                  </Button>
-                </div>
-              </NavItem>
-            </Nav> */}
           </Popover>
         </Nav>
-
 			{/* --------------------------------------------------------------------- */}
 
 {/* 						 
